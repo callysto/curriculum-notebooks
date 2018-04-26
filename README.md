@@ -17,7 +17,7 @@ Read the [training manual](https://github.com/callysto/training-manual) before y
 
 ## Contributing
 
-If you are a K-12 teacher please sign up using (this form)[https://docs.google.com/forms/d/e/1FAIpQLSc0i25Ounu-VXhgvI8lkrIwjeDetcls9DbBEJZuuru5taa8PQ/viewform?embedded=true].
+If you are a K-12 teacher please sign up using [this form](https://docs.google.com/forms/d/e/1FAIpQLSc0i25Ounu-VXhgvI8lkrIwjeDetcls9DbBEJZuuru5taa8PQ/viewform?embedded=true).
 
 We also welcome interest from outside collaborators in both industry and academia.
 If you would like to be added to the project please contact india@pims.math.ca
