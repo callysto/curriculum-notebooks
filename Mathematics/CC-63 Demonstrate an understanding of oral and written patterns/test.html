@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+<head>
+    <title>D3 tutorial</title>
+    <script src="http://d3js.org/d3.v3.js"></script>
+    <!--<script src="d3.min.js"></script>-->
+</head>
+<body>
+<input type="button"
+       value="Draw Sequence"/>
+
+<form id="frm1_diff" action="/action_page.php">
+    Enter the <b>difference</b> for the arithmatic sequence:
+    <input type="number" name="quantity" value="3" min="1" max="5">
+</form>
+
+
+<svg width="720" height="120">
+    <line x1="0" y1="50" x2="2000" y2="50" stroke="black"/>
+
+
+</svg>
+<script>
+        var svg = d3.select('svg');
+
+        var numberline = [...Array(5).keys()];
+
+
+        d3.select("body").append("button")
+                .text("Plot the sequence")
+                .on("click", function(){
+        
+
+                    difference = parseInt(document.getElementById("frm1_diff")
+                                 .elements[0]
+                                 .value);
+                    console.log(difference);
+                    let data = [...Array(10).keys()]
+                        .map( (num,i) => 1 + i*difference)
+                        .filter(num => num < 50);
+
+                    let points = svg.selectAll('points')
+                        .data(eval(data))
+                        .enter()
+                        .append('circle')
+                        .classed('points', true)
+                        .attr('r', 5)
+                        .attr('fill', 'green')
+                        .attr('cx', 10)
+                        .attr('cy', 50)
+                        .transition()
+                            .attr("delay", function(d,i){return 1000*i})
+                            .attr("duration", function(d,i){return 1000*(i+1)})
+                            .attr('cx', function(d) { return d*20; })
+                    });
+
+
+</script>
+</body>
+</html>
