@@ -2,8 +2,6 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/d3/4.8.0/d3.min.js"></script>
     <script src="//unpkg.com/d3-force-bounce"></script>
     <script src="//unpkg.com/d3-force-constant"></script>
-
-    <link rel="stylesheet" href="style.css">
 </head>
 
 <style>
@@ -36,8 +34,8 @@ body {
 <script>
 
 var width = 400, height = 400
-const BALL_RADIUS = 20,
-	WIRE_LENGTH = window.innerHeight/ 2,
+const BALL_SIZE = 20,
+	SPRING_LENGTH = window.innerHeight/ 2,
 	GRAVITY = 0.6;
 
 const canvasWidth = window.innerWidth,
@@ -47,56 +45,56 @@ const canvasWidth = window.innerWidth,
 const svgCanvas = d3.select('svg#canvas')
 		.attr('width', canvasWidth)
 		.attr('height', canvasHeight),
-	wiresG = svgCanvas.append('g'),
+	springsG = svgCanvas.append('g'),
 	ballsG = svgCanvas.append('g');
 
 svgCanvas.append('rect')
-	.attr('x', canvasWidth/2 - 4*BALL_RADIUS - 10)
-	.attr('y', canvasHeight*2/3 - WIRE_LENGTH - 5)
-	.attr('width', BALL_RADIUS*8 + 20)
+	.attr('x', canvasWidth/2 - 4*BALL_SIZE - 10)
+	.attr('y', canvasHeight*2/3 - SPRING_LENGTH - 5)
+	.attr('width', BALL_SIZE*8 + 20)
 	.attr('height', 10)
 	.attr('rx', 5)
 	.attr('ry', 5)
 	.attr('fill', 'MediumPurple');
 
 const balls = [
-		{ id: '0', init: { x: canvasWidth/2 - 4*BALL_RADIUS, y: canvasHeight*2/3 } },
-		{ id: '1', init: { x: canvasWidth/2 - 2*BALL_RADIUS, y: canvasHeight*2/3 } },
-		{ id: '2', init: { x: canvasWidth/2 - 0*BALL_RADIUS, y: canvasHeight*2/3 } },
-		{ id: '3', init: { x: canvasWidth/2 + 2*BALL_RADIUS, y: canvasHeight*2/3 } },
-		{ id: '4', init: { x: canvasWidth/2 + 4*BALL_RADIUS, y: canvasHeight*2/3 } }
+		{ id: '0', init: { x: canvasWidth/2 - 4*BALL_SIZE, y: canvasHeight*2/3 } },
+		{ id: '1', init: { x: canvasWidth/2 - 2*BALL_SIZE, y: canvasHeight*2/3 } },
+		{ id: '2', init: { x: canvasWidth/2 - 0*BALL_SIZE, y: canvasHeight*2/3 } },
+		{ id: '3', init: { x: canvasWidth/2 + 2*BALL_SIZE, y: canvasHeight*2/3 } },
+		{ id: '4', init: { x: canvasWidth/2 + 4*BALL_SIZE, y: canvasHeight*2/3 } }
 	],
-	anchors = balls.map(ball => ({
+	pivots = balls.map(ball => ({
 		id: 'a' + ball.id,
 		fx: ball.init.x,
-		fy: ball.init.y - WIRE_LENGTH
+		fy: ball.init.y - SPRING_LENGTH
 	})),
-	wires = balls.map(ball => ({
+	springs = balls.map(ball => ({
 		source: ball.id,
 		target: 'a' + ball.id
 	}));
 
-	// swing it
-	balls[0].init.x -= WIRE_LENGTH;
-	balls[0].init.y -= WIRE_LENGTH;
+	// Start the motion, moving the left-most ball
+	balls[0].init.x -= SPRING_LENGTH;
+	balls[0].init.y -= SPRING_LENGTH;
 
 let init = false;
 
 const forceSim = d3.forceSimulation()
 	.alphaDecay(0)
 	.velocityDecay(0)
-	.nodes([...balls, ...anchors])
+	.nodes([...balls, ...pivots])
 	.force('gravity', d3.forceConstant()
 		.strength(GRAVITY)
 		.direction(90)
 	)
-	.force('wires', d3.forceLink(wires)
+	.force('wires', d3.forceLink(springs)
 		.id(node => node.id)
-		.distance(WIRE_LENGTH)
+		.distance(SPRING_LENGTH)
 		.strength(0.4)
 	)
 	.force('bounce', d3.forceBounce()
-		.radius(node => BALL_RADIUS)
+		.radius(node => BALL_SIZE)
 	)
 	.force('init', () => {
 		if (!init) {
@@ -109,7 +107,7 @@ const forceSim = d3.forceSimulation()
 			init = true;
 		}
 	})
-	.on('tick', () => { ballDigest(); wireDigest(); });
+	.on('tick', () => { ballDigest(); springDigest(); });
 
 //
 
@@ -121,7 +119,7 @@ function ballDigest() {
 	ball.merge(
 		ball.enter().append('circle')
 			.classed('ball', true)
-			.attr('r', BALL_RADIUS)
+			.attr('r', BALL_SIZE)
 			.attr('fill', 'url(#sphere-gradient)')
 			.call(d3.drag()
 				.on("start", d => { d.fx = d.x; d.fy = d.y; })
@@ -133,13 +131,13 @@ function ballDigest() {
 		.attr('cy', d => d.y);
 }
 
-function wireDigest() {
-	let wire = wiresG.selectAll('line.wire').data(wires);
+function springDigest() {
+	let spring = springsG.selectAll('line.wire').data(springs);
 
-	wire.exit().remove();
+	spring.exit().remove();
 
-	wire.merge(
-		wire.enter().append('line')
+	spring.merge(
+		spring.enter().append('line')
 			.classed('wire', true)
 			.attr('stroke', 'slategrey')
 			.attr('stroke-width', 1)

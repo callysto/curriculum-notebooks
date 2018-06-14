@@ -2,8 +2,6 @@
     <script src="//cdnjs.cloudflare.com/ajax/libs/d3/4.8.0/d3.min.js"></script>
     <script src="//unpkg.com/d3-force-bounce"></script>
     <script src="//unpkg.com/d3-force-constant"></script>
-
-    <link rel="stylesheet" href="style.css">
 </head>
 
 <style>
@@ -36,9 +34,9 @@ body {
 <script>
 
 var width = 400, height = 400
-const BALL_RADIUS = 20,
-	WIRE_LENGTH = window.innerHeight/ 2,
-	GRAVITY = 0.6;
+const BALL_SIZE = 20,
+	BALL_OFFSET = window.innerHeight/8,
+    BALL_SPEED = 3;
 
 const canvasWidth = window.innerWidth,
 	canvasHeight = window.innerHeight;
@@ -47,30 +45,20 @@ const canvasWidth = window.innerWidth,
 const svgCanvas = d3.select('svg#canvas')
 		.attr('width', canvasWidth)
 		.attr('height', canvasHeight),
-	wiresG = svgCanvas.append('g'),
 	ballsG = svgCanvas.append('g');
 
 const balls = [
-		{ id: '0', init: { x: canvasWidth/2 - 6*BALL_RADIUS, y: canvasHeight*1/3, vx: 0, vy: 0 } },
-		{ id: '1', init: { x: canvasWidth/2 - 3*BALL_RADIUS, y: canvasHeight*(1/3 + .01), vx: 0, vy: 0 } },
-		{ id: '2', init: { x: canvasWidth/2 - 0*BALL_RADIUS, y: canvasHeight*1/3, vx: 0, vy: 0 } },
-		{ id: '3', init: { x: canvasWidth/2 + 3*BALL_RADIUS, y: canvasHeight*1/3, vx: 0, vy: 0 } },
-		{ id: '4', init: { x: canvasWidth/2 + 6*BALL_RADIUS, y: canvasHeight*1/3, vx: 0, vy: 0 } }
-	],
-	anchors = balls.map(ball => ({
-		id: 'a' + ball.id,
-		fx: ball.init.x,
-		fy: ball.init.y - WIRE_LENGTH
-	})),
-	wires = balls.map(ball => ({
-		source: ball.id,
-		target: 'a' + ball.id
-	}));
+		{ id: '0', init: { x: canvasWidth/2 - 6*BALL_SIZE, y: canvasHeight*1/3, vx: 0, vy: 0 } },
+		{ id: '1', init: { x: canvasWidth/2 - 3*BALL_SIZE, y: canvasHeight*1/3, vx: 0, vy: 0 } },
+		{ id: '2', init: { x: canvasWidth/2 - 0*BALL_SIZE, y: canvasHeight*1/3, vx: 0, vy: 0 } },
+		{ id: '3', init: { x: canvasWidth/2 + 3*BALL_SIZE, y: canvasHeight*1/3, vx: 0, vy: 0 } },
+		{ id: '4', init: { x: canvasWidth/2 + 6*BALL_SIZE, y: canvasHeight*1/3, vx: 0, vy: 0 } }
+	];
 
-	// swing it
-	balls[0].init.x -= WIRE_LENGTH/4;
-	balls[0].init.y -= 0*WIRE_LENGTH;
-    balls[0].init.vx = 3;
+	// start the left ball moving, at a reasonable speed
+	balls[0].init.x -= BALL_OFFSET;
+	balls[0].init.y -= 0;
+    balls[0].init.vx = BALL_SPEED;
 
 let init = false;
 
@@ -79,7 +67,7 @@ const forceSim = d3.forceSimulation()
 	.velocityDecay(0)
 	.nodes([...balls])
 	.force('elastic', d3.forceBounce()
-		.radius(node => BALL_RADIUS)
+		.radius(node => BALL_SIZE)
         .elasticity(1)
 	)
 	.force('init', () => {
@@ -109,7 +97,7 @@ function ballDigest() {
 	ball.merge(
 		ball.enter().append('circle')
 			.classed('ball', true)
-			.attr('r', BALL_RADIUS)
+			.attr('r', BALL_SIZE)
 			.attr('fill', 'url(#sphere-gradient)')
 			.call(d3.drag()
 				.on("start", d => { d.fx = d.x; d.fy = d.y; })
