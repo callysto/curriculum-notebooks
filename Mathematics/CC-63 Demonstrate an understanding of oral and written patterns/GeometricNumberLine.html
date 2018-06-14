@@ -7,11 +7,16 @@
 </head>
 <body>
 
-<form id="frm1_diff" action="/action_page.php">
-    Enter the <b>difference</b> for the arithmetic sequence:
+<form id="frm1_ratio" action="/action_page.php">
+    Enter the <b>common ratio</b> for the geometric sequence:
     <input type="number" name="quantity" value="3" min="1" max="5">
 </form>
-
+    
+<form id="frm2_init" action="/action_page.php">
+    Enter the <b>inital value</b> for the geometric sequence:
+    <input type="number" name="quantity" value="1" min="0" max="50">
+</form>
+    
 <svg width="1000" height="120">
     <line x1="0" y1="50" x2="1000" y2="50" stroke="black"/>
     <rect x="0" y="30" width="2" height="40" fill="black"/>
@@ -27,16 +32,25 @@
                 .text("Plot the sequence")
                 .on("click", function(){
         
-
-                    difference = parseInt(document.getElementById("frm1_diff")
+                    initValue = parseInt(document.getElementById("frm2_init")
                                  .elements[0]
                                  .value);
-                    console.log(difference);
-                    let data = [...Array(50).keys()]
-                        .map( (num,i) => 1 + i*difference)
-                        .filter(num => num < 40);
+            
+                    ratio = parseInt(document.getElementById("frm1_ratio")
+                                 .elements[0]
+                                 .value);
+                    
+                    var data = [initValue]
+                    
+                    if(ratio){
+                        
+                        var data = [...Array(50).keys()]
+                            .map( (num,i) => initValue*(ratio**i))
+                            .filter(num => num < 50);
+                    }
 
-                    class indices {}
+            
+                    console.log(data);
             
                     svg.selectAll('circle').remove();
                     svg.selectAll('text').remove();
@@ -77,8 +91,6 @@
                                     .delay(function(d,i){return 5*i})
                                     .duration(function(d,i){return 200*(i+1)})
                                     .attr("fill", "black")
-
-                    
                     });
 
 
