@@ -2,23 +2,20 @@
 <html>
 <head>
     <title>D3 tutorial</title>
-    <script src="http://d3js.org/d3.v3.js"></script>
-    <!--<script src="d3.min.js"></script>-->
+     <style>    .heavy { font: bold 15px sans-serif; }  </style>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
 </head>
 <body>
-<input type="button"
-       value="Draw Sequence"/>
 
 <form id="frm1_diff" action="/action_page.php">
-    Enter the <b>difference</b> for the arithmatic sequence:
+    Enter the <b>difference</b> for the arithmetic sequence:
     <input type="number" name="quantity" value="3" min="1" max="5">
 </form>
 
-
-<svg width="720" height="120">
-    <line x1="0" y1="50" x2="2000" y2="50" stroke="black"/>
-
-
+<svg width="1000" height="120">
+    <line x1="0" y1="50" x2="1000" y2="50" stroke="black"/>
+    <rect x="0" y="30" width="2" height="40" fill="black"/>
+    <text x="0" y="85" fill="black">0</text>
 </svg>
 <script>
         var svg = d3.select('svg');
@@ -35,23 +32,53 @@
                                  .elements[0]
                                  .value);
                     console.log(difference);
-                    let data = [...Array(10).keys()]
+                    let data = [...Array(50).keys()]
                         .map( (num,i) => 1 + i*difference)
-                        .filter(num => num < 50);
+                        .filter(num => num < 40);
 
+                    class indices {}
+            
+                    svg.selectAll('circle').remove();
+                    svg.selectAll('text').remove();
+                    svg.append('text')
+                       .text(0)
+                       .attr('x',0)
+                       .attr('y',85)
+                       .fill("black")
+            
                     let points = svg.selectAll('points')
                         .data(eval(data))
                         .enter()
                         .append('circle')
                         .classed('points', true)
-                        .attr('r', 5)
+                        .attr('r', 10)
                         .attr('fill', 'green')
-                        .attr('cx', 10)
-                        .attr('cy', 50)
+                        .attr('cx', 30)
+                        .attr('cy', 20)
                         .transition()
-                            .attr("delay", function(d,i){return 1000*i})
-                            .attr("duration", function(d,i){return 1000*(i+1)})
+                            .delay(function(d,i){return 5*i})
+                            .duration(function(d,i){return 200*(i+1)})
                             .attr('cx', function(d) { return d*20; })
+                            .attr('cy', 50)
+                    
+                    let text = svg.selectAll('.indicies')
+                               .data(eval(data))
+                               .enter()
+                               .append('text')                        
+                               .classed('indicies', true)
+                               .attr("fill", "white")
+                               .text(d => d)
+                               .attr('x', function(d) { return d*20; })
+                               .attr('y', 50)
+                               .attr('text-anchor',"middle")
+                               .attr('alignment-baseline',"central")
+                               .attr('class',"heavy")
+                               .transition()
+                                    .delay(function(d,i){return 5*i})
+                                    .duration(function(d,i){return 200*(i+1)})
+                                    .attr("fill", "black")
+
+                    
                     });
 
 
