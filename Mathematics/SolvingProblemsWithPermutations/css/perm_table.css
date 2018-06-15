@@ -1,0 +1,83 @@
+#table-container table {
+    width: 100%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-collapse: collapse;
+}
+
+#table-container tr {
+    padding: 10px;
+    margin-left: 15px;
+    text-align: left;
+}
+
+#permutation-table {
+    border: 1px solid black;
+}
+
+#table-container thead, th {
+    border: 1px solid black;
+    height: 40px;
+    text-align: center;
+    width: 25%;
+}
+
+#table-container td {
+    border: 1px solid black;
+    height: 40px;
+    text-align: center;
+    width: 25%;
+}
+
+input {
+    background-color: none;
+    text-align: center;
+}
+
+.correct {
+    background-color: green;
+}
+
+.incorrect {
+    background-color: red;
+}
+
+.hidden {
+    display: none;
+}
+
+.table-answers {
+    height: 100%;
+}
+
+.table-solution {
+    width: 50%;
+}
+
+.width-15 {
+    width: 15%;
+}
+
+#table-container {
+    margin-top: 50px;
+    padding-top: 50px;
+}
+
+#table-button-container {
+    padding-top: 20px;
+    width: 30%
+}
+
+#submit-table-button {
+    float: left;
+}
+
+#show-solutions-button {
+    margin-left: 20px;
+    float: right;
+}
+
+#unshow-solutions-button {
+    margin-left: 20px;
+    float: right;
+}
+
