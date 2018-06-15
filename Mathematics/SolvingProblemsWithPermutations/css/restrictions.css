@@ -1,0 +1,51 @@
+#restriction-questions-container {
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+#restrictions-button-container {
+    width: 30%;
+    margin-left: 10px;
+    height: 50px;
+    margin-top: 10px;
+}
+
+#submit-restrictions-button {
+    margin-top: 20px;
+    float: left;
+}
+
+#restriction-solutions-container {
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+#restriction-solutions-button {
+    margin-top: 20px;
+    float: right;
+}
+
+.restriction-exercise-container {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.restriction-answers {
+    float: left;
+}
+
+.restriction-feedback {
+    float: right;
+    text-align: center;
+    width: 25%;
+}
+
+.restriction-solutions {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.Mathjax_Display {
+   text-align: center !important;
+   margin-left: 40%;
+}
