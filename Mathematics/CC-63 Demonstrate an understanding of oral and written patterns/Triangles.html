@@ -5,53 +5,36 @@
      <style>    .heavy { font: bold 15px sans-serif; }  </style>
     <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
 </head>
-<body id="gBody">
-
-<form id="frm1_ratio" action="/action_page.php">
-    Enter the <b>common ratio</b> for the geometric sequence:
-    <input type="number" name="quantity" value="3" min="1" max="5">
-</form>
+<body>
     
-<form id="frm2_init" action="/action_page.php">
-    Enter the <b>inital value</b> for the geometric sequence:
+<form id="frm_num" action="/action_page.php">
+    Enter the <b>triangle number</b>:
     <input type="number" name="quantity" value="1" min="0" max="50">
 </form>
     
-<svg width="1000" height="120" id="GEO">
-    
-    <line x1="0" y1="50" x2="1000" y2="50" stroke="black"/>
-    <rect x="0" y="30" width="2" height="40" fill="black"/>
-    <text x="0" y="85" fill="black">0</text>
+<svg width="1000" height="120" id="TRIANG">
+
 </svg>
 <script>
-        var svg = d3.select('#GEO');
+        var svg = d3.select('#TRIANG');
 
         var numberline = [...Array(5).keys()];
 
 
-        d3.select("#gBody").append("button")
+        d3.select("body").append("button")
                 .text("Plot the sequence")
                 .on("click", function(){
         
-                    initValue = parseInt(document.getElementById("frm2_init")
+                    triangNum = parseInt(document.getElementById("frm2_num")
                                  .elements[0]
                                  .value);
             
-                    ratio = parseInt(document.getElementById("frm1_ratio")
-                                 .elements[0]
-                                 .value);
-                    
-                    var data = [initValue]
-                    
-                    if(ratio){
-                        
-                        var data = [...Array(50).keys()]
-                            .map( (num,i) => initValue*(ratio**i))
-                            .filter(num => num < 50);
-                    }
 
             
-                    console.log(data);
+
+                    let data = [...Array(50).keys()]
+                        .map( (num,i) => initValue + i*difference)
+                        .filter(num => num < 50);
             
                     svg.selectAll('circle').remove();
                     svg.selectAll('text').remove();

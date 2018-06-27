@@ -1,11 +1,10 @@
 <!doctype html>
 <html>
 <head>
-    <title>D3 tutorial</title>
      <style>    .heavy { font: bold 15px sans-serif; }  </style>
     <script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js" charset="utf-8"></script>
 </head>
-<body>
+<body id="aBody">
 
 <form id="frm1_diff" action="/action_page.php">
     Enter the <b>difference</b> for the arithmetic sequence:
@@ -17,18 +16,18 @@
     <input type="number" name="quantity" value="1" min="0" max="50">
 </form>
     
-<svg width="1000" height="120">
+<svg width="1000" height="120" id="ARITH">
     <line x1="0" y1="50" x2="1000" y2="50" stroke="black"/>
     <rect x="0" y="30" width="2" height="40" fill="black"/>
     <text x="0" y="85" fill="black">0</text>
 </svg>
 <script>
-        var svg = d3.select('svg');
+        var svg = d3.select('#ARITH');
 
         var numberline = [...Array(5).keys()];
 
 
-        d3.select("body").append("button")
+        d3.select("#aBody").append("button")
                 .text("Plot the sequence")
                 .on("click", function(){
         
