@@ -186,7 +186,7 @@ void draw() {
   //title
   textSize(32);
   fill(0);
-  text("Beta Plus Decay", 275, 30);
+  text("Beta Plus Decay", 235, 30);
   
   textSize(24);
   

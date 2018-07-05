@@ -189,7 +189,7 @@ void draw() {
   background(255);
   textSize(32);
   fill(0);
-  text("Beta Minus Decay", 275, 30);
+  text("Beta Minus Decay", 220, 30);
   
   textSize(24);
   

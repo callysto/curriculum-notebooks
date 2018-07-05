@@ -165,7 +165,7 @@ void draw() {
   background(255);
   textSize(20);
   fill(0);
-  text("Annihilation Reaction", 300, 25);
+  text("Annihilation Reaction", 250, 25);
   
   textSize(24);
   

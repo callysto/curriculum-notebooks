@@ -168,7 +168,7 @@ void draw() {
   background(255);
   textSize(32);
   fill(0);
-  text("Alpha Decay", 300, 30);
+  text("Alpha Decay", 260, 30);
   
   textSize(24);
   
