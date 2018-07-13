@@ -1,0 +1,13 @@
+<html>
+    <head>
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+    <script type="text/javascript" src="d3.z.collide.js"></script>
+    <style>
+      .ball { fill:steelblue;stroke:black}
+      .wire {stroke:black;stroke-widh:1;fill:none}
+    </style>
+    </head>
+    <body>  
+        <script type="text/javascript" src="app.js"></script>
+    </body>
+</html>
