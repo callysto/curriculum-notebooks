@@ -94,6 +94,7 @@ function Bubbles() {
 
 Bubbles.prototype.display = function() {
   stroke( 105, 145, 207);
+  strokeWeight(0.7);
   fill(105, 145, 207,0.8);
   ellipse(this.location.x,this.location.y,5,5);
 };
