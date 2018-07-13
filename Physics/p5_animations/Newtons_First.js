@@ -6,7 +6,7 @@ function setup() {
   for (var i = 0; i < 500; i++) {
     var x = random(width);
     var y = random(height);
-    star[i] = new Star(0.5,x,y);
+    star[i] = new Star(0.8,x,y);
   }
 
 };
@@ -66,36 +66,13 @@ Ball.prototype.display = function() {
   ellipse(this.location.x,this.location.y,this.mass*16,this.mass*16);
 };
 
-
-
-  // function checkEdges() {
-  //   if (location.x > width) {
-  //     location.x = width;
-  //     velocity.x *= 1;
-
-  //   } else if (location.x < 0) {
-  //     velocity.x *= -1;
-  //     location.x = 0;
-  //   }
-    
-  //   if (location.y > height) {
-  //     velocity.y *= -1;
-  //     location.y = height;
-  //   }
-  //   if (location.y < 0) {
-  //     velocity.y *= -1;
-  //     location.y = 0;
-  //   }
-  // }
-
-
 function Star(r, X, Y) {
   this.x = X;
   this.y = Y;
   this.radius = r;
  
 Star.prototype.display = function() {
-  stroke(255,255,255);
+  noStroke();
   fill(255,255,255);
   ellipse(this.x,this.y,this.radius,this.radius);
 };

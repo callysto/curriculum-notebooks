@@ -1,26 +1,3 @@
-// // var b = [];
-// var star = [];
-// function setup() {
-//   createCanvas(600,500);
-//   // for (var i = 0; i < 10; i++) {
-//   // 	var M = random(3,7);
-//   // 	if (i == 0) 
-//   // 	{
-// 		// b[i] = new Ball(M,M*2,40);
-//   // 	} 
-//   // 	else 
-//   // 	{
-//   // 		b[i] = new Ball(M,(M+m_old)*2,40);
-//   // 	}
-//   // 	var m_old = M;
-//   // }
-
-
-
-
-// };
-
-
 var b = [];
 var M;
 var R;
@@ -44,18 +21,10 @@ function setup() {
   for (var i = 0; i < 500; i++) {
     var x = random(width);
     var y = random(height);
-    star[i] = new Star(0.5,x,y);
+    star[i] = new Star(0.8,x,y);
   }
 
 };
-
-// function drawArrow(x0,y0,x1,y1) {
-//   strokeWeight(20);
-//   stroke(255, 87, 51);
-//   triangle(x1,y1+2,x1,y1-2,x1+3.5,y1);
-//   line(x0,y0,x1,y1);
-// };
-
 
 var check = 0;
 function draw() {
@@ -64,8 +33,8 @@ function draw() {
     star[i].display();
   }
   var gravity = createVector(0,0.32);
-  stroke(0);
-  fill(0);
+  stroke(255);
+  fill(255);
   if (check == 0) {
   	var txt = new r_text("CLICK TO APPLY GRAVITATIONAL FORCE");
    } 
@@ -85,7 +54,6 @@ function draw() {
   }
 
 };
-
 
 
 function r_text(str) {
@@ -120,15 +88,6 @@ Ball.prototype.display = function() {
 
 
 Ball.prototype.checkEdges = function() {
-  // if (this.location.x > width) {
-  //   this.location.x = width;
-  //   this.velocity.x *= -1;
-
-  // } else if (this.location.x < 0) {
-  //   this.velocity.x *= -1;
-  //   this.location.x = 0;
-  // }
-  
   if (this.location.y > height) {
     this.velocity.y *= 1;
     this.location.y = height;
@@ -148,7 +107,7 @@ function Star(r, X, Y) {
   this.radius = r;
  
 Star.prototype.display = function() {
-  stroke(255,255,255);
+  noStroke();
   fill(255,255,255);
   ellipse(this.x,this.y,this.radius,this.radius);
 };
