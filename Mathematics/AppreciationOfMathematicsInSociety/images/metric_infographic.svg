@@ -21,10 +21,10 @@
      id="defs986">
     <inkscape:perspective
        sodipodi:type="inkscape:persp3d"
-       inkscape:vp_x="-20.164185 : 287.05256 : 1"
+       inkscape:vp_x="-19.739561 : 286.90261 : 1"
        inkscape:vp_y="0 : 405.4233 : 0"
-       inkscape:vp_z="108.04487 : 292.10106 : 1"
-       inkscape:persp3d-origin="-3.6440918 : 245.92611 : 1"
+       inkscape:vp_z="108.4695 : 291.95111 : 1"
+       inkscape:persp3d-origin="-3.2194604 : 245.77616 : 1"
        id="perspective1614" />
     <filter
        inkscape:label="Organic"
@@ -94,9 +94,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.45645155"
-     inkscape:cx="252.61319"
-     inkscape:cy="568.16796"
+     inkscape:zoom="0.29888889"
+     inkscape:cx="250"
+     inkscape:cy="900"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -284,17 +284,17 @@
          x="62.648602"
          y="-71.432465"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93888903px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';fill:#131112;fill-opacity:1;stroke-width:0.26458332"
-         id="tspan975">One ten millionth of one </tspan><tspan
+         id="tspan1999">One ten millionth of the</tspan><tspan
          sodipodi:role="line"
          x="62.648602"
          y="-65.25885"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93888903px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';fill:#131112;fill-opacity:1;stroke-width:0.26458332"
-         id="tspan1950">quarter of the circumference </tspan><tspan
+         id="tspan940">distance from the North Pole</tspan><tspan
          sodipodi:role="line"
          x="62.648602"
-         y="-59.085239"
+         y="-59.085243"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93888903px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';fill:#131112;fill-opacity:1;stroke-width:0.26458332"
-         id="tspan1999">of the Earth.</tspan></text>
+         id="tspan942">to the equator.</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;fill:#279af1;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -373,7 +373,7 @@
          id="tspan886-2"
          x="69.113152"
          y="25.66518"
-         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.76111126px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#279af1;fill-opacity:1;stroke-width:0.26458332">ONE LITER</tspan></text>
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.76111126px;font-family:Arial;-inkscape-font-specification:'Arial Bold';fill:#279af1;fill-opacity:1;stroke-width:0.26458332">ONE LITRE</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.76111126px;line-height:1.25;font-family:Arial;-inkscape-font-specification:'Arial Bold';letter-spacing:0px;word-spacing:0px;fill:#279af1;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -400,7 +400,7 @@
          x="15.612072"
          y="95.786713"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93888903px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';fill:#3c0000;fill-opacity:1;stroke-width:0.26458332"
-         id="tspan1978">centimeter of water.</tspan></text>
+         id="tspan1978">centimetre of water.</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:7.05555534px;line-height:1.25;font-family:Nasalization;-inkscape-font-specification:'Nasalization Bold';letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
@@ -422,10 +422,10 @@
          x="64.950272"
          y="36.547855"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93888903px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';fill:#131112;fill-opacity:1;stroke-width:0.26458332"
-         id="tspan1039-7">One cubic decimeter</tspan><tspan
+         id="tspan1039-7">One cubic decimetre</tspan><tspan
          sodipodi:role="line"
          x="64.950272"
-         y="42.72147"
+         y="42.721466"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:4.93888903px;font-family:Calibri;-inkscape-font-specification:'Calibri Bold';fill:#131112;fill-opacity:1;stroke-width:0.26458332"
          id="tspan2009">(10 cm X 10 cm X 10 cm).</tspan></text>
     <g
@@ -440,43 +440,43 @@
          id="path1660"
          style="fill:#ff00ff;fill-rule:evenodd;stroke:#279af1;stroke-width:0.08107388;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          inkscape:box3dsidetype="6"
-         d="M 21.978732,22.63096 V 38.05189 L 34.232134,33.33184 V 20.106417 Z"
-         points="21.978732,38.05189 34.232134,33.33184 34.232134,20.106417 21.978732,22.63096 " />
+         d="m 22.403377,22.78091 v 15.42093 l 12.2534,-4.72005 V 20.256367 Z"
+         points="22.403377,38.20184 34.656777,33.48179 34.656777,20.256367 22.403377,22.78091 " />
       <path
          sodipodi:type="inkscape:box3dside"
          id="path1668"
          style="fill:#ff00ff;fill-rule:evenodd;stroke:#279af1;stroke-width:0.08107388;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          inkscape:box3dsidetype="13"
-         d="m 21.978732,38.05189 12.190826,8.129873 13.0239,-7.277985 -12.961324,-5.571938 z"
-         points="34.169558,46.181763 47.193458,38.903778 34.232134,33.33184 21.978732,38.05189 " />
+         d="M 22.403377,38.20184 34.594209,46.331713 47.618106,39.053728 34.656777,33.48179 Z"
+         points="34.594209,46.331713 47.618106,39.053728 34.656777,33.48179 22.403377,38.20184 " />
       <path
          sodipodi:type="inkscape:box3dside"
          id="path1670"
          style="fill:#ff00ff;fill-rule:evenodd;stroke:#279af1;stroke-width:0.08107388;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          inkscape:box3dsidetype="11"
-         d="m 34.232134,20.106417 12.961324,2.42064 V 38.903778 L 34.232134,33.33184 Z"
-         points="47.193458,22.527057 47.193458,38.903778 34.232134,33.33184 34.232134,20.106417 " />
+         d="m 34.656777,20.256367 12.961329,2.42064 V 39.053728 L 34.656777,33.48179 Z"
+         points="47.618106,22.677007 47.618106,39.053728 34.656777,33.48179 34.656777,20.256367 " />
       <path
          sodipodi:type="inkscape:box3dside"
          id="path1662"
          style="fill:#f7f7ff;fill-opacity:1;fill-rule:evenodd;stroke:#279af1;stroke-width:0.08107388;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          inkscape:box3dsidetype="5"
-         d="m 21.978732,22.63096 12.190826,3.669007 13.0239,-3.77291 -12.961324,-2.42064 z"
-         points="34.169558,26.299967 47.193458,22.527057 34.232134,20.106417 21.978732,22.63096 " />
+         d="m 22.403377,22.78091 12.190832,3.669007 13.023897,-3.77291 -12.961329,-2.42064 z"
+         points="34.594209,26.449917 47.618106,22.677007 34.656777,20.256367 22.403377,22.78091 " />
       <path
          sodipodi:type="inkscape:box3dside"
          id="path1666"
          style="fill:#a7bed3;fill-opacity:1;fill-rule:evenodd;stroke:#279af1;stroke-width:0.08107388;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          inkscape:box3dsidetype="14"
-         d="m 34.169558,26.299967 v 19.881796 l 13.0239,-7.277985 V 22.527057 Z"
-         points="34.169558,46.181763 47.193458,38.903778 47.193458,22.527057 34.169558,26.299967 " />
+         d="M 34.594209,26.449917 V 46.331713 L 47.618106,39.053728 V 22.677007 Z"
+         points="34.594209,46.331713 47.618106,39.053728 47.618106,22.677007 34.594209,26.449917 " />
       <path
          sodipodi:type="inkscape:box3dside"
          id="path1664"
          style="fill:#279af1;fill-opacity:1;fill-rule:evenodd;stroke:#279af1;stroke-width:0.08107388;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
          inkscape:box3dsidetype="3"
-         d="m 21.978732,22.63096 12.190826,3.669007 V 46.181763 L 21.978732,38.05189 Z"
-         points="34.169558,26.299967 34.169558,46.181763 21.978732,38.05189 21.978732,22.63096 " />
+         d="m 22.403377,22.78091 12.190832,3.669007 V 46.331713 L 22.403377,38.20184 Z"
+         points="34.594209,26.449917 34.594209,46.331713 22.403377,38.20184 22.403377,22.78091 " />
     </g>
     <image
        y="-89.85965"
