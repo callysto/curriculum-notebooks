@@ -8,9 +8,11 @@ var m_old = 6;
 var html_g  = [];
 var sun_mass = [];
 var img;
+function preload() {
+    img = loadImage("globe.png")
+}
 function setup() {
   createCanvas(600,500);
-  img = loadImage("test.JPG"); 
   for (var i = 0; i < 150; i++) {
     html_g[i] = 75 + i;
     sun_mass[i] = m_old - step;
@@ -20,7 +22,8 @@ function setup() {
     sun[i] = new Ball(sun_mass[i],width/2,height/2,html_r,html_g[i],html_b);
     m_old -= step;
   }
-  orbiter = new Ball(2,width/2+200,height/2, 85, 184, 241 );
+  orbiter = new earth(width/2 + 200, height/2)
+//   orbiter = new Ball(2,width/2+200,height/2, 85, 184, 241 );
   for (var i = 0; i < 500; i++) {
     var x = random(width);
     var y = random(height);
@@ -33,7 +36,6 @@ var head = 10;
 var theta = 0;
 function draw() {
   background(0);
-  image(img,100,100);
   for (var i = 0; i < star.length; i++) {
     star[i].display();
   }
@@ -56,7 +58,7 @@ function draw() {
   var v = createVector(x_rot,y_rot);
   drawArrow(bodyCenter,v,head, 183, 35, 227 );
   drawArrow(bodyCenter,mid_radius,head, 227, 38, 35 );
-  orbiter.display(255);
+  orbiter.display(img);
   orbiter.update(new_x,new_y);
   stroke(255);
   fill(255);
@@ -97,10 +99,11 @@ function earth(e_x,e_y) {
   this.location = createVector(e_x,e_y);
 
 earth.prototype.display = function(I) {
-  image(I,this.location.x,this.location.y)
+  imageMode(CENTER);
+  image(I,this.location.x,this.location.y,I.width/14,I.height/14);
 };
 
-earth.prototype.update() = function(en_x,en_y) {
+earth.prototype.update = function(en_x,en_y) {
   this.location.x = en_x;
   this.location.y = en_y;
 }
