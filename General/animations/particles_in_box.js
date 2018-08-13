@@ -47,8 +47,8 @@ function draw() {
       py = 0.1;
     }
 
-    var r = slider.value()*2.17
-    var b = slider.value()
+    var r = 20 + slider.value()*2.17
+    var b = 240 - slider.value()*2.4
 		p[i].display(r,b);
 		p[i].update();
 		p[i].checkEdges();	
@@ -72,10 +72,6 @@ var particle = function() {
   this.velocity = createVector(random(-1,1),random(-1,1));
 };
 
-// particle.prototype.applyForce = function(force) {
-//   var f = p5.Vector.div(force);
-//   this.acceleration.add(f);
-// };
 
   
 particle.prototype.update = function() {
@@ -85,8 +81,8 @@ particle.prototype.update = function() {
 
 particle.prototype.display = function(r,b) {
   noStroke()
-  fill(r,0,b);
-  ellipse(this.location.x,this.location.y,7,7);
+  fill(r,50,b);
+  ellipse(this.location.x,this.location.y,10,10);
 };
 
 
