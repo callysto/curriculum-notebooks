@@ -29,9 +29,10 @@ function draw() {
 
   slider.position(180,370);
   textFont("Helvetica");
-  textSize(16);
+  textSize(18);
   textStyle(BOLD);
-  text("Temperature", slider.x - 110, 380);
+  noStroke();
+  text("Temperature", slider.x - 115, 375);
   var temp = str(slider.value()) + "\u00b0 C"; 
   text(temp + "", slider.x + slider.width, 380);
 	for (var i = 0; i < p.length; i++){
@@ -54,7 +55,7 @@ function draw() {
 		p[i].checkEdges();	
 		for (var j = 0; j < p.length; j++){
 			var d = dist(p[i].location.x,p[i].location.y,p[j].location.x,p[j].location.y);
-			if (i != j && d < 10 ){
+			if (i != j && d < 12 ){
 				v1 = p[i].velocity;
 				p[i].velocity = p[j].velocity;
 				p[j].velocity = v1
@@ -82,7 +83,7 @@ particle.prototype.update = function() {
 particle.prototype.display = function(r,b) {
   noStroke()
   fill(r,50,b);
-  ellipse(this.location.x,this.location.y,10,10);
+  ellipse(this.location.x,this.location.y,12,12);
 };
 
 
