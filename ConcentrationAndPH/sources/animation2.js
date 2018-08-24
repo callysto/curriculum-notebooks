@@ -1,6 +1,4 @@
 function display(pH) {
-	var width = 600;
-	var height = 300;
 	var datas = [{
 		id: "Red", fade: "./images/RedLitmus2.png", lastx: 450
 		},{		
@@ -10,7 +8,7 @@ function display(pH) {
 		
 	var svg = d3.select("#animation")
 		.append("svg")
-		.attr("viewBox", "0 0 1000 500");
+		.attr("viewBox", "0 0 1000 320");
 		
 	svg.append("image")
 		.attr("href", "./images/Beaker.png")
@@ -19,7 +17,6 @@ function display(pH) {
 		.attr("width", 250)
 		.attr("height", 300);
 		
-	//	<text x="20" y="20" font-family="sans-serif" font-size="20px" fill="red">Hello!</text>
 	
 	svg.append("text")
 		.attr("x", 50)
