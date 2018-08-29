@@ -1,16 +1,17 @@
 var sequence = [0, 0, 0, 0, 0];
 
-function display() {
+function display1() {
+	var timeout;
 	var datas = [{
 		id: "LightCoral", lastx: 50, tag: 1
 		},{		
 		id: "LightBlue", lastx: 150, tag: 2
 		}];
 		
-	var svg = d3.select("#Highlight")
+	var svg = d3.select("#Highlight1")
 		.append("svg")
-		.attr("viewBox", "0 0 600 200");
-	
+		.attr("viewBox", "0 0 650 225");
+		
 	var group = svg.selectAll('g')
 		.data(datas)
 		.enter()
@@ -22,7 +23,7 @@ function display() {
 			.on("dragend", dragended));	
 		
 	svg.append("image")
-		.attr("href", "./images/LittleMissMuffet.png")
+		.attr("href", "./images/Hickory.png")
 		.attr("x", 0)
 		.attr("y", 40)
 		.attr("width", 400)
@@ -48,24 +49,24 @@ function display() {
 	}
 	
 	function dragended(d) {
-		if (d.x <= 285 && d.x >= 275 && d.y <= 70 && d.y >= 60) {
-			highlight(this, d.id, group, 281, 65)
+		if (d.x <= 225 && d.x >= 215 && d.y <= 55 && d.y >= 45) {
+			highlight(this, d.id, group, 219, 48)
 			sequence[0] = d.tag;
 		}
-		if (d.x <= 235 && d.x >= 225 && d.y <= 95 && d.y >= 85) {
-			highlight(this, d.id, group, 231, 91)
+		if (d.x <= 285 && d.x >= 275 && d.y <= 85 && d.y >= 75) {
+			highlight(this, d.id, group, 280, 80)
 			sequence[1] = d.tag;
 		}
-		if (d.x <= 172 && d.x >= 162 && d.y <= 122 && d.y >= 112) {
-			highlight(this, d.id, group, 167, 118)
+		if (d.x <= 220 && d.x >= 210 && d.y <= 120 && d.y >= 110) {
+			highlight(this, d.id, group, 215, 115)
 			sequence[2] = d.tag;
 		}
-		if (d.x <= 240 && d.x >= 230 && d.y <= 150 && d.y >= 140) {
-			highlight(d, d.id, group, 235, 145)
+		if (d.x <= 212 && d.x >= 202 && d.y <= 150 && d.y >= 140) {
+			highlight(d, d.id, group, 207, 145)
 			sequence[3] = d.tag;
 		}
-		if (d.x <= 295 && d.x >= 285 && d.y <= 180 && d.y >= 170) {
-			highlight(this, d.id, group, 292, 175)
+		if (d.x <= 225 && d.x >= 215 && d.y <= 185 && d.y >= 175) {
+			highlight(this, d.id, group, 219, 180)
 			sequence[4] = d.tag;
 		}
 		
@@ -73,7 +74,7 @@ function display() {
 			.transition()
 			.duration(1000)
 			.attr("x", d.x = d.lastx)
-			.attr("y", d.y = 20)
+			.attr("y", d.y = 20);
 	}
 	
 	function highlight(d, id, group, x, y) {
@@ -88,17 +89,17 @@ function display() {
 	}	
 }
 
-function resetHL() {
+function resetHL1() {
 		d3.selectAll("#highlight")
 			.remove();
 		d3.select("#result")
 			.text("");
 	}
 	
-function submit() {
-    	function arrayEqual (a) {
-		b = [0, 1, 2, 2, 1];
-		c = [0, 2, 1, 1, 2];
+function submit1() {
+	function arrayEqual (a) {
+		b = [1, 1, 2, 2, 1];
+		c = [2, 2, 1, 1, 2];
 		for (var i = 0; i < a.length; ++i) {
 			if (a[i] !== b[i]) {
 				for (var i = 0; i < a.length; ++i) {
@@ -107,14 +108,18 @@ function submit() {
 			}
 		}
 		return true;
-	}
+	} 
+	
 	if (arrayEqual(sequence)){
 		d3.select("#result")
-			.text("That's right! This poem's pattern is ABCCB");
+			.text("That's right! This poem's pattern is AABBA")
+		console.log(sequence);
 	}
 	else {
 		d3.select("#result")
-			.text("Not Quite. Look at the words again. Remember not all lines have to rhyme.");
+			.text("Not Quite. Look at the words again. It's about sound and not spelling.")
+		console.log(sequence)
+		console.log([0, 2, 1, 1, 2]);
 	}
 }
 
