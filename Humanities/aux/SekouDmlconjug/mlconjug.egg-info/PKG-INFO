@@ -1,0 +1,402 @@
+Metadata-Version: 1.1
+Name: mlconjug
+Version: 3.1.3
+Summary: A Python library to conjugate French, English, Spanish, Italian, Portuguese and Romanian verbs using Machine Learning techniques.
+Home-page: https://github.com/SekouD/mlconjug
+Author: SekouD
+Author-email: sekoud.python@gmail.com
+License: MIT license
+Description: .. image:: https://raw.githubusercontent.com/SekouD/mlconjug/master/logo/logotype2%20mlconjug.png
+                :target: https://pypi.python.org/pypi/mlconjug
+                :alt: mlconjug PyPi Home Page
+        
+        ========
+        mlconjug
+        ========
+        
+        
+        .. image:: https://img.shields.io/pypi/v/mlconjug.svg
+                :target: https://pypi.python.org/pypi/mlconjug
+                :alt: Pypi Python Package Index Status
+        
+        .. image:: https://img.shields.io/travis/SekouD/mlconjug.svg
+                :target: https://travis-ci.org/SekouD/mlconjug
+                :alt: Linux Continuous Integration Status
+        
+        .. image:: https://ci.appveyor.com/api/projects/status/6iatj101xxfehbo8/branch/master?svg=true
+                :target: https://ci.appveyor.com/project/SekouD/mlconjug
+                :alt: Windows Continuous Integration Status
+        
+        .. image:: https://readthedocs.org/projects/mlconjug/badge/?version=latest
+                :target: https://mlconjug.readthedocs.io/en/latest
+                :alt: Documentation Status
+        
+        .. image:: https://pyup.io/repos/github/SekouD/mlconjug/shield.svg
+                :target: https://pyup.io/repos/github/SekouD/mlconjug/
+                :alt: Depedencies Update Status
+        
+        .. image:: https://codecov.io/gh/SekouD/mlconjug/branch/master/graph/badge.svg
+                :target: https://codecov.io/gh/SekouD/mlconjug
+                :alt: Code Coverage Status
+        
+        .. image:: https://snyk.io/test/github/SekouD/mlconjug/badge.svg?targetFile=requirements.txt
+                :target: https://snyk.io/test/github/SekouD/mlconjug?targetFile=requirements.txt
+                :alt: Code Vulnerability Status
+        
+        
+        | A Python library to conjugate verbs in French, English, Spanish, Italian, Portuguese and Romanian (more soon)
+            using Machine Learning techniques.
+        | Any verb in one of the supported language can be conjugated, as the module contains a Machine Learning model of how the verbs behave.
+        | Even completely new or made-up verbs can be successfully conjugated in this manner.
+        | The supplied pre-trained models are composed of:
+        
+        - a binary feature extractor,
+        - a feature selector using Linear Support Vector Classification,
+        - a classifier using Stochastic Gradient Descent.
+        
+        | MLConjug uses scikit-learn to implement the Machine Learning algorithms.
+        | Users of the library can use any compatible classifiers from scikit-learn to modify and retrain the models.
+        
+        | The training data for the french model is based on Verbiste https://perso.b2b2c.ca/~sarrazip/dev/verbiste.html .
+        | The training data for English, Spanish, Italian, Portuguese and Romanian was generated using unsupervised learning techniques
+          using the French model as a model to query during the training.
+        
+        
+        * Free software: MIT license
+        * Documentation: https://mlconjug.readthedocs.io.
+        
+        Supported Languages
+        -------------------
+        
+        - French
+        - English
+        - Spanish
+        - Italian
+        - Portuguese
+        - Romanian
+        
+        
+        Features
+        --------
+        
+        - Easy to use API.
+        - Includes pre-trained models with 99% + accuracy in predicting conjugation class of unknown verbs.
+        - Easily train new models or add new languages.
+        - Easily integrate MLConjug in your own projects.
+        - Can be used as a command line tool.
+        
+        Credits
+        -------
+        
+        This package was created with the help of Verbiste_ and scikit-learn_.
+        
+        The logo was designed by Zuur_.
+        
+        .. _Verbiste: https://perso.b2b2c.ca/~sarrazip/dev/verbiste.html
+        .. _scikit-learn: http://scikit-learn.org/stable/index.html
+        .. _Zuur: https://github.com/zuuritaly
+        
+        
+        
+        ============
+        Installation
+        ============
+        
+        
+        Stable release
+        --------------
+        
+        To install MLConjug, run this command in your terminal:
+        
+        .. code-block:: console
+        
+            $ pip install mlconjug
+        
+        This is the preferred method to install MLConjug, as it will always install the most recent stable release.
+        
+        If you don't have `pip`_ installed, this `Python installation guide`_ can guide
+        you through the process.
+        
+        .. _pip: https://pip.pypa.io
+        .. _Python installation guide: http://docs.python-guide.org/en/latest/starting/installation/
+        
+        
+        From sources
+        ------------
+        
+        The sources for MLConjug can be downloaded from the `Github repo`_.
+        
+        You can either clone the public repository:
+        
+        .. code-block:: console
+        
+            $ git clone git://github.com/SekouD/mlconjug
+        
+        Or download the `tarball`_:
+        
+        .. code-block:: console
+        
+            $ curl  -OL https://github.com/SekouD/mlconjug/tarball/master
+        
+        Once you have a copy of the source, you can install it with:
+        
+        .. code-block:: console
+        
+            $ python setup.py install
+        
+        
+        .. _Github repo: https://github.com/SekouD/mlconjug
+        .. _tarball: https://github.com/SekouD/mlconjug/tarball/master
+        
+        
+        =====
+        Usage
+        =====
+        
+        .. NOTE:: The default language is French.
+            When called without specifying a language, the library will try to conjugate the verb in French.
+        
+        To use MLConjug in a project with the provided pre-trained conjugation models::
+        
+            import mlconjug
+        
+            # To use mlconjug with the default parameters and a pre-trained conjugation model.
+            default_conjugator = mlconjug.Conjugator(language='fr)
+        
+            # Verify that the model works
+            test1 = default_conjugator.conjugate("manger").conjug_info['indicative']['simple-past']['1p']
+            test2 = default_conjugator.conjugate("partir").conjug_info['indicative']['simple-past']['1p']
+            test3 = default_conjugator.conjugate("facebooker").conjug_info['indicative']['simple-past']['1p']
+            test4 = default_conjugator.conjugate("astigratir").conjug_info['indicative']['simple-past']['1p']
+            test5 = default_conjugator.conjugate("mythoner").conjug_info['indicative']['simple-past']['1p']
+            print(test1)
+            print(test2)
+            print(test3)
+            print(test4)
+            print(test5)
+        
+        
+        To use MLConjug in a project and train a new model::
+        
+            import mlconjug
+            from functools import partial
+            import pickle
+        
+            # Set a language to train the Conjugator on
+            lang = 'fr'
+        
+            # Set a ngram range sliding window for the vectorizer
+            ngrange = (2,7)
+        
+            # Transforms dataset with CountVectorizer. We pass the function extract_verb_features to the CountVectorizer.
+            vectorizer = CountVectorizer(analyzer=partial(mlconjug.extract_verb_features, lang=lang, ngram_range=ngrange),
+                                         binary=True)
+        
+            # Feature reduction
+            feature_reductor = SelectFromModel(LinearSVC(penalty="l1", max_iter=12000, dual=False, verbose=0))
+        
+            # Prediction Classifier
+            classifier = SGDClassifier(loss="log", penalty='elasticnet', l1_ratio=0.15, max_iter=4000, alpha=1e-5, random_state=42, verbose=0)
+        
+            # Initialize Data Set
+            dataset = DataSet(Verbiste().verbs)
+            dataset.construct_dict_conjug()
+            dataset.split_data(proportion=0.9)
+        
+            # Initialize Conjugator
+            model = mlconjug.Model(vectorizer, feature_reductor, classifier)
+            conjugator = mlconjug.Conjugator(lang, model)
+        
+            #Training and prediction
+            conjugator.model.train(data_set.train_input, data_set.train_labels)
+            predicted = conjugator.model.predict(data_set.test_input)
+        
+            # Assess the performance of the model's predictions
+            score = len([a == b for a, b in zip(predicted, conjugator.data_set.templates_list) if a == b]) / len(predicted)
+            print('The score of the model is {0}'.format(score)
+        
+            # Verify that the model works
+            test1 = conjugator.conjugate("manger").conjug_info['indicative']['simple-past']['1p']
+            test2 = conjugator.conjugate("partir").conjug_info['indicative']['simple-past']['1p']
+            test3 = conjugator.conjugate("facebooker").conjug_info['indicative']['simple-past']['1p']
+            test4 = conjugator.conjugate("astigratir").conjug_info['indicative']['simple-past']['1p']
+            test5 = conjugator.conjugate("mythoner").conjug_info['indicative']['simple-past']['1p']
+            print(test1)
+            print(test2)
+            print(test3)
+            print(test4)
+            print(test5)
+        
+            # Save trained model
+            with open('path/to/save/data/trained_model-fr.pickle', 'wb') as file:
+                pickle.dump(conjugator.model, file)
+        
+        
+        To use MLConjug from the command line::
+        
+            $ mlconjug manger
+        
+            $ mlconjug bring -l en
+        
+            $ mlconjug gallofar --language es
+        
+        
+        
+        =======
+        History
+        =======
+        
+        3.1.3 (2018-07-10)
+        ------------------
+        
+        * Updated Documentation.
+        * Added support for pipenv.
+        * Included tests and documentation in the package distribution.
+        
+        
+        3.1.2 (2018-06-27)
+        ------------------
+        
+        * Updated `Type annotations`_ to the whole library for PEP-561 compliance.
+        
+        
+        3.1.1 (2018-06-26)
+        ------------------
+        
+        * Minor Api enhancement (see `API documentation`_)
+        
+        
+        3.1.0 (2018-06-24)
+        ------------------
+        
+        * Updated the conjugation models for Spanish and Portuguese.
+        * Internal changes to the format of the verbiste data from xml to json for better handling of unicode characters.
+        * New class ConjugManager to more easily add new languages to mlconjug.
+        * Minor Api enhancement (see `API documentation`_)
+        
+        
+        3.0.1 (2018-06-22)
+        ------------------
+        
+        * Updated all provided pre-trained prediction models:
+            - Implemented a new vectrorizer extracting more meaningful features.
+            - As a result the performance of the models has gone through the roof in all languages.
+            - Recall and Precision are intesimally close to 100 %. English being the anly to achieve a perfect score at both Recall and Precision.
+        
+        * Major API changes:
+            - I removed the class EndingCustomVectorizer and refactored it's functionnality in a top level function called extract_verb_features()
+            - The provided new improved model are now being zip compressed before release because the feature space has so much grown that their size made them impractical to distribute with the package.
+            - Renamed "Model.model" to "Model.pipeline"
+            - Renamed "DataSet.liste_verbes" and "DataSet.liste_templates" to "DataSet.verbs_list" and "DataSet.templates_list" respectively. (Pardon my french ;-) )
+            - Added the attributes "predicted" and "confidence_score" to the class Verb.
+            - The whole package have been typed check. I will soon add mlconjug's type stubs to typeshed.
+        
+        
+        2.1.11 (2018-06-21)
+        -------------------
+        
+        * Updated all provided pre-trained prediction models
+            - The French Conjugator has accuracy of about 99.94% in predicting the correct conjugation class of a French verb. This is the baseline as i have been working on it for some time now.
+            - The English Conjugator has accuracy of about 99.78% in predicting the correct conjugation class of an English verb. This is one of the biggest improvement since version 2.0.0
+            - The Spanish Conjugator has accuracy of about 99.65% in predicting the correct conjugation class of a Spanish verb. It has also seen a sizable improvement since version 2.0.0
+            - The Romanian Conjugator has accuracy of about 99.06% in predicting the correct conjugation class of a Romanian verb.This is by far the bigger gain. I modified the vectorizer to better take into account the morphological features or romanian verbs. (the previous score was about 86%, so it wil be nice for our romanian friends to have a trusted conjugator)
+            - The Portuguese Conjugator has accuracy of about 96.73% in predicting the correct conjugation class of a Portuguese verb.
+            - The Italian Conjugator has accuracy of about 94.05% in predicting the correct conjugation class of a Italian verb.
+        
+        
+        2.1.9 (2018-06-21)
+        ------------------
+        
+        * Now the Conjugator adds additional information to the Verb object returned.
+            - If the verb under consideration is already in Verbiste, the conjugation for the verb is retrieved directly from memory.
+            - If the verb under consideration is unknown in Verbiste, the Conjugator class now sets the boolean attribute 'predicted' and the float attribute confidence score to the instance of the Verb object the Conjugator.conjugate(verb) returns.
+        * Added `Type annotations`_ to the whole library for robustness and ease of scaling-out.
+        * The performance of the Engish and Romanian Models have improved significantly lately. I guess in a few more iteration they will be on par with the French Model which is the best performing at the moment as i have been tuning its parameters for a caouple of year now. Not so much with the other languages, but if you update regularly you will see nice improvents in the 2.2 release.
+        * Enhanced the localization of the program.
+        * Now the user interface of mlconjug is avalaible in French, Spanish, Italian, Portuguese and Romanian, in addition to English.
+        * `All the documentation of the project`_ have been translated in the supported languages.
+        
+        
+        .. _Type annotations: https://github.com/python/typeshed
+        .. _All the documentation of the project: https://mlconjug.readthedocs.io/en/latest/
+        .. _API documentation: https://mlconjug.readthedocs.io/en/latest/modules.html
+        
+        
+        2.1.5 (2018-06-15)
+        ------------------
+        
+        * Added localization.
+        * Now the user interface of mlconjug is avalaible in French, Spanish, Italian, Portuguese and Romanian, in addition to English.
+        
+        
+        2.1.2 (2018-06-15)
+        ------------------
+        
+        * Added invalid verb detection.
+        
+        
+        2.1.0 (2018-06-15)
+        ------------------
+        
+        * Updated all language models for compatibility with scikit-learn 0.19.1.
+        
+        
+        2.0.0 (2018-06-14)
+        ------------------
+        
+        * Includes English conjugation model.
+        * Includes Spanish conjugation model.
+        * Includes Italian conjugation model.
+        * Includes Portuguese conjugation model.
+        * Includes Romanian conjugation model.
+        
+        
+        1.2.0 (2018-06-12)
+        ------------------
+        
+        * Refactored the API. Now a Single class Conjugator is needed to interface with the module.
+        * Includes improved french conjugation model.
+        * Added support for multiple languages.
+        
+        
+        1.1.0 (2018-06-11)
+        ------------------
+        
+        * Refactored the API. Now a Single class Conjugator is needed to interface with the module.
+        * Includes improved french conjugation model.
+        
+        
+        1.0.0 (2018-06-10)
+        ------------------
+        
+        * First release on PyPI.
+        
+        
+        
+        
+        
+Keywords: mlconjug conjugation conjugaison conjugación coniugazione conjugação conjugare verbs verbes verbos ML machine-learning NLP linguistics linguistique linguistica conjug_manager sklearn scikit-learn
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Education
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Utilities
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Natural Language :: French
+Classifier: Natural Language :: Spanish
+Classifier: Natural Language :: Italian
+Classifier: Natural Language :: Portuguese
+Classifier: Natural Language :: Romanian
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

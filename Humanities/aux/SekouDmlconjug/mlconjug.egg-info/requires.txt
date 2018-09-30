@@ -1,0 +1,5 @@
+cython
+Click>=6.0
+numpy
+scipy
+scikit-learn
