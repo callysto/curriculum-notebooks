@@ -1,0 +1,63 @@
+{
+  "1" : {
+    "question" : "Add \\(\\mixed {5} {2} {9} + \\mixed {2} {2} {9}\\).",
+    "answer" : "7 4/9",
+    "solution" : "\\(\\mixed {5} {2} {9} + \\mixed {2} {2} {9} = \\mixed {7} {4} {9}\\).",
+    "explanation" : ""
+  },
+  "2" : {
+    "question" : "Add \\(\\mixed {1} {5} {12} + \\mixed {3} {3} {12}\\).",
+    "answer" : "4 8/12",
+    "solution" : "\\(\\mixed {1} {5} {12} + \\mixed {3} {3} {12} = \\mixed {4} {8} {12}\\).",
+    "explanation" : ""
+  },
+  "3" : {
+    "question" : "Add \\(\\mixed {2} {2} {6} + \\mixed {4} {1} {6}\\).",
+    "answer" : "6 3/6",
+    "solution" : "\\(\\mixed {2} {2} {6} + \\mixed {4} {1} {6} = \\mixed {6} {3} {6}\\).",
+    "explanation" : ""
+  },
+  "4" : {
+    "question" : "Add \\(\\mixed {5} {1} {2} + \\mixed {1} {1} {2}\\).",
+    "answer" : "7",
+    "solution" : "\\(\\mixed {5} {1} {2} + \\mixed {1} {1} {2} = \\mixed {6} {2} {2} = {7}\\).",
+    "explanation" : ""
+  },
+  "5" : {
+    "question" : "Add \\(\\mixed {2} {2} {9} + \\mixed {1} {7} {9}\\).",
+    "answer" : "4",
+    "solution" : "\\(\\mixed {2} {2} {9} + \\mixed {1} {7} {9} = \\mixed {3} {9} {9} = {4}\\).",
+    "explanation" : ""
+  },
+  "6" : {
+    "question" : "Add \\(\\mixed {1} {1} {3} + \\mixed {3} {1} {3}\\).",
+    "answer" : "4 2/3",
+    "solution" : "\\(\\mixed {1} {1} {3} + \\mixed {3} {1} {3} = \\mixed {4} {2} {3}\\).",
+    "explanation" : ""
+  },
+  "7" : {
+    "question" : "Add \\(\\mixed {4} {10} {11} + \\mixed {1} {8} {11}\\).",
+    "answer" : "6 7/11",
+    "solution" : "\\(\\mixed {4} {10} {11} + \\mixed {1} {8} {11} = \\mixed {5} {18} {11} = \\mixed {6} {7} {11}\\).",
+    "explanation" : ""
+  },
+  "8" : {
+    "question" : "Add \\(\\mixed {5} {4} {6} + \\mixed {4} {4} {6}\\).",
+    "answer" : "10 2/6",
+    "solution" : "\\(\\mixed {5} {4} {6} + \\mixed {4} {4} {6} = \\mixed {9} {8} {6} = \\mixed {10} {2} {6}\\).",
+    "explanation" : ""
+  },
+  "9" : {
+    "question" : "Add \\(\\mixed {3} {3} {5} + \\mixed {5} {4} {5}\\).",
+    "answer" : "9 2/5",
+    "solution" : "\\(\\mixed {3} {3} {5} + \\mixed {5} {4} {5} = \\mixed {8} {7} {5} = \\mixed {9} {2} {5}\\).",
+    "explanation" : ""
+  },
+  "10" : {
+    "question" : "Add \\(\\mixed {5} {2} {6} + \\mixed {2} {3} {6}\\).",
+    "answer" : "7 5/6",
+    "solution" : "\\(\\mixed {5} {2} {6} + \\mixed {2} {3} {6} = \\mixed {7} {5} {6}\\).",
+    "explanation" : ""
+  }
+}
+

@@ -1,0 +1,63 @@
+{
+  "1" : {
+    "question" : "Add \\(\\frac {2} {5} + \\frac {1} {5}\\).",
+    "answer" : "3/5",
+    "solution" : "\\( \\frac {2} {5} + \\frac {1} {5} = \\frac {3} {5}\\).",
+    "explanation" : ""
+  },
+  "2" : {
+    "question" : "Add \\(\\frac {1} {6} + \\frac {3} {6}\\).",
+    "answer" : "4/6",
+    "solution" : "\\(\\frac {1} {6} + \\frac {3} {6} = \\frac {4} {6}\\).",
+    "explanation" : ""
+  },
+  "3" : {
+    "question" : "Add \\(\\frac {6} {11} + \\frac {8} {11}\\).",
+    "answer" : "14/11",
+    "solution" : "\\(\\frac {6} {11} + \\frac {8} {11} = \\frac {14} {11}\\).",
+    "explanation" : ""
+  },
+  "4" : {
+    "question" : "Add \\(\\frac {3} {6} + \\frac {5} {6}\\).",
+    "answer" : "8/6",
+    "solution" : "\\(\\frac {3} {6} + \\frac {5} {6} = \\frac {8} {6}\\).",
+    "explanation" : ""
+  },
+  "5" : {
+    "question" : "Add \\(\\frac {6} {10} + \\frac {5} {10}\\).",
+    "answer" : "11/10",
+    "solution" : "\\(\\frac {6} {10} + \\frac {5} {10} = \\frac {11} {10}\\).",
+    "explanation" : ""
+  },
+  "6" : {
+    "question" : "Add \\(\\frac {3} {4} + \\frac {1} {4}\\).",
+    "answer" : "4/4",
+    "solution" : "\\(\\frac {3} {4} + \\frac {1} {4} = \\frac {4} {4}\\).",
+    "explanation" : ""
+  },
+  "7" : {
+    "question" : "Add \\(\\frac {5} {6} + \\frac {2} {6}\\).",
+    "answer" : "7/6",
+    "solution" : "\\(\\frac {5} {6} + \\frac {2} {6} = \\frac {7} {6}\\).",
+    "explanation" : ""
+  },
+  "8" : {
+    "question" : "Add \\(\\frac {2} {3} + \\frac {1} {3}\\).",
+    "answer" : "3/3",
+    "solution" : "\\(\\frac {2} {3} + \\frac {1} {3} = \\frac {3} {3}\\).",
+    "explanation" : ""
+  },
+  "9" : {
+    "question" : "Add \\(\\frac {4} {11} + \\frac {1} {11}\\).",
+    "answer" : "5/11",
+    "solution" : "\\(\\frac {4} {11} + \\frac {1} {11} = \\frac {5} {11}\\).",
+    "explanation" : ""
+  },
+  "10" : {
+    "question" : "Add \\(\\frac {5} {7} + \\frac {4} {7}\\).",
+    "answer" : "9/7",
+    "solution" : "\\(\\frac {5} {7} + \\frac {4} {7} = \\frac {9} {7}\\).",
+    "explanation" : ""
+  }
+}
+

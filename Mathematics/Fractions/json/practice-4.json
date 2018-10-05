@@ -1,0 +1,63 @@
+{
+  "1" : {
+    "question" : "Add \\(\\frac {4} {9} + \\frac {30} {36}\\).",
+    "answer" : "46/36",
+    "solution" : "\\(\\frac {4} {9} + \\frac {30} {36} = \\frac {16} {36} + \\frac {30} {36} = \\frac {46} {36}\\).",
+    "explanation" : ""
+  },
+  "2" : {
+    "question" : "Add \\(\\frac {26} {32} + \\frac {6} {8}\\).",
+    "answer" : "50/32",
+    "solution" : "\\(\\frac {26} {32} + \\frac {6} {8} = \\frac {26} {32} + \\frac {24} {32} = \\frac {50} {8}\\).",
+    "explanation" : ""
+  },
+  "3" : {
+    "question" : "Add \\(\\frac {2} {3} + \\frac {5} {12}\\).",
+    "answer" : "13/12",
+    "solution" : "\\(\\frac {2} {3} + \\frac {5} {12} = \\frac {8} {12} + \\frac {5} {12} = \\frac {13} {12}\\).",
+    "explanation" : ""
+  },
+  "4" : {
+    "question" : "Add \\(\\frac {6} {10} + \\frac {27} {30}\\).",
+    "answer" : "45/30",
+    "solution" : "\\(\\frac {6} {10} + \\frac {27} {30} = \\frac {18} {30} + \\frac {27} {30} = \\frac {45} {30}\\).",
+    "explanation" : ""
+  },
+  "5" : {
+    "question" : "Add \\(\\frac {3} {4} + \\frac {6} {8}\\).",
+    "answer" : "12/8",
+    "solution" : "\\(\\frac {3} {4} + \\frac {6} {8} = \\frac {6} {8} + \\frac {6} {8} = \\frac {12} {8}\\).",
+    "explanation" : ""
+  },
+  "6" : {
+    "question" : "Add \\(\\frac {29} {32} + \\frac {6} {8}\\).",
+    "answer" : "53/32",
+    "solution" : "\\(\\frac {29} {32} + \\frac {6} {8} = \\frac {29} {32} + \\frac {24} {32} = \\frac {53} {8}\\).",
+    "explanation" : ""
+  },
+  "7" : {
+    "question" : "Add \\(\\frac {17} {36} + \\frac {7} {12}\\).",
+    "answer" : "38/36",
+    "solution" : "\\(\\frac {17} {36} + \\frac {7} {12} = \\frac {17} {36} + \\frac {21} {36} = \\frac {38} {12}\\).",
+    "explanation" : ""
+  },
+  "8" : {
+    "question" : "Add \\(\\frac {4} {9} + \\frac {9} {18}\\).",
+    "answer" : "17/18",
+    "solution" : "\\(\\frac {4} {9} + \\frac {9} {18} = \\frac {8} {18} + \\frac {9} {18} = \\frac {17} {18}\\).",
+    "explanation" : ""
+  },
+  "9" : {
+    "question" : "Add \\(\\frac {2} {24} + \\frac {6} {12}\\).",
+    "answer" : "14/24",
+    "solution" : "\\(\\frac {2} {24} + \\frac {6} {12} = \\frac {2} {24} + \\frac {12} {24} = \\frac {14} {12}\\).",
+    "explanation" : ""
+  },
+  "10" : {
+    "question" : "Add \\(\\frac {4} {5} + \\frac {8} {10}\\).",
+    "answer" : "16/10",
+    "solution" : "\\(\\frac {4} {5} + \\frac {8} {10} = \\frac {8} {10} + \\frac {8} {10} = \\frac {16} {10}\\).",
+    "explanation" : ""
+  }
+}
+
