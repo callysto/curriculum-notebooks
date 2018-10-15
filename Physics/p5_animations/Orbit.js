@@ -7,10 +7,7 @@ var step = 0.03;
 var m_old = 6;
 var html_g  = [];
 var sun_mass = [];
-var img;
-function preload() {
-    img = loadImage("globe.png")
-}
+
 function setup() {
   createCanvas(600,500);
   for (var i = 0; i < 150; i++) {
@@ -22,8 +19,8 @@ function setup() {
     sun[i] = new Ball(sun_mass[i],width/2,height/2,html_r,html_g[i],html_b);
     m_old -= step;
   }
-  orbiter = new earth(width/2 + 200, height/2)
-//   orbiter = new Ball(2,width/2+200,height/2, 85, 184, 241 );
+
+  orbiter = new Ball(2,width/2+200,height/2, 85, 184, 241 );
   for (var i = 0; i < 500; i++) {
     var x = random(width);
     var y = random(height);
@@ -58,7 +55,7 @@ function draw() {
   var v = createVector(x_rot,y_rot);
   drawArrow(bodyCenter,v,head, 183, 35, 227 );
   drawArrow(bodyCenter,mid_radius,head, 227, 38, 35 );
-  orbiter.display(img);
+  orbiter.display();
   orbiter.update(new_x,new_y);
   stroke(255);
   fill(255);
