@@ -7,7 +7,15 @@
       .wire {stroke:black;stroke-widh:1;fill:none}
     </style>
     </head>
-    <body>  
+    <body> 
+        <button id="startbutton">Restart</button> <p>
         <script type="text/javascript" src="app.js"></script>
+        <script>
+        startbutton.addEventListener('click', function (ev) {
+            location.reload();
+            ev.preventDefault();
+        }, false);
+    </script>
+
     </body>
-</html>
+</html> 
