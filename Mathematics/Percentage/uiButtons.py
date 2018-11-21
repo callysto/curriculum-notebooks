@@ -27,7 +27,6 @@ class MyMagics(Magics):
 
                     document.getElementById('init').onclick = function () {
                         runAll = document.getElementById('run_all_cells_below').childNodes[1]
-                        console.log(runAll)
                         runAll.click()
                     }
 
