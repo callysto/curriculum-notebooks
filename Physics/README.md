@@ -1,1 +1,1 @@
-#Notebooks related to Physics curriculum.
+# Physics Notebooks
