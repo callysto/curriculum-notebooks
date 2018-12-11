@@ -111,8 +111,3 @@ function display2(pH) {
 	}
 }
 
-function reset_liquid(){
-	d3.select("#Liquid")
-		.style("fill", "LightSteelBlue");
-}
-
