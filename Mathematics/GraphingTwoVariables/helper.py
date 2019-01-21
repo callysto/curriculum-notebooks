@@ -6,6 +6,7 @@ import math
 import ipywidgets as widgets
 from astropy.table import Table, Column
 from ipywidgets import interact, interactive, Layout
+from IPython.display import display, Math, Latex, HTML
 
 py.offline.init_notebook_mode(connected=True)
 
@@ -434,6 +435,48 @@ def ask_question3():
     display(btn)
     btn.on_click(check_results)      
     display(text_warning) 
+    
+def lin_or_non1(val):
+    if val == "Linear":
+        display(Latex("Correct!"))
+        display(Latex("This equation has no exponent on either variable, and is therefore linear."))
+    elif val == "Non-Linear":
+        display(Latex("Try Again!"))
+
+def lin_or_non2(val):
+    if val == "Linear":
+        display(Latex("Try Again!"))
+    elif val == "Non-Linear":
+        display(Latex("Right on!"))
+        display(Latex("Because $x$ is raised to the power of 2, this function is not linear."))
+
+
+def lin_or_non3(val):
+    if val == "Linear":
+        display(Latex("Try Again!"))
+    elif val == "Non-Linear":
+        display(Latex("Way to go!"))
+        display(Latex("This graph does not resemble a straight line, therefore, it is not linear."))
+        display(Latex("The equation for this function is:"))
+        display(Math("y = x^2"))
+
+        
+def lin_or_non4(val):
+    if val == "Linear":
+        display(Latex("Good job!"))
+        display(Latex("This graph is a straight line, and is therefore linear."))
+        display(Latex("The equation for this function is:"))
+        display(Math("y = -x - 6"))
+    elif val == "Non-Linear":
+        display(Latex("Try Again!"))
+        
+def wage(val):
+    if val == "W (Wage)":
+        display(Latex("Correct!"))
+        display(Latex("The amount of money you make depends on your wage, and your wage is free to change. It is therefore the independent variable."))
+    elif val == "M (Money Made)":
+        display(Latex("Try Again!"))
+    
         
         
         
