@@ -1,5 +1,4 @@
-https://travis-ci.org/callysto/curriculum-notebooks.svg?branch=master
-
+[![Build Status](https://travis-ci.org/callysto/curriculum-notebooks.svg?branch=staging)](https://travis-ci.org/callysto/curriculum-notebooks)
 # Curriculum Notebooks
 Home of curriculum related notebook content developed by Callysto developers. These notebooks are designed to help teachers bring computational thinking into their math, science, social sciences, and humanities courses. 
 
