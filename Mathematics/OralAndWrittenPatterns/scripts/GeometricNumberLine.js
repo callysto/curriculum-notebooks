@@ -1,4 +1,4 @@
-var svg = d3.select('#GEO');
+
 
 var numberline = [...Array(5).keys()];
 requirejs.config({
@@ -10,7 +10,7 @@ requirejs.config({
 require(['d3'], function(d3) {
 d3.select("#geoButton")
     .on("click", function(){
-    
+        
         initValue = parseInt(document.getElementById("frm2_initGeo")
             .elements[0]
             .value);
@@ -28,7 +28,7 @@ d3.select("#geoButton")
         }
 
         var data = [initValue]
-                    
+        var svg = d3.select('#GEO');           
         if(ratio > 1 && ratio < 5 ){
                         
             var data = [...Array(50).keys()]

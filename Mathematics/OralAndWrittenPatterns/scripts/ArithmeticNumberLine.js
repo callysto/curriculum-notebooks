@@ -1,4 +1,3 @@
-var svg2 = d3.select('#ARITH');
 
 var numberline = [...Array(5).keys()];
 
@@ -28,7 +27,7 @@ d3.select("#arithButton")
         }
     
         var data = [initValue]
-
+        var svg2 = d3.select('#ARITH');
         if(difference){
 
             var data = [...Array(50).keys()]
