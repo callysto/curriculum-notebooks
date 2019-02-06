@@ -1,11 +1,10 @@
-var svg = d3.select('#ARITH');
+var svg2 = d3.select('#ARITH');
 
 var numberline = [...Array(5).keys()];
 
 
 d3.select("#arithButton")
   .on("click", function(){
-      
         initValue = parseInt(document.getElementById("frm2_initArith")
                                          .elements[0]
                                          .value);
@@ -14,6 +13,11 @@ d3.select("#arithButton")
                                          .value);
 
         if(initValue < 0 || initValue > 5 || difference == 0){
+            svg2.selectAll('circle').remove();
+            svg2.selectAll('text').remove();
+            svg2.append('text').text("Oh no! The values you selected can't make a nice sequence, please select new differences and inital values")
+            .attr('x', 10)
+            .attr('y', 40).style("font-size", "18px")
             return
         }
     
@@ -43,20 +47,20 @@ d3.select("#arithButton")
             .domain(d3.extent(data))
             .range([0,1]);
 
-        svg.selectAll('circle').remove();
-        svg.selectAll('text').remove();
-        svg.append('text')
+        svg2.selectAll('circle').remove();
+        svg2.selectAll('text').remove();
+        svg2.append('text')
             .text(0)
             .attr('x',0)
             .attr('y',85)
             .fill("black")
-        svg.append('text')
+        svg2.append('text')
             .text(50)
             .attr('x',970)
             .attr('y',85)
             .fill("black")
 
-        let points = svg.selectAll('points')
+        let points = svg2.selectAll('points')
             .data(eval(data))
             .enter()
             .append('circle')
@@ -72,7 +76,7 @@ d3.select("#arithButton")
                 .attr('cy', 50)
                 .style("fill", function (d,i) { return colorScale(colorInterpolate(d)); });
 
-        let text = svg.selectAll('.indicies')
+        let text = svg2.selectAll('.indicies')
             .data(eval(data))
             .enter()
             .append('text')                        

@@ -14,6 +14,11 @@ d3.select("#geoButton")
             .elements[0]
             .value);
         if(initValue < 1 || initValue > 50){
+            svg.selectAll('circle').remove();
+            svg.selectAll('text').remove();
+            svg.append('text').text("Oh no! The values you selected can't make a nice sequence, please select new differences and inital values")
+            .attr('x', 10)
+            .attr('y', 40).style("font-size", "18px")
             return
         }
 
@@ -27,6 +32,11 @@ d3.select("#geoButton")
                         .filter(num => (num > -1));
         }
         else{
+            svg.selectAll('circle').remove();
+            svg.selectAll('text').remove();
+            svg.append('text').text("Oh no! The values you selected can't make a nice sequence, please select new differences and inital values")
+            .attr('x', 10)
+            .attr('y', 40).style("font-size", "18px")
             return
         }
                      
