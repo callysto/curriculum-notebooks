@@ -1,8 +1,13 @@
 var svg = d3.select('#GEO');
 
 var numberline = [...Array(5).keys()];
+requirejs.config({
+    paths: { 
+        'd3': ['//cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3'], 
+    },                                         // strip .js ^, require adds it back
+});
 
-
+require(['d3'], function(d3) {
 d3.select("#geoButton")
     .on("click", function(){
     
@@ -105,3 +110,4 @@ d3.select("#geoButton")
                           .attr("opacity", 1)
 });
 
+})

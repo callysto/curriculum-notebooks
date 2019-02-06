@@ -2,7 +2,13 @@ var svg2 = d3.select('#ARITH');
 
 var numberline = [...Array(5).keys()];
 
+requirejs.config({
+    paths: { 
+        'd3': ['//cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3'], 
+    },                                         // strip .js ^, require adds it back
+});
 
+require(['d3'], function(d3){
 d3.select("#arithButton")
   .on("click", function(){
         initValue = parseInt(document.getElementById("frm2_initArith")
@@ -95,3 +101,4 @@ d3.select("#arithButton")
                 .attr("fill", "black");
         
         });
+    })
