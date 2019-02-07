@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/callysto/curriculum-notebooks.svg?branch=staging)](https://travis-ci.org/callysto/curriculum-notebooks)
 # Curriculum Notebooks
 Home of curriculum related notebook content developed by Callysto developers. These notebooks are designed to help teachers bring computational thinking into their math, science, social sciences, and humanities courses. 
 
@@ -19,8 +20,9 @@ Read the [training manual](https://github.com/callysto/training-manual) before y
 
 If you are a K-12 teacher please sign up using [this form](https://docs.google.com/forms/d/e/1FAIpQLSc0i25Ounu-VXhgvI8lkrIwjeDetcls9DbBEJZuuru5taa8PQ/viewform?embedded=true).
 
-We also welcome interest from outside collaborators in both industry and academia.
-If you would like to be added to the project please contact india@pims.math.ca
+We welcome interest and pull requests from outside collaborators in both industry and academia.
+Please read the [contributing guidelines](CONTRIBUTING.md) before committing to this repo.
+
 
 ## Authors
 
@@ -32,7 +34,7 @@ See also the list of [contributors](https://github.com/callysto/curriculum-noteb
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the CC License - see the [LICENSE.md](LICENSE.md) file for details.
 
 ## Acknowledgments
 
