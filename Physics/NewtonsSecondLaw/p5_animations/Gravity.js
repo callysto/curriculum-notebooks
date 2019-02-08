@@ -2,6 +2,7 @@ var b = [];
 var M;
 var R;
 var star = [];
+
 function setup() {
   createCanvas(600,400);
   var r_old = 0;
@@ -27,27 +28,33 @@ function setup() {
 };
 
 var check = 0;
+
 function draw() {
   background(0);
+  var gravity = createVector(0,0.1);
+
   for (var i = 0; i < star.length; i++) {
     star[i].display();
   }
-  var gravity = createVector(0,0.32);
+
   stroke(255);
   fill(255);
+
   if (check == 0) {
-  	var txt = new r_text("CLICK TO APPLY GRAVITATIONAL FORCE");
-   } 
-   else 
-   {
-   	var txt = new r_text(" ");
-   }
-  
+    var txt = new r_text("CLICK TO APPLY GRAVITATIONAL FORCE");
+  }
+  else {
+    var txt = new r_text("");
+  }
+
+  if (mouseIsPressed) {
+    check = 1;
+  }
+
   for (var i = 0; i < b.length; i++) {
-  	if (mouseIsPressed) {
-  		check = 1;
-  		b[i].applyForce(gravity);
-  	}
+    if (check == 1) {
+      b[i].applyForce(gravity);
+    }
     b[i].display();
     b[i].update();
     b[i].checkEdges();
@@ -76,7 +83,6 @@ Ball.prototype.update = function() {
   this.velocity.add(this.acceleration);
   this.location.add(this.velocity);
   this.acceleration.mult(0);
-  this.velocity.limit(0.6);
 };
 
 Ball.prototype.display = function() {

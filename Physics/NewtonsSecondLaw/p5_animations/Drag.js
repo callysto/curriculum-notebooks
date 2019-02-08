@@ -4,10 +4,11 @@ var R;
 var liquid;
 var bub1 = [];
 var bub2 = [];
+
 function setup() {
   createCanvas(750,600);
   var r_old = 0;
-  liquid = new Friction(0,height/1.8,width,height/2,0.05);
+  liquid = new Friction(0,height/1.8,width,height/2,0.1);
   for (var i = 0; i < 40; i++) {
     M = random(1,11);
     R = M*5;
@@ -35,52 +36,54 @@ function setup() {
 //   triangle(x1,y1+2,x1,y1-2,x1+3.5,y1);
 //   line(x0,y0,x1,y1);
 // };
-var g = 0;
 var check = 0;
+
 function draw() {
   background(255);
   liquid.display();
   stroke(0);
   fill(0);
+
+  if (mouseIsPressed) {
+    check = 1;
+  }
+
   if (check == 0) {
-  	var txt = new r_text("CLICK TO APPLY GRAVITATIONAL FORCE");
-   } 
-   else 
-   {
-   	var txt = new r_text(" ");
-   }
+    var txt = new r_text("CLICK TO APPLY GRAVITATIONAL FORCE");
+  }
+  else {
+    var txt = new r_text(" ");
+  }
+
   for (var i = 0; i < bub1.length; i++) {
     bub1[i].display();
     bub1[i].clr();
     bub1[i].floater(0.07);
   }
+
   for (var i = 0; i < b.length; i++) {
-    if (g == 0) {
-      var gravity = createVector(0,0.85*b[i].mass);
+    var gravity = createVector(0,0.1*b[i].mass);
+
+    if (check == 1) {
+      b[i].applyForce(gravity);
     }
-    else {
-      var gravity = createVector(0,0);
-    }
-  	if (mouseIsPressed) {
-  		check = 1;
-  		b[i].applyForce(gravity);
-  	}
+
     b[i].isInside(liquid);
+
     if (b[i].edges == 1) {
-        b[i].Drag(liquid);
-        g = 1;
+      b[i].Drag(liquid);
     }
+
     b[i].display();
     b[i].update();
     b[i].checkEdges();
   }
+
   for (var i = 0; i < bub2.length; i++) {
     bub2[i].display();
     bub2[i].clr();
     bub2[i].floater(0.07);
   }
-
-
 };
 
 
@@ -143,12 +146,11 @@ Ball.prototype.applyForce = function(f) {
   var grav = p5.Vector.div(f,this.mass);
   this.acceleration.add(grav);
 };
-  
+
 Ball.prototype.update = function() {
   this.velocity.add(this.acceleration);
   this.location.add(this.velocity);
   this.acceleration.mult(0);
-  this.velocity.limit(2);
 };
 
 Ball.prototype.isInside = function(F) {
