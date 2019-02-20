@@ -1,0 +1,32 @@
+li {
+    margin-top: 5px;
+}
+.booleanInput {
+    width: 30px;
+    margin-top: 10px;
+}
+.submit-boolean {
+    margin-left: 10px;
+}
+
+.correct {
+    background-color: #33ff33;
+}
+
+.incorrect {
+    background-color: #ff1a1a;
+}
+
+.perm-answer {
+    margin-right: 50%;
+    margin-top: 5px;
+}
+
+#is-permutation-feedback-container {
+    margin-top: 20px;
+    display: none;
+}
+
+#perm-questions {
+    margin-top: 20px;
+}

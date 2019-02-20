@@ -1,91 +1,98 @@
 var colors = ["red", "green", "blue", "gray", "yellow", "teal", "aqua", "purple", "silver", "lime"];
 // Variables for drag_handler
-var startX = 0;
-var startY = 0;
-var draggedCircleIndex = 0;
-var draggedCircleColors = [];
-var permutedSets = [];
-var numberOfSetsAllowed = 0;
-var tableComplete = false;
-var scrollingThreshold = 6;
+var startX = 0,
+    startY = 0,
+    draggedCircleIndex = 0,
+    draggedCircleColors = [],
+    permutedSets = [],
+    numberOfSetsAllowed = 0,
+    tableComplete = false,
+    scrollingThreshold = 6;
 
 var drag_handler = d3.behavior.drag()
-  .on("drag", function(d) {
-        d3.select(this)
-          .attr("cx", d3.event.x  )
-          .attr("cy", d3.event.y  );
-  })
-  .on("dragstart", function(d) {
-    startX = d.x
-    startY = d.y;
-    draggedCircleIndex = 0;
-    for(var i = 1; i < numberOfCircles*2; i=i+2) {
-      if(startX == drivingData[i].x && startY == drivingData[i].y) {
-        draggedCircleIndex = i;
+  .on("drag", dragged)
+  .on("dragstart", dragstart)
+  .on("dragend", dragend);
+
+function dragged(d) {
+  d3.select(this)
+    .attr("cx", d3.event.x  )
+    .attr("cy", d3.event.y  );
+}
+
+function dragstart(d) {
+  startX = d.x
+  startY = d.y;
+  draggedCircleIndex = 0;
+  for(var i = 1; i < numberOfCircles*2; i=i+2) {
+    if(startX == drivingData[i].x && startY == drivingData[i].y) {
+      draggedCircleIndex = i;
+      break;
+    }
+  }
+}
+
+function dragend(d) {
+  var circle = d3.select(this),
+      endX = Number(circle.attr("cx")),
+      endY = Number(circle.attr("cy"));
+
+  if(endY < circleLineHeight || (startY > circleLineHeight && endY < circleLineHeight)) {
+      d3transtionBack(drivingData, circle, draggedCircleIndex);
+  }
+  else {
+    var startingIndex = numberOfCircles*2;
+    for(var i = startingIndex; i < drivingData.length; ++i) {
+      if(endX <= drivingData[i].x && Math.abs(drivingData[i].x-endX) < (distanceBetweenCircles/2)) {
+        if(isOccupied(drivingData[i], drivingData, numberOfCircles)) {
+          d3transtionBack(drivingData, circle, draggedCircleIndex);
+        }
+
+        else {
+          d3transitionTo(drivingData, circle, draggedCircleIndex, i, checkForEnd);
+        }
+        break;
+      }
+
+      else if(endX > drivingData[i].x && Math.abs(drivingData[i].x-endX) < (distanceBetweenCircles/2)) {
+        if(isOccupied(drivingData[i], drivingData, numberOfCircles)) {
+          d3transtionBack(drivingData, circle, draggedCircleIndex);
+        }
+
+        else {
+          d3transitionTo(drivingData, circle, draggedCircleIndex, i, checkForEnd);
+        }
+        break;
+      }
+
+      else if(endX > drivingData[i].x && i == drivingData.length-1) {
+        if(isOccupied(drivingData[i], drivingData, numberOfCircles)) {
+          d3transtionBack(drivingData, circle, draggedCircleIndex);
+        }
+
+        else {
+          d3transitionTo(drivingData, circle, draggedCircleIndex, i, checkForEnd);
+        }
         break;
       }
     }
-  })
-  .on("dragend", function(d) {
-      var circle = d3.select(this);
-      var endX = Number(circle.attr("cx"));
-      var endY = Number(circle.attr("cy"));
-      if(endY < circleLineHeight || (startY > circleLineHeight && endY < circleLineHeight)) {
-        d3transtionBack(drivingData, circle, draggedCircleIndex);
-      }
-      else {
-        var startingIndex = numberOfCircles*2;
-        for(var i = startingIndex; i < drivingData.length; ++i) {
-          if(endX <= drivingData[i].x && Math.abs(drivingData[i].x-endX) < (distanceBetweenCircles/2)) {
-            if(isOccupied(drivingData[i], drivingData, numberOfCircles)) {
-              d3transtionBack(drivingData, circle, draggedCircleIndex);
-            }
+  }
+}
 
-            else {
-              d3transitionTo(drivingData, circle, draggedCircleIndex, i, checkForEnd);
-            }
-            break;
-          }
-
-          else if(endX > drivingData[i].x && Math.abs(drivingData[i].x-endX) < (distanceBetweenCircles/2)) {
-            if(isOccupied(drivingData[i], drivingData, numberOfCircles)) {
-              d3transtionBack(drivingData, circle, draggedCircleIndex);
-            }
-
-            else {
-              d3transitionTo(drivingData, circle, draggedCircleIndex, i, checkForEnd);
-            }
-            break;
-          }
-
-          else if(endX > drivingData[i].x && i == drivingData.length-1) {
-            if(isOccupied(drivingData[i], drivingData, numberOfCircles)) {
-              d3transtionBack(drivingData, circle, draggedCircleIndex);
-            }
-
-            else {
-              d3transitionTo(drivingData, circle, draggedCircleIndex, i, checkForEnd);
-            }
-            break;
-          }
-        }
-      }
-
-    });
-var radius = 20;
-var distanceBetweenCircles = 80;
-var startingXNode = 40;
-var circleLineHeight = 100;
-var slider = document.getElementById("perm-range-slider");
-var output = document.getElementById("slider-output");
-var permutedSetsTable = d3.select("#correct-permutations").select("table").style("width", "100%");
-var permutedSetsTableHead = permutedSetsTable.append("thead");
-var permutedSetsTableBody = permutedSetsTable.append("tbody");
-var answeringTimeout;
-
-var drivingData = [];
-var numberOfCircles = slider.value;
-numberOfSetsAllowed = factorial(numberOfCircles);
+// Interactive svg variables
+var radius = 20,
+    distanceBetweenCircles = 80,
+    startingXNode = 40,
+    circleLineHeight = 100,
+    slider = document.getElementById("perm-range-slider"),
+    output = document.getElementById("slider-output"),
+    permutedSetsTable = d3.select("#correct-permutations").select("table").style("width", "100%"),
+    permutedSetsTableHead = permutedSetsTable.append("thead"),
+    permutedSetsTableBody = permutedSetsTable.append("tbody"),
+    answeringTimeout,
+    drivingData = [],
+    numberOfCircles = slider.value,
+    numberOfSetsAllowed = factorial(numberOfCircles);
 
 output.innerHTML = slider.value; // Display the default slider value
 // Create svg
@@ -121,12 +128,12 @@ slider.oninput = function() {
 
     else {
       removeCircle();
-      
+
     }
     numberOfSetsAllowed = factorial(numberOfCircles);
 }
 
-
+// Create circles given some data, a root object, a callback for dragging functionalilty, and the number of circles.
 function createCircles(data, d3Object, dragFunc, nCircles) {
     var circles = d3Object.selectAll("circle")
       .data(data)
@@ -139,12 +146,9 @@ function createCircles(data, d3Object, dragFunc, nCircles) {
             .style("stroke", function(d) { return d.border; });
 
   var draggableCircles = d3Object.selectAll("circle").filter(function(d, i) { return i % 2 == 1 && i < nCircles*2; }).call(dragFunc);
-
-    // d3.v4
-    // draggableCircles = svg.selectAll("circle").filter(function(d, i) { return i % 2 == 1 && i < numberOfCircles*2; });
-    //drag_handler(draggableCircles);
 }
 
+// After circles have been given a new position, update the circles position.
 function updateCircles(data, d3obj, nCircles, subset) {
   var circles = d3obj.selectAll("circle")
     .data(data)
@@ -154,10 +158,12 @@ function updateCircles(data, d3obj, nCircles, subset) {
         .style("stroke", function(d) { return d.border; });
 }
 
+// Add a circle to the interactive module
 function addCircle() {
-  var match;
-  var newColor;
-  var i = 0;
+  var match,
+      newColor,
+      i = 0;
+
   do {
     match = drivingData.find(function(d) { return d.color == colors[i]});
     if(!match) {
@@ -314,7 +320,7 @@ function d3transitionTo(data, obj, objIndex, toIndex, callback) {
   obj.transition()
     .attr("cx", function() { return data[objIndex].x = data[toIndex].x; })
     .attr("cy", function() { return data[objIndex].y = data[toIndex].y; })
-    .each("end", function(d, i) { 
+    .each("end", function(d, i) {
       moveTo(data, objIndex, objIndex-1);
       createCopy(data, obj, data[toIndex].x, data[toIndex].y);
       callback();
@@ -352,7 +358,7 @@ function isEmpty(data, nCircles, subset) {
   else {
     draggableIndex = nCircles*3;
   }
-  if(draggableIndex < data.length) 
+  if(draggableIndex < data.length)
     return false;
 
   return true;
@@ -466,7 +472,7 @@ function checkForEnd() {
       if(areDuplicates(drivingData, numberOfCircles)) {
         answer.text("Incorrect. You cannot use the same circle twice as there are no repetitions in the original set");
       }
-      
+
       answer.style("background-color", "red");
     }
     if(!tableComplete) {
@@ -480,7 +486,7 @@ function checkForEnd() {
       if(answeringTimeout)
         clearTimeout(answeringTimeout);
 
-      if(!isEmpty(drivingData, numberOfCircles)){ 
+      if(!isEmpty(drivingData, numberOfCircles)){
         answer.text("Permuting...");
         answer.style("background-color", "yellow");
         answeringTimeout = setTimeout(function() {
@@ -542,7 +548,7 @@ function resetSets(table, data) {
       .selectAll("td")
         .data(function(d) { return d; })
           .text(function(d) { return d; })
-  
+
   tableBody.selectAll("tr")
     .data(data)
       .exit()
@@ -554,7 +560,7 @@ function setMade(data, set) {
   for(var i = 0; i < data.length; ++i) {
     checkCount = 0;
     for(var j = 0; j < data[i].length; ++j) {
-      if(data[i][j] == set[j]) { 
+      if(data[i][j] == set[j]) {
         checkCount += 1;
         if(checkCount == data[i].length) {
           return i;
@@ -578,7 +584,7 @@ function displaySet(svgObject, data, index) {
     .each("end", function() {
     setToTransition.transition()
               .duration(1000)
-              .style("background-color", "white"); 
+              .style("background-color", "white");
   })
 }
 
@@ -598,9 +604,9 @@ function initData(nCircles, subset) {
     data.push({x:(i*distanceBetweenCircles)+startingXNode, y: circleLineHeight-50, color:colors[i], border: "none" });
     data.push({x:(i*distanceBetweenCircles)+startingXNode, y: circleLineHeight-50, color:colors[i], border: "none" });
   }
-  
+
   var numberOfFills = subset ? subset : nCircles;
-  
+
   for(var i = 0; i < numberOfFills; ++i) {
     data.push({ x: (i*distanceBetweenCircles)+startingXNode, y: circleLineHeight+50, color: "none", border: "black" });
   }

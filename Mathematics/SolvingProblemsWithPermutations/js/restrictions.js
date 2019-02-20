@@ -1,7 +1,7 @@
 createQuestions();
 
 function createQuestions() {
-    d3.json("./data/restriction-solutions.json", function(data) {
+    d3.json("./data/restriction_solutions.json", function(data) {
         var jsonArray = [];
         jsonLength = Object.keys(data).length;
         for(var i = 0; i < jsonLength; ++i) {
@@ -50,14 +50,14 @@ function createQuestions() {
         d3.select("#restrictions-button-container")
             .append("input")
                 .attr("type", "button")
-                .attr("value", "Submit answers")
+                .attr("value", "Submit Answers")
                 .attr("onclick", "submitRestrictions()")
                 .attr("id", "submit-restrictions-button");
 
         d3.select("#restrictions-button-container")
             .append("input")
                 .attr("type", "button")
-                .attr("value", "Show solutions")
+                .attr("value", "Show Solutions")
                 .attr("onclick", "showRestrictionSolutions()")
                 .attr("id", "restriction-solutions-button")
                 .classed("hidden", true);
