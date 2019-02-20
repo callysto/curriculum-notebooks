@@ -1,0 +1,222 @@
+/* Classes */
+.subject-container {
+    width: 75%;
+    padding: 15px;
+    margin-top: 10px;
+    border: 1px ridge black;
+}
+
+.question-container {
+    width: 50%;
+}
+
+.question-options {
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.flex-container-start {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.flex-container-25-space {
+    display: flex;
+    justify-content: space-between;
+    width: 25%;
+}
+
+.flex-container-50-space {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+}
+
+.flex-container-50-space p {
+    margin-top: 1em;
+}
+
+.flex-container-50-center {
+    display: flex;
+    justify-content: center;
+    width: 50%;    
+}
+
+.flex-container-center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.flex-container-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-weight: bold;
+    margin: 0px;
+}
+
+.score-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-weight: bold;
+}
+
+.food-question {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.food-question p {
+     margin-top:5px;   
+}
+
+.food-question-center {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.score-summary {
+    margin-left: 10px;
+}
+
+.user-score {
+    background-color: orange !important;
+}
+
+.water-usage-topic {
+    color: blue;
+}
+
+/* Tags */
+
+input[type="checkbox"] {
+    transform: scale(1.5);
+    margin-right: 10px;
+    margin-top: 20px;
+}
+
+select {
+    height: 30px;
+    line-height: 30px;
+    font-size: 0.7em;
+    padding: 0px;
+}
+
+input[type="text"] {
+    height: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 50px;
+    text-align: center;
+}
+
+input[type="button"] {
+    margin: 10px;
+}
+
+body {
+    background-color: gainsboro;
+}
+
+/* IDs */
+
+#water-use-questions-container {
+    background-color:#00bfff;
+}
+
+#food-use-question-container {
+    background-color: lightcoral;
+}
+
+#transportation-use-question-container {
+    background-color: aqua;
+}
+
+#shelter-use-question-container {
+    background-color: darkseagreen;
+}
+
+#energy-use-question-container {
+    background-color: goldenrod;
+}
+
+#clothing-use-question-container {
+    background-color: lightsalmon;
+}
+
+#stuff-use-question-container {
+    background-color: mediumorchid;
+}
+
+#fun-use-question-container {
+    background-color: teal
+}
+
+#score-summary-container {
+    background-color: darkgrey;
+}
+
+#ecological-footprint-quiz-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#ecological-footprint-countries-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#wikitable {
+    border-collapse: collapse;
+}
+
+#wikitable table, th, td {
+    border: 1px solid black;
+}
+
+#wikitable tr {
+    height: 50px;
+}
+
+#wikitable th {
+    width: 100px;
+}
+
+#water-use-at-home-container {
+   display: flex;
+   justify-content: center;
+}
+
+
+#water-use-at-home-container table {
+   width: 90%;
+}
+
+#water-use-at-home-container td {
+   text-align: center !important;
+   font-size: 1.1em;
+}
