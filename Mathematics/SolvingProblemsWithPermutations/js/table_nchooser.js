@@ -1,6 +1,6 @@
 var answers = [];
 var solutionsShowed = false;
-d3.json("./data/pchoosenData.json", function(data) {
+d3.json("./data/p_choose_n.json", function(data) {
     for(var i = 0; i < data.length; ++i) {
         answers.push(data[i].answer);
     }
