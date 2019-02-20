@@ -1,0 +1,12 @@
+[
+    { "available" : 4, "selected" : 3, "answer" : 24 },
+    { "available" : 5, "selected" : 3, "answer" : 60 },
+    { "available" : 5, "selected" : 4, "answer" : 120 },
+    { "available" : 6, "selected" : 3, "answer" : 120 },
+    { "available" : 6, "selected" : 4, "answer" : 360 },
+    { "available" : 6, "selected" : 5, "answer" : 720 },
+    { "available" : 7, "selected" : 3, "answer" : 210},
+    { "available" : 7, "selected" : 4, "answer" : 840},
+    { "available" : 7, "selected" : 5, "answer" : 2520},
+    { "available" : 7, "selected" : 6, "answer" : 5040}
+]
