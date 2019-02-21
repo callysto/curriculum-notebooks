@@ -16,8 +16,8 @@ var drag_handler = d3.behavior.drag()
 
 function dragged(d) {
   d3.select(this)
-    .attr("cx", d3.event.x  )
-    .attr("cy", d3.event.y  );
+    .attr("cx", d.x = d3.event.x  )
+    .attr("cy", d.y = d3.event.y  );
 }
 
 function dragstart(d) {
