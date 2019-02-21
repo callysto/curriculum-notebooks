@@ -16,8 +16,8 @@ var drag_handler = d3.behavior.drag()
 
 function dragged(d) {
   d3.select(this)
-    .attr("cx", d.x = d3.event.x  )
-    .attr("cy", d.y = d3.event.y  );
+    .attr("cx", d3.event.x  )
+    .attr("cy", d3.event.y  );
 }
 
 function dragstart(d) {
@@ -145,7 +145,7 @@ function createCircles(data, d3Object, dragFunc, nCircles) {
             .attr("fill", function(d) { return d.color;})
             .style("stroke", function(d) { return d.border; });
 
-  var draggableCircles = d3Object.selectAll("circle").filter(function(d, i) { return i % 2 == 1 && i < nCircles*2; }).call(dragFunc);
+    d3Object.selectAll("circle").filter(function(d, i) { return i % 2 == 1 && i < nCircles*2; }).call(drag_handler);
 }
 
 // After circles have been given a new position, update the circles position.
