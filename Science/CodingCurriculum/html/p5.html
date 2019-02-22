@@ -1,0 +1,510 @@
+<!doctype html>
+<html>
+    <head>
+        
+    </head>
+    <body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.js"></script>
+        <script>
+            console.log(p5);
+            
+            var DEBUG = 1;
+            // Define a Point class which has an x and a y for our Nodes
+            function Point(x=0, y=0) {
+                this.x = x;
+                this.y = y;
+                this.areEqual = function(point) {
+                    if(point.x === this.x && point.y === this.y)
+                        return true;
+                    return false;
+                }
+            }
+
+            // Define an "enum" to store the value of which direction the "vehicle" is animating
+            var animation = Object.freeze({ "NONE" : -1, "LEFT" : 0, "RIGHT" : 1, "UP" : 2, "DOWN" : 3 });
+
+            // Define an "enum" to register how the game ended
+            var gameCodes = Object.freeze({ "SUCCESS" : 0, "FAILURE" : 1 });
+
+            // Global Variables
+            var rows = 5,
+                cols = 5,
+                trafficControl = [
+                                    [ 1, 0, 1, 0, 1 ],
+                                    [ 0, 1, 0, 1, 0 ],
+                                    [ 1, 0, 0, 0, 1 ],
+                                    [ 0, 1, 0, 1, 0 ],
+                                    [ 1, 0, 1, 0, 1 ],
+                                    [ 1, 1, 1, 1, 1 ]
+                                ],
+                trafficNodes = [],
+                nodesVisited = [],
+                nodeDiameter = 30,
+                carDiameter = 20,
+                vehicleSpeed = 1,
+                circles = [],
+                vehicleRotation = 0,
+                vehicleMovement = new Point(),
+                animationDirection = animation.none,
+                currentNode = new Point(),
+                nextNode = new Point(),
+                endNode = new Point(),
+                currentY = 0,
+                currentX = 0,
+                run = false;
+
+            // p5 setup
+            function setup() {
+                let canvas = createCanvas(windowWidth - 50, windowHeight-50);
+                canvas.style("display", "block");
+                let stepX = canvas.width / cols,
+                    stepY = canvas.height / rows;
+                let x = stepX / 2,
+                    y = stepY / 2;
+
+                // Create our nodes based on canvas height and width
+                for(let i = 0; i < rows; ++i) {
+                    trafficNodes.push([]);
+                    for(let j = 0; j < cols; ++j) {
+                        trafficNodes[i].push(new Point(x, y));
+                        x += stepX;
+                    }
+
+                    // Reset x and increase y
+                    x = stepX / 2;
+                    y += stepY;
+                }
+
+                // initialize the starting point of the "vehicle"
+                currentX = trafficNodes[0][0].x;
+                currentY = trafficNodes[0][0].y;
+
+                // Randomize the end node
+                endNode.y = 2;
+                endNode.x = 4;//Math.floor((Math.random() * (rows*cols)));
+
+                angleMode(RADIANS);
+                rectMode(CENTER);
+
+                // Don't loop draw right away
+                redraw();
+            };
+
+            function draw() {
+                background(200, 200, 255);
+                noFill();
+                // Create the nodes and draw lines in between them
+                for(let i = 0; i < rows; ++i) {
+                    for(let j = 0; j < cols; ++j) {
+                        if(i + 1 < rows) {
+                            line(trafficNodes[i][j].x, trafficNodes[i][j].y, trafficNodes[i+1][j].x, trafficNodes[i+1][j].y);
+                            // Determine Color
+                        }
+                        if(j + 1 < cols) {
+                            line(trafficNodes[i][j].x, trafficNodes[i][j].y, trafficNodes[i][j+1].x, trafficNodes[i][j+1].y);
+                        }
+
+                        if(i === endNode.y && j === endNode.x) {
+                            push();
+                                fill(51);
+                                textSize(50);
+                                text("End", 0, 0);
+                            pop();
+                            push();
+                                fill('red');
+                                ellipse(trafficNodes[i][j].x, trafficNodes[i][j].y, nodeDiameter, nodeDiameter);
+                                pop();
+                        }
+
+                        else if(trafficControl[i][j]) {
+                            push();
+                                fill('rgb(100%,0%,100%)');
+                                ellipse(trafficNodes[i][j].x, trafficNodes[i][j].y, nodeDiameter, nodeDiameter);
+                            pop();
+                        }
+
+                        else {
+                            push();
+                                fill('rgb(0,255,0)');
+                                ellipse(trafficNodes[i][j].x, trafficNodes[i][j].y, nodeDiameter, nodeDiameter);
+                            pop();
+                        }
+                    }
+                }
+
+                push();
+                    rotate(vehicleRotation);
+                    fill('rgb(0,255,0)');
+                    translate(0, 0);
+                    rect(currentX, currentY, carDiameter, carDiameter, 2);
+                pop();
+                if(run) {
+                    if(animationDirection === animation.LEFT) {
+                        if(currentX <= trafficNodes[nextNode.y][nextNode.x].x) {
+                            reachedDestination();
+                        }
+                    }
+
+                    else if(animationDirection === animation.RIGHT) {
+                        if(currentX >= trafficNodes[nextNode.y][nextNode.x].x) {
+                            reachedDestination();
+                        }
+                    }
+
+                    else if(animationDirection === animation.UP) {
+                        if(currentY <= trafficNodes[nextNode.y][nextNode.x].y) {
+                            reachedDestination();
+                        }
+                    }
+
+                    else if(animationDirection === animation.DOWN) {
+                        if(currentY >= trafficNodes[nextNode.y][nextNode.x].y) {
+                            reachedDestination();
+                        }
+                    }
+
+                    currentX += vehicleMovement.x;
+                    currentY += vehicleMovement.y;
+                }
+            };
+
+            function mouseClicked() {
+                //carRotation += PI / 3.0;
+                run = true;
+                reachedDestination();
+            }
+
+            function reachedDestination() {
+                currentNode = nextNode;
+                if(trafficNodes[currentNode.y][currentNode.x].areEqual(trafficNodes[endNode.y][endNode.x])) {
+                    gameOver(gameCodes.SUCCESS);
+                    return;
+                }
+
+
+                nodesVisited.push(currentNode);
+
+                // Determine if the current node is a horizontal or vertical intersection where 1 is vertical and 0 is horizontal
+
+                // Keep track if the vehicle actually finds somewhere to go.
+                let success = false;
+
+                // If this is a vertical intersection
+                if(trafficControl[currentNode.y][currentNode.x]) {
+                    // If the end node has a lower y value than the vehicle, check if we can go up
+                    if(trafficNodes[endNode.y][endNode.x].y < currentY) {
+                        success = evaluateAbove();
+                        if(DEBUG) {
+                            if(success) {
+                                console.log("Going to node above.")
+                            }
+
+                            else {
+                                console.log("Failed to find valid node above.")
+                            }
+                        }
+                    }
+
+                    // If the end node has a higher y value than the vehicle, check if we can go down
+                    if(!success || trafficNodes[endNode.y][endNode.x].y > currentY) {
+                        success = evaluateBelow();
+                        if(DEBUG) {
+                            if(success) {
+                                console.log("Going to node below.")
+                            }
+
+                            else {
+                                console.log("Failed to find valid node below");
+                            }
+                        }
+                    }
+
+                    // If it is not higher or lower, it is equal and we need to evaluate where to go based upon visited nodes
+                    if(!success)
+                        success = evaluateEquality(trafficControl[currentNode.y][currentNode.x]);
+
+                    // If the vehicle could not find anywhere to go, then we call game over
+                    if(!success) {
+                        gameOver(gameCodes.FAILURE);
+                    }
+                }
+
+                // else this is a horizontal interesection
+                else {
+                    // If the the end node is to the left of the current vehicles position
+                    if(trafficNodes[endNode.y][endNode.x].x < currentX) {
+                        // Check if we can go left
+                        success = evaluateLeft();
+                        if(DEBUG) {
+                            if(success) {
+                                console.log("Going to node to the left.")
+                            }
+
+                            else {
+                                console.log("Failed to find valid node to the left.")
+                            }
+                        }
+                    }
+
+                    // If we cannot go left or the end node is to the right of the vehicles current position
+                    if(!success || trafficNodes[endNode.y][endNode.x].x > currentX) {
+                        // Check if we can go right
+                        success = evaluateRight();
+                        if(DEBUG) {
+                            if(success) {
+                                console.log("Going to the node to the right.")
+                            }
+
+                            else {
+                                console.log("Failed to find valid node to the right");
+                            }
+                        }
+                    }
+
+                    // If we have not succeeded to go left or right, we may be equal with the end nodes x value, so we check for equality and see if we can go anywhere.
+                    if(!success)
+                        success = evaluateEquality(trafficControl[currentNode.y][currentNode.x]);
+
+                    // If we still have not succeeded, we end the game.
+                    if(!success)
+                        gameOver(gameCodes.FAILURE);
+                }
+            }
+
+            function evaluateAbove() {
+                // Is there a node above the current node?
+                if(currentNode.y - 1 >= 0) {
+                    // Have we visited that node before?
+                    if(!nodesVisited.includes(Point(currentNode.y-1, currentNode.x))) {
+                        // Set the movement to go up
+                        vehicleMovement.x = 0;
+                        vehicleMovement.y = -vehicleSpeed;
+                        // Set the next node to the node above
+                        nextNode.y = currentNode.y - 1;
+                        nextNode.x = currentNode.x;
+                        animationDirection = animation.UP;
+                        return true;
+                    }
+
+                    return false;
+                }
+
+                return false;
+            }
+
+            function evaluateBelow() {
+                // Is there a node below the current node?
+                if(currentNode.y + 1 < rows) {
+                    if(DEBUG)
+                        console.log("There is a node below!")
+
+                    if(!nodesVisited.includes(Point(currentNode.y+1,currentNode.x))) {
+                        if(DEBUG)
+                            console.log("Below node has not been visited.")
+                        // Set the movement to go down
+                        vehicleMovement.x = 0;
+                        vehicleMovement.y = vehicleSpeed;
+                        // Set the next node to the node below
+                        nextNode.y = currentNode.y + 1;
+                        nextNode.x = currentNode.x;
+                        animationDirection = animation.DOWN;
+                        return true;
+                    }
+
+                    if(DEBUG)
+                        console.log("Below node has been visited.");
+
+                    return false;
+                }
+
+                return false;
+            }
+
+            function evaluateRight() {
+                // Is there a node to the right?
+                if(currentNode.x + 1 < cols) {
+                    if(DEBUG)
+                        console.log("There is a node to the right!");
+                    // Has the node to the right been visited?
+                    if(!nodesVisited.includes(Point(currentNode.y, currentNode.x + 1))) {
+                        if(DEBUG)
+                            console.log("Right node has not been visited.");
+
+                        // If the node has not been visited, we set up our "vehicle" to go right.
+                        vehicleMovement.x = vehicleSpeed;
+                        vehicleMovement.y = 0;
+                        nextNode.x = currentNode.x + 1;
+                        nextNode.y = currentNode.y;
+                        animationDirection = animation.RIGHT;
+                        return true;
+                    }
+
+                    if(DEBUG)
+                        console.log("Right node has been visited");
+                    return false;
+                }
+
+                if(DEBUG)
+                    console.log("Cannot go right");
+
+                return false;
+            }
+
+            function evaluateLeft() {
+                // Is there a node to the left?
+                if(currentNode.x - 1 >= 0) {
+                    if(DEBUG)
+                        console.log("There is a node to the left!");
+                    // Has the node to the left been visited?
+                    if(!nodesVisited.includes(Point(currentNode.y, currentNode.x - 1))) {
+                        if(DEBUG)
+                            console.log("Left node has not been visited.");
+
+                        // If the node to the left has not been visited, then we set up the "vehicle" to go left.
+                        vehicleMovement.x = -vehicleSpeed;
+                        vehicleMovement.y = 0;
+                        nextNode.x = currentNode.x - 1;
+                        nextNode.y = currentNode.y
+                        animationDirection = animation.LEFT;
+                        return true;
+                    }
+
+                    if(DEBUG)
+                        console.log("Left node has been visited.");
+
+                    return false;
+                }
+
+                return false;
+            }
+
+            function evaluateEquality(direction) {
+                if(direction === 0) {
+                    // Check if there are nodes to the left and to the right
+                    let leftNode = currentNode.x - 1 >= 0;
+                    let rightNode = currentNode.x + 1 < cols;
+
+                    let ableToTravelLeft = false;
+                    if(leftNode && !nodesVisited.includes(Point(currentNode.y, currentNode.x - 1)))
+                        ableToTravelLeft = true;
+
+                    let ableToTravelRight = false;
+                    if(rightNode && !nodesVisited.includes(Point(curentNode.y, currentNode.x + 1)))
+                        ableToTravelRight = true;
+
+                    // If we have the option to go left and right then we randomize the direction
+                    if(ableToTravelLeft && ableToTravelRight) {
+                        //Randomize the direction
+
+                        // -1 means left and 1 means right
+                        let multipliers = [-1,1];
+                        let direction = Math.round(Math.random());
+
+                        nextNode.x = currentNode.x + multipliers[direction];
+                        nextNode.y = currentNode.y;
+                        vehicleMovement.x = 0;
+                        vehicleMovement.y = vehicleSpeed*multipliers[direction];
+                        if(multipliers[direction] > 0) {
+                            animationDirection = animation.DOWN;
+                        }
+                        else {
+                            animationDirection = animation.UP;
+                        }
+                        return true;
+                    }
+
+                    else if(ableToTravelLeft) {
+                        nextNode.x = currentNode.x - 1;
+                        nextNode.y = currentNode.y;
+                        vehicleMovement.x = -vehicleSpeed;
+                        vehicleMovement.y = 0;
+                        animationDirection = animation.LEFT;
+                        return true;
+                    }
+
+                    else if(ableToTravelRight) {
+                        nextNode.x = currentNode.x + 1;
+                        nextNode.y = currentNode.y;
+                        vehicleMovement.x = vehicleSpeed;
+                        vehicleMovement.y = 0;
+                        animationDirection = animation.RIGHT;
+                        return true;
+                    }
+
+                    return false;
+                }
+
+                else {
+                    // Check if there are nodes above and below
+                    let aboveNode = currentNode.y - 1 >= 0;
+                    let belowNode = currentNode.y + 1 < rows;
+
+                    let ableToTravelUp = false;
+                    if(aboveNode && !nodesVisited.includes(Point(currentNode.y - 1, currentNode.x)))
+                        ableToTravelUp = true;
+
+                    let ableToTravelDown = false;
+                    if(belowNode && !nodesVisited.includes(Point(currentNode.y + 1, currentNode.x)))
+                        ableToTravelDown = true;
+
+                    // If both the above node and below node have not been visitied, randomize the direction.
+                    if(ableToTravelUp && ableToTravelDown) {
+                        //Randomize the direction
+
+                        // -1 means up and 1 means down
+                        let multipliers = [-1,1];
+                        let direction = Math.round(Math.random());
+
+                        nextNode.x = currentNode.x
+                        nextNode.y = currentNode.y + multipliers[direction];
+                        vehicleMovement.x = 0;
+                        vehicleMovement.y = vehicleSpeed*multipliers[direction];
+                        if(multipliers[direction] > 0) {
+                            animationDirection = animation.DOWN;
+                        }
+                        else {
+                            animationDirection = animation.UP;
+                        }
+                        return true;
+                    }
+
+                    // If the above node has not been visited yet, go to it.
+                    else if(ableToTravelUp) {
+                        nextNode.x = currentNode.x;
+                        nextNode.y = currentNode.y - 1;
+                        vehicleMovement.x = 0;
+                        vehicleMovement.y = -vehicleSpeed;
+                        animationDirection = animation.UP;
+                        return true;
+                    }
+
+                    // If the below node has not been visited yet, go to it.
+                    else if(ableToTravelDown) {
+                        nextNode.x = currentNode.x;
+                        nextNode.y = curentNode.y + 1;
+                        vehicleMovement.x = 0;
+                        vehicleMovement.y = vehicleSpeed;
+                        animationDirection = animation.DOWN;
+                        return true;
+                    }
+
+                    return false;
+                }
+            }
+
+            function gameOver(endCode) {
+                // cancel the loop
+                noLoop();
+                run = false;
+
+                if(endCode === gameCodes.SUCCESS) {
+                    console.log("Congratulations! You successfully got the car to it's destination.");
+                }
+                else if(endCode === gameCodes.FAILURE) {
+                    console.log("Unfortunately, the car cannot get to it's destination. But don't worry! Just reset and try again!");
+                }
+            }  
+        </script>
+</body>
+<html>
