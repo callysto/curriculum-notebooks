@@ -1,0 +1,9 @@
+{
+    "1" : 
+    {
+        "question" : "Select all the independent events from the choices below:",
+        "answer" : [ 0, 2 ],
+        "options" : [ "Rolling a die", "Selecting multiple cards from a deck", "Spinning a wheel", "Drawing names from a container" ],
+        "explanation" : "When we roll a die, and then roll the die again, the result of the first roll does not impact the second roll. Therefore, rolling a die is an independent event. As is spinning a wheel. When we spin the wheel, the result of the first spin, does not affect the result of the second spin."  
+    }
+}

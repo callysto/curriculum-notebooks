@@ -1,0 +1,32 @@
+{
+    "1" : { "question": "A teacher has 12 students in their class, 5 girls and 7 boys. The teacher wants to make 4 groups of 3. What is the probability of the teacher making a group that is all boys? (Enter the answer as a percentage rounded to the nearest tength i.e 10.1%)",
+            "answer": "15.9%",
+            "solution": "$\\frac{\\frac{7!}{3!4!}}{\\frac{12!}{3!9!}} = \\frac{7!9!}{12!4!} = 15.9\\%$",
+            "explaination": "First we start with how many combinations there are to make a group of all boys. We have 7 boys and groups of 3 so we have $_7C_3$. Next we divide by how many different combinations there are when we include all 12 students. Therefore, we get $\\frac{_7C_3}{_{12}C_3}$."
+          },
+    "2" : { "question": "If the odds of the Seattle Seahawk winning the super bowl are 1:3, what is the odds of the opposition winning? (express as a non-reduceable fraction)",
+            "answer": "1/4",
+            "solution": "$1:3 = \\frac{3}{4}$ that Seattle wins = $\\frac{1}{4}$ the opposition wins",
+            "explaination": "We know that when we have odds in the form a:b that the odds of success are $\\frac{b}{a+b} = \\frac{3}{4}$. Therefore, the odds that the opposition wins is $\\frac{a}{a+b} = \\frac{1}{4}$"
+          },
+    "3" : { "question": "Is spinning a wheel (such as the the one on the show \"Wheel Of Fortune\") an independent or a dependent event?",
+            "answer": "independent",
+            "solution": "",
+            "explaination": "If we spin a wheel, and then spin a wheel a second time, the first spin does not affect the result of the second spin, therefore, spinning the wheel is an Independent event."
+          },
+    "4" : { "question": "What is the probability of pulling a face card out of a 52 card deck (with no replacement) and rolling a 6 with a fair 6-sided die? (express as a non-reduceable fraction)",
+            "answer": "2/39",
+            "solution": "$A \\cap B = P(A) * P(B) = \\frac{4}{13} * \\frac{1}{6} = \\frac{4}{78} = \\frac{2}{39} = 5.1\\%$",
+            "explaination": "Since there are 3 face cards in a deck (King, Queen, Jack) and 4 suits, we know that there are 12 face cards in total in a deck. Therefore, the probability of pulling a face card is $\\frac{12}{52} = \\frac{4}{13}$. The probability of rolling a 6 with a fair die is $\\frac{1}{6}$. Since these are compound events, we mulitply them together: "
+          },
+    "5" : { "question": "What is the probability of pulling a red card or a face card out of a 52 card deck? (express as a non-reduceable fraction)",
+            "answer" : "8/13",
+            "solution": "$A \\cup B = P(A) + P(B) - P(A \\cap B) = \\frac{1}{2} + \\frac{3}{13} - (\\frac{1}{2} * \\frac{3}{13}) = \\frac{13}{26} + \\frac{6}{26} - \\frac{3}{26} = \\frac{16}{26} = \\frac{8}{13} = 61.5\\%$",
+            "explaination": "First we determine what the probability of pulling a red card is. We know that half a deck is red and the other half is black. Therefore, the probability of pulling a red card is $\\frac{26}{52} = \\frac{1}{2}$. The probability of pulling a face card, as we have seen before, is $\\frac{3}{13}$. Since this is a $union$ question, we need to also minus the $intersection$ of these two events. Therefore, we get: "
+          },
+    "6" : { "question": "If the odds of you winning a bet are 8:1, how much money would you get back if you placed a $5 bet and won?",
+            "answer": "40",
+            "solution" : "$8:1 = 8 * x$ where x is the amount you bet = $ 8 * 5 = 40$",
+            "explaination": "As we saw in the section about odds, if we have a \"bookie\" gives us 8:1 odds to against a team, that means he is willing to pay out $8 for every dollar you bet if you win. Therefore, if you win, it's simply: " 
+          }
+}

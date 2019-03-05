@@ -1,0 +1,42 @@
+.question-container {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.question-container input[type=text] {
+    height: 30px;
+    text-align: center;
+}
+
+.question-container input[type=radio] {
+    margin-top: 10px;
+}
+
+.solutions-container {
+    margin-top: 20px;
+}
+
+.button-container {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+}
+
+.show-solutions-button {
+    margin-left: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color:red;
+}
