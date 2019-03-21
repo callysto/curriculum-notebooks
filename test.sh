@@ -16,7 +16,7 @@ fi
 retval=0
 
 for notebook in "${notebooks[@]}"; do
-    docker run -v "$script_dir:/notebooks" callysto/pims-r py.test --nbval-lax "/notebooks/$notebook"
+    docker run -u "$UID" -v "$script_dir:/notebooks" callysto/pims-r py.test --nbval-lax --disable-pytest-warnings "/notebooks/$notebook"
     [ $? -ne 0 ] && retval=1
 done
 
