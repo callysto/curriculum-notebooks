@@ -2,6 +2,8 @@
 
 IFS=$'\n'
 script_dir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+notebook_dir="$(basename $script_dir)"
+mount_point=/callysto
 
 cd "$script_dir"
 
@@ -13,12 +15,21 @@ else
     notebooks=($(git diff --name-only --diff-filter=d $TRAVIS_COMMIT_RANGE | grep \.ipynb$ | grep -v \.ipynb_checkpoints))
 fi
 
+# Copy notebooks to a volume and chown them to avoid permissions issues
+vid=$(docker volume create)
+cid=$(docker create -v "$vid:$mount_point" callysto/pims-r)
+docker cp "$script_dir" "$cid:$mount_point"
+docker rm $cid > /dev/null
+docker run --rm -u root -v "$vid:$mount_point" callysto/pims-r chown -R jupyter "$mount_point/$notebook_dir"
+
 retval=0
 
 for notebook in "${notebooks[@]}"; do
-    docker run -u "$UID" -v "$script_dir:/notebooks" callysto/pims-r py.test --nbval-lax --disable-pytest-warnings "/notebooks/$notebook"
+    docker run --rm -v "$vid:$mount_point" callysto/pims-r py.test --nbval-lax --disable-pytest-warnings "$mount_point/$notebook_dir/$notebook"
     [ $? -ne 0 ] && retval=1
 done
+
+docker volume rm $vid > /dev/null
 
 checkpoint_dirs=($(git ls-files *.ipynb_checkpoints/*))
 
