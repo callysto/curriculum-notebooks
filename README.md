@@ -3,9 +3,9 @@ Home of curriculum related notebook content developed by Callysto developers. Th
 
 ## Getting Started
 
-These instructions will get a copy of the project up and running on the remote callysto hub for development purposes.
+These instructions will get a copy of the project up and running on the remote Callysto Hub for development purposes.
 
-Sign in to the [Callysto hub](https://hub.callysto.ca) and start your server.
+Sign in to the [Callysto Hub](https://hub.callysto.ca) and start your server.
 
 Create a new Terminal instance in the hub and then clone this git repo. You should now see this repo in the hub.
 
@@ -17,7 +17,7 @@ Read the [training manual](https://github.com/callysto/training-manual) before y
 
 ## Contributing
 
-If you are a K-12 teacher please sign up using [this form](https://docs.google.com/forms/d/e/1FAIpQLSc0i25Ounu-VXhgvI8lkrIwjeDetcls9DbBEJZuuru5taa8PQ/viewform?embedded=true).
+If you are a K-12 teacher please sign up using [this form](https://callysto.ca/sign-up/).
 
 We welcome interest and pull requests from outside collaborators in both industry and academia.
 Please read the [contributing guidelines](CONTRIBUTING.md) before committing to this repo.
