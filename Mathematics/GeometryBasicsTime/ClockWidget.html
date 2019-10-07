@@ -1,0 +1,125 @@
+<style>
+ @import url('https://fonts.googleapis.com/css?family=Orbitron');
+    #digitalClock {
+        font-family: 'Orbitron', sans-serif;
+        font-size: 60px;
+    }
+</style>
+
+<div style="display: block; text-align: center;">
+    <canvas id="clockFace" width="400" height="400"></canvas>
+    <div>
+        <input type="range" min="0" max="3600" value="0" id="sliderTime" style="width: 380px; margin: 0 auto;">
+    </div>
+    <div style="padding: 30px 0;">
+        <span id="digitalClock">12:00:00</span>
+    </div>
+</div>
+<script>
+        var inputTime = document.getElementById('sliderTime');
+
+        //Followed MDN Canvas Animation Tutorial to create clock
+        function clock() {
+            var canvas = document.getElementById('clockFace');
+            var ctx = canvas.getContext('2d');
+            var x = canvas.width / 2;
+            var y = canvas.height / 2;
+            ctx.save();
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.translate(x, y);
+            ctx.rotate(-Math.PI / 2);
+            ctx.strokeStyle = 'black';
+            ctx.fillStyle = "white";
+            ctx.lineWidth = 8;
+            ctx.lineCap = 'round';
+
+            // Hour marks
+            ctx.save();
+            for (var i = 0; i < 12; i++) {
+                ctx.beginPath();
+                ctx.rotate(Math.PI / 6);
+                ctx.moveTo(150, 0);
+                ctx.lineTo(170, 0);
+                ctx.stroke();
+            }
+            ctx.restore();
+
+            // Minute marks
+            ctx.save();
+            ctx.lineWidth = 5;
+            for (i = 0; i < 60; i++) {
+                if (i % 5 != 0) {
+                    ctx.beginPath();
+                    ctx.moveTo(160, 0);
+                    ctx.lineTo(170, 0);
+                    ctx.stroke();
+                }
+                ctx.rotate(Math.PI / 30);
+            }
+            ctx.restore();
+
+            let dummyTime = new Date(0,0,0,0,0,0);
+            dummyTime.setSeconds(inputTime.value);
+            var sec = dummyTime.getSeconds();
+            var min = dummyTime.getMinutes();
+            var hr = dummyTime.getHours();
+            ctx.fillStyle = 'black';
+            updateDigitalClock(hr, min, sec);
+
+
+            // write Hours
+            ctx.save();
+            ctx.rotate(hr * (Math.PI / 6) + (Math.PI / 360) * min + (Math.PI / 21600) * sec);
+            ctx.lineWidth = 14;
+            ctx.beginPath();
+            ctx.moveTo(-20, 0);
+            ctx.lineTo(100, 0);
+            ctx.stroke();
+            ctx.restore();
+
+            // write Minutes
+            ctx.save();
+            ctx.rotate((Math.PI / 30) * min + (Math.PI / 1800) * sec);
+            ctx.lineWidth = 10;
+            ctx.beginPath();
+            ctx.moveTo(-28, 0);
+            ctx.lineTo(160, 0);
+            ctx.strokeStyle = "#0000FF"
+            ctx.stroke();
+            ctx.restore();
+
+            // Write seconds
+            ctx.save();
+            ctx.rotate(sec * Math.PI / 30);
+            ctx.strokeStyle = '#D40000';
+            ctx.fillStyle = '#D40000';
+            ctx.lineWidth = 6;
+            ctx.beginPath();
+            ctx.moveTo(-30, 0);
+            ctx.lineTo(160, 0);
+            ctx.stroke();
+            ctx.beginPath();
+            ctx.arc(0, 0, 5, 0, Math.PI * 2, true);
+            ctx.fill();
+            ctx.fillStyle = 'rgba(0, 0, 0, 0)';
+            ctx.arc(0, 0, 3, 0, Math.PI * 2, true);
+            ctx.fill();
+            ctx.restore();
+
+            ctx.restore();
+
+            window.requestAnimationFrame(clock);
+        }
+        
+        function updateDigitalClock(h, m, s) {
+            let dClock = document.getElementById('digitalClock');
+            h += 12;
+            if (h === 13)
+                h = 1;
+            dClock.innerHTML = (h < 10 ? ("0" + h) : h) + ":" +
+                (m < 10 ? ("0" + m) : m) + ":" +
+                (s < 10 ? ("0" + s) : s);
+        }
+
+        window.requestAnimationFrame(clock);
+</script>

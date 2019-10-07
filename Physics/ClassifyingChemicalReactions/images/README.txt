@@ -1,0 +1,1 @@
+The images contained within this directory represent original artwork (excluding the top and bottom banners).

@@ -1,0 +1,15 @@
+language: minimal
+
+branches:
+  only:
+    - master
+    - staging
+
+services:
+  - docker
+
+before_install:
+  - docker pull callysto/pims-r
+
+script:
+  - ./test.sh

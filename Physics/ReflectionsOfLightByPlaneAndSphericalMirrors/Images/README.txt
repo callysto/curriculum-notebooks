@@ -1,0 +1,1 @@
+The images contained within this directory represent original work.
