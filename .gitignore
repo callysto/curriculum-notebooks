@@ -104,3 +104,9 @@ venv.bak/
 
 # End of https://www.gitignore.io/api/python
 .DS_Store
+<<<<<<< Updated upstream
+=======
+*checkpoint.ipynb
+*/.ipynb_checkpoints/*
+**/.DS_Store
+>>>>>>> Stashed changes
