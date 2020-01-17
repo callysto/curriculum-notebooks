@@ -1,93 +1,31 @@
 .
-├── CONTRIBUTING.md
-├── Chemistry
-│   ├── BalancingChemicalEquations
-│   │   ├── balancing-chemical-equations.ipynb
-│   │   └── images
-│   │       ├── README
-│   │       ├── balancing_example_1.0.svg
-│   │       ├── balancing_example_1.1.svg
-│   │       ├── conservation_of_mass.svg
-│   │       ├── general_equation_1.0.svg
-│   │       ├── general_equation_1.1.svg
-│   │       ├── general_equation_2.0.svg
-│   │       ├── general_equation_2.1.svg
-│   │       ├── general_equation_3.0.svg
-│   │       └── general_equation_3.1.svg
-│   ├── ConcentrationAndPH
-│   │   ├── concentration-and-ph.ipynb
-│   │   ├── images
-│   │   │   ├── Beaker.png
-│   │   │   ├── BeakerEmpty.png
-│   │   │   ├── BlueLitmus2.png
-│   │   │   ├── CanadaAmbientAirQuality.gif
-│   │   │   ├── RedLitmus2.png
-│   │   │   └── dropper2.png
-│   │   └── sources
-│   │       ├── animation2.js
-│   │       ├── dropperAnimation.js
-│   │       └── dropperstyle.css
-│   └── StoichiometryAndLimitingReactants
-│       ├── images
-│       │   ├── 3DMolecules.svg
-│       │   ├── Bread.jpg
-│       │   ├── BreadCheese.PNG
-│       │   ├── Cheese.jpg
-│       │   └── StoichiometryLimiting.svg
-│       └── stoichiometry-and-limiting-reactants.ipynb
-├── General
+├── Arts
 │   ├── MathematicsOfSound
 │   │   └── mathematics-of-sound.ipynb
-│   ├── MethodsUsedInStudyingTheEarth
-│   │   ├── images
-│   │   │   └── erosion.jpg
-│   │   └── methods-used-in-studying-the-earth.ipynb
-│   ├── MusicMathematicsOfPitch
-│   │   ├── images
-│   │   │   └── CircleFifths.png
-│   │   └── music-mathematics-of-pitch.ipynb
-│   ├── README.md
-│   └── SourcesOfEnergy
-│       ├── main.js
-│       ├── myMagics.py
-│       └── resources-and-recycling.ipynb
-├── Humanities
-│   ├── BubonicPlague
-│   │   ├── bubonic-plague-and-SIR-model.ipynb
-│   │   ├── bubonic-plague-grade-8.ipynb
-│   │   └── images
-│   │       ├── 1347.jpg
-│   │       ├── 1350.jpg
-│   │       ├── 1351.jpg
-│   │       ├── Alexandre_Yersin.jpg
-│   │       ├── Kitasato_Shibasaburo.jpg
-│   │       ├── SIR_1.jpg
-│   │       ├── SIR_2.jpg
-│   │       ├── after_1351.jpg
-│   │       ├── before_plague.jpg
-│   │       ├── callysto_notebook-banner_top.png
-│   │       ├── callysto_notebook-banners_bottom.png
-│   │       ├── early_1349.jpg
-│   │       ├── late_1349.jpg
-│   │       ├── mid_1348.jpg
-│   │       ├── minor-outbreak.jpg
-│   │       └── plague-transmission.jpg
-│   ├── French-Verb-Coding.ipynb
-│   ├── French-Verb-Conjugation.ipynb
-│   ├── IntroductionToPoetry
-│   │   ├── images
-│   │   │   └── WorldWithJapan.png
-│   │   ├── poetry-introduction.ipynb
-│   │   └── sources
-│   │       └── syllables.js
-│   └── Notebook_necessities
-│       └── SekouDmlconjug
-│           └── mlconjug
-│               └── __pycache__
-│                   ├── PyVerbiste.cpython-36.pyc
-│                   ├── __init__.cpython-36.pyc
-│                   └── mlconjug.cpython-36.pyc
+│   └── MusicMathematicsOfPitch
+│       ├── images
+│       │   └── CircleFifths.png
+│       └── music-mathematics-of-pitch.ipynb
+├── CONTRIBUTING.md
+├── EnglishLanguageArts
+│   └── IntroductionToPoetry
+│       ├── images
+│       │   └── WorldWithJapan.png
+│       ├── poetry-introduction.ipynb
+│       └── sources
+│           └── syllables.js
 ├── LICENSE.md
+├── Languages
+│   └── FrenchVerbCodingConjugation
+│       ├── French-Verb-Coding.ipynb
+│       ├── French-Verb-Conjugation.ipynb
+│       └── Notebook_necessities
+│           └── SekouDmlconjug
+│               └── mlconjug
+│                   └── __pycache__
+│                       ├── PyVerbiste.cpython-36.pyc
+│                       ├── __init__.cpython-36.pyc
+│                       └── mlconjug.cpython-36.pyc
 ├── Mathematics
 │   ├── AnalyzingRadicalFunctions
 │   │   ├── analyzing-radical-functions.ipynb
@@ -141,28 +79,6 @@
 │   │   │   └── marchtransactions.csv
 │   │   └── images
 │   │       └── spending_guidelines.jpg
-│   ├── CC-113-Transformations
-│   │   ├── exercises-transformations-of-objects-and-shapes.ipynb
-│   │   ├── images
-│   │   │   ├── Callysto_Notebook-Banner_Top_06.06.18.jpg
-│   │   │   ├── Callysto_Notebook-Banners_Bottom_06.06.18.jpg
-│   │   │   ├── exercisePlot1.png
-│   │   │   ├── exercisePlot2.png
-│   │   │   ├── image1.png
-│   │   │   ├── image2.png
-│   │   │   ├── image3.png
-│   │   │   ├── image4.png
-│   │   │   ├── image5.png
-│   │   │   ├── image6.png
-│   │   │   ├── newplot.png
-│   │   │   ├── plot.png
-│   │   │   ├── pointplot.png
-│   │   │   ├── pointplot2.png
-│   │   │   ├── pointplot3.png
-│   │   │   ├── pointplot4.png
-│   │   │   ├── rotationimage.png
-│   │   │   └── rotationimage2.png
-│   │   └── transformations-of-objects-and-shapes.ipynb
 │   ├── CentralTendency
 │   │   ├── central-tendency.ipynb
 │   │   ├── images
@@ -184,6 +100,8 @@
 │   │       ├── exampleData.csv
 │   │       ├── exampleDataSource.csv
 │   │       └── exampleData_NoOutlier.csv
+│   ├── CombinedLogLaw
+│   │   └── combined-log-law.ipynb
 │   ├── CountingTriangles
 │   │   ├── Counting_Triangles.ipynb
 │   │   ├── ggb.py
@@ -345,6 +263,8 @@
 │   ├── GraphingTwoVariables
 │   │   ├── graphing-two-variables.ipynb
 │   │   └── helper.py
+│   ├── HorizontalAndVerticalTranslations
+│   │   └── effects-of-horizontal-and-vertical-translations.ipynb
 │   ├── IndependentProbability
 │   │   ├── Images
 │   │   │   ├── Dice1.gif
@@ -381,6 +301,8 @@
 │   │   │   ├── intvl1.png
 │   │   │   └── intvl2.png
 │   │   └── intervals-and-inequalities.ipynb
+│   ├── MultiplicationDivisionFractions
+│   │   └── multiplication-division-fractions.ipynb
 │   ├── NumberSenseAndLogicalReasoning2
 │   │   ├── Fibonacci_Numbers.ipynb
 │   │   └── Golden2.png
@@ -400,6 +322,8 @@
 │   │   └── scripts
 │   │       ├── ArithmeticNumberLine.js
 │   │       └── GeometricNumberLine.js
+│   ├── OrderOfOperations
+│   │   └── order-of-operations.ipynb
 │   ├── ParallelogramArea
 │   │   ├── ParaEx.ggb
 │   │   ├── images
@@ -514,6 +438,28 @@
 │   │   │   ├── processing.min.js
 │   │   │   └── uibuttons.py
 │   │   └── statistical-reasoning.ipynb
+│   ├── Transformations
+│   │   ├── exercises-transformations-of-objects-and-shapes.ipynb
+│   │   ├── images
+│   │   │   ├── Callysto_Notebook-Banner_Top_06.06.18.jpg
+│   │   │   ├── Callysto_Notebook-Banners_Bottom_06.06.18.jpg
+│   │   │   ├── exercisePlot1.png
+│   │   │   ├── exercisePlot2.png
+│   │   │   ├── image1.png
+│   │   │   ├── image2.png
+│   │   │   ├── image3.png
+│   │   │   ├── image4.png
+│   │   │   ├── image5.png
+│   │   │   ├── image6.png
+│   │   │   ├── newplot.png
+│   │   │   ├── plot.png
+│   │   │   ├── pointplot.png
+│   │   │   ├── pointplot2.png
+│   │   │   ├── pointplot3.png
+│   │   │   ├── pointplot4.png
+│   │   │   ├── rotationimage.png
+│   │   │   └── rotationimage2.png
+│   │   └── transformations-of-objects-and-shapes.ipynb
 │   ├── TriangleArea
 │   │   ├── images
 │   │   │   ├── TriQ1.png
@@ -530,16 +476,26 @@
 │   │   └── triangle-area.ipynb
 │   ├── __pycache__
 │   │   └── CC47_functions.cpython-36.pyc
-│   ├── combined-log-law.ipynb
-│   ├── effects-of-horizontal-and-vertical-translations.ipynb
-│   ├── images
-│   │   ├── ex1.png
-│   │   ├── ex_soln.png
-│   │   ├── intvl1.png
-│   │   └── intvl2.png
-│   ├── multiplication-division-fractions.ipynb
-│   └── order-of-operations.ipynb
-├── Physics
+│   └── images
+│       ├── ex1.png
+│       ├── ex_soln.png
+│       ├── intvl1.png
+│       └── intvl2.png
+├── README.md
+├── Science
+│   ├── BalancingChemicalEquations
+│   │   ├── balancing-chemical-equations.ipynb
+│   │   └── images
+│   │       ├── README
+│   │       ├── balancing_example_1.0.svg
+│   │       ├── balancing_example_1.1.svg
+│   │       ├── conservation_of_mass.svg
+│   │       ├── general_equation_1.0.svg
+│   │       ├── general_equation_1.1.svg
+│   │       ├── general_equation_2.0.svg
+│   │       ├── general_equation_2.1.svg
+│   │       ├── general_equation_3.0.svg
+│   │       └── general_equation_3.1.svg
 │   ├── ClassifyingChemicalReactions
 │   │   ├── classifying-chemical-reactions.ipynb
 │   │   ├── helper.py
@@ -551,6 +507,19 @@
 │   │       ├── decomposition_reaction.svg
 │   │       ├── double_displacement_reaction.svg
 │   │       └── single_displacement_reaction.svg
+│   ├── ConcentrationAndPH
+│   │   ├── concentration-and-ph.ipynb
+│   │   ├── images
+│   │   │   ├── Beaker.png
+│   │   │   ├── BeakerEmpty.png
+│   │   │   ├── BlueLitmus2.png
+│   │   │   ├── CanadaAmbientAirQuality.gif
+│   │   │   ├── RedLitmus2.png
+│   │   │   └── dropper2.png
+│   │   └── sources
+│   │       ├── animation2.js
+│   │       ├── dropperAnimation.js
+│   │       └── dropperstyle.css
 │   ├── ExploringSolarSystem
 │   │   ├── Images
 │   │   │   ├── README
@@ -633,6 +602,10 @@
 │   │   │   ├── straight.png
 │   │   │   └── vacuum.png
 │   │   └── transmission-of-light.ipynb
+│   ├── MethodsUsedInStudyingTheEarth
+│   │   ├── images
+│   │   │   └── erosion.jpg
+│   │   └── methods-used-in-studying-the-earth.ipynb
 │   ├── NatureOfThermalEnergy
 │   │   ├── README.md
 │   │   ├── animations
@@ -735,7 +708,6 @@
 │   │   │   ├── qu_5-4.jpg
 │   │   │   └── qu_6.jpg
 │   │   └── projectile-motion.ipynb
-│   ├── README.md
 │   ├── RadiatonAnimations
 │   │   ├── alpha
 │   │   │   └── alpha.pde
@@ -781,6 +753,12 @@
 │   │   │   └── specular_diffuse_reflections.svg
 │   │   ├── helper.py
 │   │   └── reflections-of-light-by-plane-and-spherical-mirrors.ipynb
+│   ├── ScienceLabReportTemplate
+│   │   └── science-lab-report-template.ipynb
+│   ├── SourcesOfEnergy
+│   │   ├── main.js
+│   │   ├── myMagics.py
+│   │   └── resources-and-recycling.ipynb
 │   ├── SpecificAndLatentHeat
 │   │   ├── Images
 │   │   │   ├── README.txt
@@ -809,6 +787,14 @@
 │   │   │   ├── free_body_diagram_spring.svg
 │   │   │   └── rough_surfaces.svg
 │   │   └── StaticAndKineticFriction.ipynb
+│   ├── StoichiometryAndLimitingReactants
+│   │   ├── images
+│   │   │   ├── 3DMolecules.svg
+│   │   │   ├── Bread.jpg
+│   │   │   ├── BreadCheese.PNG
+│   │   │   ├── Cheese.jpg
+│   │   │   └── StoichiometryLimiting.svg
+│   │   └── stoichiometry-and-limiting-reactants.ipynb
 │   ├── ThermalExpansion
 │   │   ├── README.txt
 │   │   ├── images
@@ -832,9 +818,30 @@
 │       │   ├── speed.JPG
 │       │   └── uniform-motion.gif
 │       └── uniform-motion-and-uniformly-accelerated-motion.ipynb
-├── README.md
-├── Technology
-│   ├── ASL-Leap-Motion.ipynb
+├── SocialStudies
+│   └── BubonicPlague
+│       ├── bubonic-plague-and-SIR-model.ipynb
+│       ├── bubonic-plague-grade-8.ipynb
+│       └── images
+│           ├── 1347.jpg
+│           ├── 1350.jpg
+│           ├── 1351.jpg
+│           ├── Alexandre_Yersin.jpg
+│           ├── Kitasato_Shibasaburo.jpg
+│           ├── SIR_1.jpg
+│           ├── SIR_2.jpg
+│           ├── after_1351.jpg
+│           ├── before_plague.jpg
+│           ├── callysto_notebook-banner_top.png
+│           ├── callysto_notebook-banners_bottom.png
+│           ├── early_1349.jpg
+│           ├── late_1349.jpg
+│           ├── mid_1348.jpg
+│           ├── minor-outbreak.jpg
+│           └── plague-transmission.jpg
+├── TechnologyStudies
+│   ├── ASL-LeapMotion
+│   │   └── ASL-Leap-Motion.ipynb
 │   ├── IntroductionToDataStructures
 │   │   └── introduction-to-data-structures.ipynb
 │   ├── IntroductionToPython
@@ -848,4 +855,4 @@
 ├── files
 └── test.sh
 
-156 directories, 692 files
+164 directories, 691 files
