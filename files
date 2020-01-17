@@ -844,15 +844,14 @@
 │   │   └── ASL-Leap-Motion.ipynb
 │   ├── IntroductionToDataStructures
 │   │   └── introduction-to-data-structures.ipynb
-│   ├── IntroductionToPython
-│   │   ├── avg-flowchart.mp4
-│   │   ├── introduction-to-python-classes.ipynb
-│   │   ├── introduction-to-python.ipynb
-│   │   └── time-flowchart.mp4
-│   └── README.md
+│   └── IntroductionToPython
+│       ├── avg-flowchart.mp4
+│       ├── introduction-to-python-classes.ipynb
+│       ├── introduction-to-python.ipynb
+│       └── time-flowchart.mp4
 ├── binder
 │   └── environment.yml
 ├── files
 └── test.sh
 
-164 directories, 691 files
+164 directories, 690 files
