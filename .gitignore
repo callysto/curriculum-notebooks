@@ -107,3 +107,4 @@ venv.bak/
 .DS_Store
 *checkpoint.ipynb
 */.ipynb_checkpoints/*
+.DS_Store
