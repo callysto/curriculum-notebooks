@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Copyright 2017 mathsisfun.com -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="344.4" height="285.6" version="1.1" style="font-family:Verdana; font-size:16px; stroke-width:0.15px;">
+<defs/>
+<path style="fill:none; fill-opacity:0.75; stroke:black; stroke-width:1.02;" d="M 59.9,247.4 V 34.8"/>
+<text x="96.9" y="263.1" style="font-style:italic; fill:#19aeff;">1</text>
+<text x="27.2" y="94.6" style="font-size:19.5px; fill:#73d216;">15</text>
+<text x="27.1" y="41.1" style="font-size:19.5px; fill:#73d216;">20</text>
+<text x="27.1" y="147.8" style="font-size:19.5px; fill:#73d216;">10</text>
+<text x="39.6" y="200.9" style="font-size:19.5px; fill:#73d216;">5</text>
+<text x="39.5" y="254.2" style="font-size:19.5px; fill:#73d216;">0</text>
+<text x="94.1" y="15.8" style="font-size:21.3px; font-style:italic; fill:#3465a4;">Facts I got Correct</text>
+<text x="-167.2" y="14.2" transform="rotate(-90)" style="font-size:19.5px; fill:#73d216;">Facts</text>
+<text x="163.4" y="263.1" style="font-style:italic; fill:#19aeff;">2</text>
+<text x="230.1" y="263.1" style="font-style:italic; fill:#19aeff;">3</text>
+<text x="298" y="263.1" style="font-style:italic; fill:#19aeff;">4</text>
+<path style="fill:none; fill-opacity:0.75; stroke:#0084c8; stroke-width:1.04;" d="M 59.9,88 H 343.9"/>
+<path style="fill:none; fill-opacity:0.75; stroke:#0084c8; stroke-width:1.04;" d="M 59.9,141.2 H 343.9"/>
+<path style="fill:none; fill-opacity:0.75; stroke:#0084c8; stroke-width:1.04;" d="M 59.9,194.5 H 343.9"/>
+<path style="fill:none; fill-opacity:0.75; stroke:#0084c8; stroke-width:1.04;" d="M 59.9,247.7 H 343.9"/>
+<path style="fill:none; fill-opacity:0.75; stroke:#0084c8; stroke-width:1.04;" d="M 59.9,34.8 H 343.9"/>
+<path id="aa1" style="fill:none; fill-opacity:0.75; stroke:#b8e7ff; stroke-width:1;" d="M 59.9,98.7 H 343.9"/>
+<path id="aa2" style="fill:none; fill-opacity:0.75; stroke:#b8e7ff; stroke-width:1;" d="M 59.9,151.9 H 343.9"/>
+<path id="aa3" style="fill:none; fill-opacity:0.75; stroke:#b8e7ff; stroke-width:1;" d="M 59.9,205.1 H 343.9"/>
+<path id="aa4" style="fill:none; fill-opacity:0.75; stroke:#b8e7ff; stroke-width:1;" d="M 59.9,45.4 H 343.9"/>
+<use id="aa5" transform="translate(-4.267e-6,10.65)" xlink:href="#aa1" x="0" y="0"/>
+<use id="aa6" transform="translate(-4.267e-6,10.65)" xlink:href="#aa2" x="0" y="0"/>
+<use id="aa7" transform="translate(-4.267e-6,10.65)" xlink:href="#aa3" x="0" y="0"/>
+<use id="aa8" transform="translate(-4.267e-6,10.65)" xlink:href="#aa4" x="0" y="0"/>
+<use id="aa9" transform="translate(-4.267e-6,10.65)" xlink:href="#aa5" x="0" y="0"/>
+<use id="aa10" transform="translate(-4.267e-6,10.65)" xlink:href="#aa6" x="0" y="0"/>
+<use id="aa11" transform="translate(-4.267e-6,10.65)" xlink:href="#aa7" x="0" y="0"/>
+<use id="aa12" transform="translate(-4.267e-6,10.65)" xlink:href="#aa8" x="0" y="0"/>
+<use transform="translate(-4.267e-6,10.65)" xlink:href="#aa9" x="0" y="0"/>
+<use transform="translate(-4.267e-6,10.65)" xlink:href="#aa10" x="0" y="0"/>
+<use transform="translate(-4.267e-6,10.65)" xlink:href="#aa11" x="0" y="0"/>
+<use transform="translate(-4.267e-6,10.65)" xlink:href="#aa12" x="0" y="0"/>
+<path style="fill:none; fill-opacity:0.75; stroke:black; stroke-width:1.02;" d="M 343.9,247.4 V 34.8"/>
+<path style="fill:none; stroke:#19aeff; stroke-width:1px;" d="m 101.4,34.8 v 212"/>
+<path style="fill:none; stroke:#19aeff; stroke-width:1px;" d="M 168.6,34.3 V 247.7"/>
+<path style="fill:none; stroke:#19aeff; stroke-width:1px;" d="M 235.8,34.7 V 248.1"/>
+<path style="fill:none; stroke:#19aeff; stroke-width:1px;" d="M 303,34.3 V 247.7"/>
+<path style="fill:none; stroke:black; stroke-width:1.9;" d="m 101.4,215.8 67.2,-10.7 67.2,-85.2 67.2,-31.9"/>
+<text x="96.6" y="211.2" style="font-style:italic; fill:black;">3</text>
+<text x="162" y="200.1" style="font-style:italic; fill:black;">4</text>
+<text x="224.2" y="114.3" style="font-style:italic; fill:black;">12</text>
+<text x="292.4" y="83.5" style="font-style:italic; fill:black;">15</text>
+<text x="151" y="282.4" style="font-style:italic; fill:#19aeff;">Day Number</text>
+</svg>
