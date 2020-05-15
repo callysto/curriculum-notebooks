@@ -1,0 +1,69 @@
+<style>
+        @import url('https://fonts.googleapis.com/css?family=Patrick+Hand');
+
+        #btnOutline {
+            width: 400px;
+            height: 250px;
+            border: solid 2px black;
+            display: block;
+            border-radius: 50px;
+            background: rgb(126, 114, 230);
+            cursor: pointer;
+            margin: 0 auto;
+        }
+
+        #btnOutline:hover {
+            background: rgb(144, 134, 238);
+            box-shadow: 2px 2px 2px #0a0a0a;
+        }
+
+        #btnText {
+            display: block;
+            text-align: center;
+            vertical-align: middle;
+            line-height: 250px;
+            font-size: 5em;
+            font-family: 'Patrick Hand', cursive;
+
+        }
+    </style>
+     <div id="btnOutline" onclick="play(this)">
+        <span id="btnText">Start</span>
+    </div>
+
+    <script>
+        let gameState = 0;
+        let startTime;
+        let endTime;
+
+        function play(e) {
+            let text = e.firstElementChild;
+            switch (gameState) {
+                case 0:
+                    startTime = new Date();
+                    $('#btnText').fadeOut(800, function () {
+                        text.innerHTML = "15sec?";
+                        $('#btnText').fadeIn(800);
+                    });
+                    gameState++;
+                    break;
+                case 1:
+                    endTime = new Date();
+                    let time = new Date(endTime - startTime);
+                    let str = (time.getMinutes() < 10 ? ("0" + time.getMinutes()) : (time.getMinutes())) + ":" + (time.getSeconds() <
+                        10 ?
+                        ("0" + time.getSeconds()) : (time.getSeconds())) + ":" + time.getMilliseconds();
+                    text.innerHTML = str;
+                    gameState++;
+                    break;
+                case 2:
+                    delete startTime;
+                    delete endTime;
+                    text.innerHTML = "Start";
+                    gameState = 0;
+                    break;
+                default:
+                    gameState = 0;
+            }
+        };
+    </script>

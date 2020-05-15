@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Copyright 2017 mathsisfun.com -->
+<svg xmlns="http://www.w3.org/2000/svg" width="460" height="282.9" version="1.1">
+<defs/>
+<g transform="matrix(3.82348,0,0,3.82348,1893.04,21.6142)">
+<text x="-469" y="-0.5" style="font-family:'Comic Sans MS'; font-size:6.6px; font-style:italic; color:black; overflow:visible; fill:#ff6600; stroke-width:0.25px;">Favorite Type of Movie</text>
+<path style="color:black; overflow:visible; fill:#c4a000; stroke-width:0.03;"/>
+<path style="color:black; overflow:visible; fill:#c4a000; stroke-width:0.03;"/>
+<path style="color:black; overflow:visible; fill:#c4a000; stroke-width:0.03;"/>
+<path style="color:black; overflow:visible; fill:#c4a000; stroke-width:0.03;"/>
+<path style="color:black; overflow:visible; fill:#c4a000; stroke-width:0.03;"/>
+<path d="m -406.2,28.8 a 30.1,30.1 0 0 1 -17.1,37.1 l -11.5,-27.8 z" style="color:black; overflow:visible; fill:#204a87; stroke:black; stroke-width:0.15;"/>
+<path d="m -423.3,66 a 30.1,30.1 0 0 1 -28.2,-2.8 30.1,30.1 0 0 1 -13.4,-25 l 30.1,-1e-4 z" style="color:black; overflow:visible; fill:#ef2929; stroke:black; stroke-width:0.15;"/>
+<path d="M -462.9,27.4 A 30.1,30.1 0 0 1 -434.8,8.1 V 38.2 Z" style="color:black; overflow:visible; fill:#19aeff; stroke:black; stroke-width:0.15;"/>
+<path d="m -464.9,38.2 a 30.1,30.1 0 0 1 2,-10.7 l 28.1,10.7 z" style="color:black; overflow:visible; fill:#3465a4; stroke:black; stroke-width:0.15;"/>
+<path d="m -434.8,8.1 a 30.1,30.1 0 0 1 28.6,20.7 l -28.6,9.3 z" style="color:black; overflow:visible; fill:#ff9900; stroke:black; stroke-width:0.15;"/>
+<text x="-413.7" y="14" style="font-family:'Comic Sans MS'; font-size:4.2px; font-style:italic; color:black; overflow:visible; fill:#ff9900; stroke-width:0.21px;">Comedy: 4 (20%)</text>
+<text x="-405.7" y="52" style="font-family:'Comic Sans MS'; font-size:4.2px; font-style:italic; color:black; overflow:visible; fill:#204a87; stroke-width:0.21px;">Action: 5 (25%)</text>
+<text x="-489.7" y="66.2" style="font-family:'Comic Sans MS'; font-size:4.2px; font-style:italic; color:black; overflow:visible; fill:#ef2929; stroke-width:0.21px;">Romance: 6 (30%)</text>
+<text x="-495.5" y="31.7" style="font-family:'Comic Sans MS'; font-size:4.2px; font-style:italic; color:black; overflow:visible; fill:#3465a4; stroke-width:0.21px;">Drama: 1 (5%)</text>
+<text x="-482.9" y="10.9" style="font-family:'Comic Sans MS'; font-size:4.2px; font-style:italic; color:black; overflow:visible; fill:#19aeff; stroke-width:0.21px;">SciFi: 4 (20%)</text>
+</g>
+</svg>
