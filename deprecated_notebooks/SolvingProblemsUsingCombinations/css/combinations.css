@@ -1,0 +1,103 @@
+h1 {
+    text-align: center;
+}
+
+hr {
+    margin: 20px;
+}
+
+body {
+    padding: 10px;
+    background: burlywood;
+}
+
+.red {
+    color: red;
+}
+
+.blue {
+    color : blue;
+}
+
+.green {
+    color: green;
+}
+
+.hidden {
+   display: none;
+}
+
+.pascal-element {
+    stroke-width: 2;
+    stroke: black;
+}
+
+.clear-floats {
+    clear: both;
+}
+
+.exercise-solution-container {
+    margin-top: 20px;
+}
+
+#n-choose-r-table-container {
+    width: 50%;
+    float: left;
+}
+
+#n-choose-r-table-container table{
+    width: 100%;
+}
+
+#n-choose-r-table-container table, th, tr, td {
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+#n-choose-r-table-container th {
+   border: 1px solid black; 
+}
+
+#n-choose-r-table-container td {
+    border: 1px solid black;
+    width: 50px;
+    padding: 0px;
+    margin: 0px;
+}
+
+#n-choose-r-table-container tr {
+    height: 30px;
+}
+
+#n-choose-r-table-container p {
+    margin-top: 15px;
+}
+
+#n-choose-r-table-container input {
+    padding: 0px;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+#pascal-triangle-solutions-container {
+       width = 30%;
+       float: left;
+}
+
+#detailed-table-solutions {
+    margin-top: 10px;
+}
+
+#submit-table-button {
+   margin-top: 15px;
+}
+
+#combination-exercises-buttons-container {
+    padding-top: 10px;
+}
+
+#combination-exercises-container input {
+   margin: 10px;
+}

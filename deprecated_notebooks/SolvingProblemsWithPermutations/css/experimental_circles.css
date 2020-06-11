@@ -1,0 +1,196 @@
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: #0099cc;
+    margin-left: 10px;
+}
+
+hr {
+    border-color: #007399;
+}
+
+input[type=range] {
+    pointer-events: none;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    pointer-events:auto;
+}
+
+#reset-circles {
+    float: right;
+    display: none;
+}
+
+#experiment-container {
+    margin-top: 50px;
+}
+
+#correct-permutations-table {
+    border: 1px solid black;
+}
+
+#correct-permutations-table td {
+    border-top: 1px solid black;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#correct-subset-permutations-table {
+    width: 50%;
+    border: 1px solid black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+#correct-subset-permutations-table td {
+    border-top: 1px solid black;
+}
+
+#reset-circles-subset {
+    float: right;
+    display: none;
+}
+
+#slider-output {
+    margin-left: 10px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#slider-full-output {
+    margin-left: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: left;
+}
+
+#slider-fill-output {
+    margin-left: 10px;
+    margin-top: 20px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: left;
+}
+
+#perm-range-container {
+    width: 50%;
+    float: left;
+    padding-top: 20px;
+}
+
+#perm-subset-range-container {
+    width: 50%;
+}
+
+#perm-range-slider {
+    float: left;
+    width: 50%;
+}
+
+#perm-fillsubset-range-slider {
+    margin-top: 20px;
+    float: left;
+    width: 50%;
+}
+
+#perm-fullsubset-range-slider {
+    float: left;
+    width: 50%;
+    margin-top: 20px;
+}
+
+#circles1-answer-container {
+    width: 25%;
+}
+
+#circles1-answer {
+    width: 75%;
+    float: left;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+#circles1-diff-permutations {
+    margin-top: 50px;
+}
+
+#diff-perm {
+    margin-top: 3px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    float: left;
+}
+
+#circles-subset-answer-container {
+    width: 25%;
+    margin-top: 50px;
+}
+
+#circles-subset-answer {
+    width: 75%;
+    float: left;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.clear-float {
+    clear: both;
+}
+
+.slider {
+    display: inline-block;
+    -webkit-appearance: none;
+    /* Override default CSS styles */
+    appearance: none;
+    width: 100%;
+    /* Full-width */
+    height: 15px;
+    /* Specified height */
+    background: #d3d3d3;
+    /* Grey background */
+    outline: none;
+    /* Remove outline */
+    opacity: 0.7;
+    /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s;
+    /* 0.2 seconds transition on hover */
+    transition: opacity .2 border-radius: 5px;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.align-container {
+    margin-left: 20px;
+}
+
+.permutation-table-container {
+    float: right;
+    width: 40%;
+    height: 300px;
+}
+
+.experiment {
+    float: left;
+    width: 60%;   
+}
