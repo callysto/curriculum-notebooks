@@ -19,13 +19,6 @@
 │   └── FrenchVerbCodingConjugation
 │       ├── French-Verb-Coding.ipynb
 │       ├── French-Verb-Conjugation.ipynb
-│       └── Notebook_necessities
-│           └── SekouDmlconjug
-│               └── mlconjug
-│                   └── __pycache__
-│                       ├── PyVerbiste.cpython-36.pyc
-│                       ├── __init__.cpython-36.pyc
-│                       └── mlconjug.cpython-36.pyc
 ├── Mathematics
 │   ├── AnalyzingRadicalFunctions
 │   │   ├── analyzing-radical-functions.ipynb
@@ -193,8 +186,6 @@
 │   │   └── uiButtons.py
 │   ├── FractionMultiplication
 │   │   ├── FractionMultiplication.ipynb
-│   │   ├── __pycache__
-│   │   │   └── uiButtons.cpython-36.pyc
 │   │   ├── d3
 │   │   │   ├── LICENSE
 │   │   │   ├── d3.js
@@ -345,8 +336,6 @@
 │   │   └── patterns-and-relations.ipynb
 │   ├── Percentage
 │   │   ├── Percents.ipynb
-│   │   ├── __pycache__
-│   │   │   └── uiButtons.cpython-36.pyc
 │   │   └── uiButtons.py
 │   ├── PythagoreanTheorem
 │   │   ├── images
@@ -474,8 +463,6 @@
 │   │   │   ├── TriStep1.png
 │   │   │   └── TriStep2.png
 │   │   └── triangle-area.ipynb
-│   ├── __pycache__
-│   │   └── CC47_functions.cpython-36.pyc
 │   └── images
 │       ├── ex1.png
 │       ├── ex_soln.png
