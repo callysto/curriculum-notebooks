@@ -1,0 +1,180 @@
+School Name	Location	Dates	Religion	Notes	Latitude	Longitude
+Ahousaht Indian Residential School	Ashousaht, B.C.	1901-1950	Presbyterian		49.276165899999995	-126.05636729999999
+Akaitcho Hall	Yellowknife, N.W.T.	1958-1994	Federal	 dormitory for Sir John Franklin High School	62.453971700000004	-114.37178870000001
+Aklavik Anglican Indian Residential School	Single Point and Aklavik, N.W.T.	1924-1959	Anglican	moved to Aklavik in 1934 due to overcrowding	68.22027800000001	-135.011667
+Aklavik Catholic Indian Residential School 	Aklavik, N.W.T.	1925-1930	Roman Catholic	 Also known as Inuvik Indian Residential School. Relocated to Inuvik in 1959; Stringer Hall was Anglican Residence and Grollier Hall the RC residence.	68.219916	-135.0077881
+Albany Mission Indian Residential School	 Fort Albany, Ont	1912-1963	Roman Catholic		52.30636060000001	-81.7276723
+Alberni Indian residential School	Prince Albert, Sask.	1920-1973	United Church	Burned in 1917, rebuilt in 1920; burned again in 1937, rebuilt in 1939.	53.2	-105.75
+Alexandra Industrial School for Girls	Toronto, Ontario	1897-?			43.653226000000004	-79.3831843
+All Hallows School for Girls	Yale, BC	1884-1914	Anglican	amalgamated with St.George’s Indian Residential School, Lytton, BC 1917,] Diocese of New Westminster, Diocese of Cariboo.	49.561062	-121.42917209999999
+All Saints Indian Residential School	Aklavik, NWT	1936-1959	Anglican	Diocese of the Arctic, enrolment 100-150	68.219916	-135.0077881
+All Saints Indian Residential School	Lac La Ronge, SK	1906-1947	Anglican	 [amalgamated 1948 with new Prince Albert Indian Residential School, a.k.a. All Saints School until 1953,] Diocese of Saskatchewan, Authorized Enrolment – 50 to 100.	55.043040399999995	-104.903304
+Alnwick Industrial School	Alderville, Ont.	1838-1996	Methodist	Worked in partnership with Mount Elgin Indian Residential School.	44.181311	-78.06691699999998
+Amos Indian Residential school	Amos, Que.	1845-1965	Roman Catholic	Also known as St. Marc's Indian Residential School	45.5643919	-73.2075368
+Armstrong Indian Residential School	Armstrong, Ont.	1880-1891	Roman Catholic	Also known as Armstrong Home and School	47.71102	-79.82378620000001
+Aroland Indian Day School	Ontario				51.253775	-85.32321400000002
+Assiniboia Indian Residential School	Winnipeg, Man.	1957-1973	Roman Catholic		49.895136	-97.1383744
+Assumption Indian Residential School	Hay Lakes, Alta.	1953-1965	Roman Catholic	Also known as Hay Lakes Indian Residential School (Hay Lakes, Alta.)	53.1964307	-113.05477150000002
+Baptist Indian residential School	Whitehorse, YT	1990-1968	Baptist	Also known as Yukon Indian Residential School	60.7211871	-135.05684480000002
+Battleford Industrial School	Battleford, Sask.	1883-1943	Roman Catholic		52.73626820000001	-108.30524309999998
+Beauval Indian Residential School	Beauval, Sask.	1895-1983	Roman Catholic	 Following closure as an IRS the facility became Meadow Lake Tribal Council’s Beauval Indian Education Centre which closed in 1995.	55.15217999999999	-107.607293
+Big Trout Lake Indian School	Big Trout Lake, Ont.				53.7585877	-90.0763901
+Birtle Indian Residential School	Birtle, Man.	1889-1975	Presbyterian		50.4221254	-101.04495190000002
+Bishop Horden Memorial School	Moose Factory, Ont.	1855-1969	Anglican	Moose Factory IRS, Moose Fort IRS, Horden Hall.  Enrolment 30-250	51.262485999999996	-80.59296499999998
+Blue Quills Indian Residential School	St. Paul, Alta.	1862-1970	Roman Catholic	(Saddle Lake, Sacred Heart, formerly Lac la Biche), St. Paul, Alberta. Roman Catholic. Blue Quill's Indian Residential School opened in 1862 in Lac la Biche. This building was located on the corner of the Saddle Lake Reserve. Moved to Brocket in 1898 (Sacred Heart Indian Residential School; Saddle Lake Boarding School). Moved lastly to St. Paul in 1931 (St. Paul's Boarding School). In 1970, and became the first Native-administered school in Canada.	53.991116399999996	-111.2953051
+Bompas Hall Indian Residential School	Fort Simpson, N.W.T.	1960-1969	Anglican	Diocese of Yukon, Authorized Enrolment – 50.	61.86305600000001	-121.355
+Brandon Industrial School	Brandon, Man.	1892-1975	Methodist	Became a residential school in 1923.	49.848471	-99.95009040000001
+Breynant Hall 	Fort Smith, N.W.T.		Roman Catholic		60.00552	-111.8849379
+Camperville Indian Residential School	Camperville, Man.	1891-1971	Roman Catholic	 [Pine Creek Indian Residential School]	51.98784600000001	-100.147958
+Carcross Indian Residential School	Fortymile, Y.T.	1891-1910	Anglican	Also known as Forty Mile Boarding School, moved to Carcross in 1910 and changed to Carcoss IRS.	64.4238524	-140.53317719999998
+Carcross Indian Residential School	Carcross, Y.T.	1910-1969	Anglican	Also known as Chooutla Indian Residential School; Caribou Crossing Indian Residential School	60.167585100000004	-134.7073506
+Caughnawaga Indian Day School	Caughnawaga, Ont.		Roman Catholic		45.4107847	-73.68147629999999
+Cecilia Jeffery Indian Residential School	Kenora, Ont.	1900-1966	Presbyterian		49.767041600000006	-94.48939240000001
+Chapleau Indian Residential School	Chapleau, Ont.	1907-1948	Anglican	 [St. John's Indian Residential School,] 1907-1948, Diocese of Moosonee, Authorized Enrolment – 18 to 100. 	47.8423282	-83.40261079999998
+Charles Camsell Indian Hospital	Edmonton	1946-1996		Converted to Indian hospital from a residential school in 1946, with a new building added in 1967,[7] integrated in the 1970s, and closed in 1996	53.544389	-113.4909267
+Chesterfield Inlet Indian Residential School	Chesterfield Inlet, Nunavut	1929-1970	Roman Catholic	Also known as Turquetil Hall (name of residence). 	63.346514	-90.736827
+Chooutla Indian Residential School	Carcross, YT	1903-1969	Anglican	[Carcross Indian Residential School,] 1903-1969, Diocese of Yukon, Authorized Enrolment – 40 to 135.	60.167585100000004	-134.7073506
+Christ the King Day School	Moosonee, Ontario.				51.273089	-80.64004899999998
+Christie Indian Residential School	Tofino, B.C.	1900-1983	Roman Catholic	Also known as Kakawis Indian Residential School	49.1529842	-125.90661840000001
+Convent of Holy Angels Indian Residential School	Fort Chipewyan, Alta.	1902-1974	Roman Catholic	Also known as Holy Angels Indian Residential School, Our Lady of Victoria Indian Residential School, Fort Chipewyan and École des Saints-Anges.	58.719637	-111.140697
+Coppermine Residential School	Coppermine, Nunavut	1955-1959	Anglican	 [Coppermine Tent Hostel], Diocese of the Arctic, Authorized Enrolment – 30 to 44.	67.813457	-115.081253
+Cowesses Indian Residential School	Marieval, Sask.	1936-1975	Roman Catholic	 [Marieval Indian Residential School]	50.582181	-102.64784
+Cristal Lake Residential High School	Cristal Lake, Ont.	1976-1986	Mennonite	Merged with Stirland Lake in 1986.	45.3881076	-78.4895007
+Cross Lake Indian Residential School	Cross Lake, Man.	1915-1972	Roman Catholic	 [Norway House Roman Catholic Indian Residential School]	54.7122699	-97.6132672
+Crowfoot Indian Residential School 	Cluny, Alta.	1909-1968	Roman Catholic	Also known as St. Joseph's Indian Residential School and St. Trinite Indian residential School	52.129444	-122.138333
+Crowstand Indian Residential School	Kamsak, Sask.	1888-1916	Presbyterian		51.5648837	-101.8984151
+Desmarais Indian Residential School	Wabasca, Alta.	1901-1973	Roman Catholic	Operated by the Roman Catholic Church. Also known as St. Martin's Bording School and the Wabasca Roman Catholic School.	56.0144698	-113.8215527
+Dunbow Industrial School	High River, Alta.	1888-1939	Roman Catholic	Also known as St. Joseph's Industrial School, High River Industrial School	50.5801021	-113.8707312
+Elkhorn Indian Residential School	Elkhorn, Alta.	1888-1949	Anglican	Also known as Washakada Indian Residential School, Diocese of Brandon, Authorized Enrolment – 70 to 130.	41.2831958	-96.2368465
+Emmanual College	Prince Albert, Sask.	1879-1923	Anglican		53.2	-105.75
+Ermineskin Indian Residential School	Hobbema, Alta.	1916-1973	Roman Catholic		52.83443199999999	-113.447207
+Federal Hostel at George River	Kangirsualujjuaq, QC.		Federal		58.71015479999999	-65.99511600000001
+Federal Hostel at Great Whale River	 Kuujjuarapik, QC.		Federal		55.27457	-77.7637839
+Federal Hostel at Payne Bay	Kangirsuk (Bellin), QC.		Federal		60.023415	-70.026235
+Federal Hostel at Port Harrison	Inukjuak, QC.		Federal		58.455121	-78.105103
+File Hills Indian Residential School	Okanese Reserve, Sask.	1889-1949	Presbyterian	Also known as File Hills Colony School	50.943895399999995	-103.3553102
+Fort Alexander Indian Residential School	Fort Alexander, Man.	1906-1970	Roman Catholic	Run by the Missionary Oblates of Marry Immaculate. Also known as Pine Hills Residential School	50.610446	-96.2987221
+Fort George Anglican Residential School	Fort George, QC.	1934-1979	Anglican	Also known as St. Philip's IRS. ,Diocese of Moosonee, Authorized Enrollment – 35 to 75.	53.83073899999999	-78.989746
+Fort George Catholic Indian Residential School	Fort George, QC.	1936-1952	Roman Catholic		53.83073899999999	-78.989746
+Fort McPherson Indian Residential School	Fort McPherson, N.W.T.	1951-1969	Anglican	Also known as Fleming Hall, Diocese of the Arctic, Authorized Enrolment – 20 to 100.	67.43644499999999	-134.880755
+Fort Providence Indian Residential School	Fort Providence, N.W.T.	1867-1953	Roman Catholic	Also known as Povidence Mission Indian School	61.3576238	-117.66065390000001
+Fort Resolution Indian Residential School	Fort Resolution, N.W.T.	1867-?	Roman Catholic		61.17205399999999	-113.67376399999999
+Fort Simpson Indian residential School	Fort Simpson, N.W.T.	1920-1970	Roman Catholic	Also known as: Fort Simpson Boarding School, including residences Bompas Hall, Lapointe Hall, St. Margaret's Hall	61.8627978	-121.35303300000001
+Fort Smith Indian Residential School	Fort Smith, Alta.	1955-1970	Roman Catholic	Also known as Breyant Hall	60.005278	-111.890556
+Fort William Sanitorium	Fort William, Ont.	1935-1974		Fort William was partially used as a provincial school from 1944 on to 1971, and a day school for the local Indigenous population between 1950 and 1953.[5] It is unclear whether the hospital was fully racially segregated at any point during its operation, or whether settler and Indigenous patients were treated in different wings or areas of the hospital at the same time.	48.380895100000004	-89.2476823
+Friendly Cove Day School	Yuquot, B.C.	1930-1964	Roman Catholic		49.591767	-126.618654
+Frobisher Bay Indian residential School	Frobisher Bay, NU	1965-?	Roman Catholic		62.833332999999996	-66.583333
+Garnier Indian Residential High School	Spanish, Ont.	1913-1958	Roman Catholic	Also known as St. Charles Garnier College. Part of the Spanish IRS facility.  Associated with St. Peter Claver School at Spanish.	46.194795899999995	-82.34227790000001
+Gordon's Indian Residential School	Punnichy, Sask.	1888-1996	Anglican	Gordon’s Reserve, Punnichy, SK, 1888-1969, Diocese of Qu’Appelle, Authorized Enrolment – 15 to 165. Anglican Church ceased involvement in 1969.	51.37119569999999	-104.29742359999999
+Greenville Mission Boys' Boarding School	Nass River, B.C.	1877-?	Methodist		55.952315299999995	-128.9271246
+Grollier Hall	Inuvik, N.W.T.	1959-1996	Roman Catholic	Hostel/residence which developed out of Alavik IRS relocation in 1959	68.3607437	-133.7230178
+Guy Hill Indian Residential School	The Pas, Man.	1955-1974	Roman Catholic		53.8255265	-101.24761290000001
+Hay River Indian Residential School	Hay River, N.W.T.	1989-1949	Anglican	Also known as St. Peter's Mission Indian Residential School	60.816218000000006	-115.7853652
+ Île-à-la-Crosse Indian Residential School	 Île-à-la-Crosse, Sask.	1878-1976	Roman Catholic		55.450564799999995	-107.90363020000001
+Immaculate Conception Boarding School	Stand-Off, Alta.	1884-1975	Roman Catholic	Also known as Blood Indian Residential School, St. Mary's Mission Boarding School	49.46799799999999	-113.30541000000001
+Inuvik Federal School	Inuvik, N.W.T.	1959-1975	Anglican	Also known as Stringer Hall	68.3607437	-133.7230178
+Kamloops Indian Residential School	Kamloops, B.C.	1893-1977	Roman Catholic	Also known as Kamloops Industrial School	50.674521999999996	-120.3272675
+Kitmaat Indian Residential School	Kitmaat, B.C.	1883-?	Methodist	Also known as Elizabeth Long Memorial School for Girls	54.054722	-128.657778
+Kootenay Indian Residential School	Cranbrook, B.C.	1890-1975	Roman Catholic	Also known as: St. Eugene's Indian Residential School, St. Mary's Indian Residential School	49.5129678	-115.7694002
+Kuper Island Indian Residential School	Penelakut, B.C.	1890-1975	Roman Catholic		48.96	-123.645
+Lake La Ronge Mission Indian Residential School	La Ronge, Sask.	1914-1947	Anglican	New school built in 1920	55.108230000000006	-105.28598899999999
+Lake St. Martin Indian Residential School	Fiser River, Man.	1874-1963	Anglican	New school building built in 1948.	51.438889	-97.366667
+La Tuque Indian Residential School	La Tuque, QC.	1963-1973	Anglican	Diocese of Quebec, Authorized Enrollment – 250. Anglican church involvement stopped in 1969.	47.4383405	-72.7839311
+Lac Seul Day School	Lac Seul, Ont.				50.3320854	-92.4819935
+Long Lac Day School	Long Lac, Ont.				49.78166599999999	-86.534706
+Lejac Indian Residential School	Fraser Lake, B.C.	1890-1976	Roman Catholic	New building in 1922.	54.054722	-124.848889
+Lockwood School	Cartwright, NL	?-1964			53.70777800000001	-57.016111
+Lower Post Indian Residential School	Lower Post, B.C.	1940-1975	Roman Catholic		59.92383699999999	-128.4863905
+Mackay Indian Residential School	Dauphin, Man.	1957-1988	Anglican	Anglian church involvement ceased in 1969. In June 1968 School switched to hostel model.  Renamed as Mackay Student Residence in 1969. Brandon Diocese. 	51.1500374	-100.0497004
+Mackay Indian Residential School	The Pas, Man.	1915-1933	Anglican	 Authorized Enrollment – 80. In 1922, administration of the school passed from the Diocese of Saskatchewan to the Missionary Society of the Church of England in Canada (MSCC), who operated the school until fire destroyed the main building in 1933. A replacement building was not built here or elsewhere in Manitoba. Many displaced students were sent to Elkhorn and Lac La Ronge schools.	53.8255265	-101.24761290000001
+Marieval Indian Residential School	Marieval, Sask.	1936-1975	Roman Catholic	Also known as Cowesses Indian Residential School	50.582181	-102.64784
+Makkovik Boarding School	Makkovik, NL	?-1960			55.086167599999996	-59.1764336
+McIntosh Indian Residential School	Kenora, Ont.	1924-1969	Roman Catholic		49.767041600000006	-94.48939240000001
+Metlakatla Indian Residential School	Metlakatla, B.C.	1870-1878	Anglican	Diocese of Caledonia	54.337324	-130.444669
+Methodist Coqualeetza Institute	Chlliwack, B.C.	1886-1937	Methodist	Later became the Coqualeetza Hospital and is now the Coqualeetza Cultural Education Centre	49.15794010000001	-121.9514666
+Mohawk Intitute	Brantford, Ont.	1831-1970	Anglican	Also known as: Mohawk Residential School, Mush Hole, Mohawk Manual Labour School.  Diocese of Huron, Authorized Enrollment 15 to 185. Currently home to Woodland Cultural Centre.	43.1393867	-80.26442540000002
+Morley Indian Residential School	Morley, Alta.	1886-1949	Methodist	Also known as: McDougall Orphanage and Residential School	51.16154299999999	-114.850968
+Mount Elgin Residential School	Muncey, Ont.	1848-1948	Methodist, United Church		42.820147	-81.440304
+Muscowequan Indian Residential School	Lestock, Sask.	1932-1981	Roman Catholic		51.31100000000001	-103.983
+Nain Boarding School	Nain, NL	?-1973			56.542222	-61.692778
+Northwestern Bay Day School	Fort Frances, Ont.				48.6099494	-93.3955282
+Norway House Methodist Indian Residential School	Norway House, Man.	1900-1974	Methodist, United Church		53.990278	-97.815556
+Norway House Roman Catholic Indian Residential School	Cross Lake, Man.	1915-1942	Roman Catholic	Also known as: Cross Lake Indian Residential School, Jack River Hostel	54.7122699	-97.6132672
+Old Sun Indian Residential School	Blackfoot Reserve, Gleichen, Alta.	1886-1978	Anglican	Beginning in 1966 students were bussed to local provincial schools. Also known as Old Sun Student Residence.  1971 Sept. Government reduces dormitory capacity to 75 as Mount Royal College takes over most of building for use as a Native Learning Centre (vocational studies) for adult education. Campus is known as the Old Sun Community College.	50.866111	-113.054722
+Peigan Indian Residential School	Brocket, Alta.	1892-1965	Anglican	Also known as Victoria Jubilee Home	49.55174599999999	-113.75093000000001
+Pelican Lake Indian residential School	Sioux Lookout, Ont.	1926-1978	Anglican	"1969 Apr. 1 Ottawa takes over full management of school with most Anglican staff (non-teaching) staying on and becoming government employees.
+
+1978 Student hostel at Pelican Lake closes, following completion of roads north and west of Sioux Lookout, affording students better access to new day schools in areas close to their homes."	50.0978321	-91.922038
+Pine Creek Indian Residential School	Camperville, Man.	1891-1971	Roman Catholic	Also known as Camperville Indian Residential School	51.98784600000001	-100.147958
+Pointe Bleue Indian Residential School	Pointe Bleue, QC.	1956-1965	Roman Catholic		48.566667	-72.233333
+Poplar Hill Indian Residential School	Poplar Hill, Ont.	1962-1989	Mennonite	Initially it had residential facilities for thirty students; by 1977 it had fifty-five students with thirty adult support staff.	43.0059896	-81.51412529999998
+Port Simpson Methodist Girls' School	Port Simpson, B.C.	1863-1950	Methodist		54.55438100000001	-130.43393
+Portage la Prairie Methodist Indian Residential School	Portage la Priarie, Man.	1891-1975	Methodist		49.9723205	-98.2903251
+Portage la Prairie Presbyterian Indian Residential School	Portage la Priarie, Man.	1895-1950	Presbyterian		49.97277800000001	-98.291944
+Prebyterian Coqualleetza Indian residential School	Chilliwack, B.C.	1861-1940	Presbyterian		49.157722	-121.950917
+Prince Albert Indian Residential School	Prince Albert, Sask.	1947-1996	Anglican	"The Prince Albert Indian Residential School was founded within months of the fire that destroyed the All Saints School at Lac La Ronge, February 2nd, 1947. At the outset, the new school served as the replacement for the Lac La Ronge School, only relocated 200 km south to Prince Albert.1968: Enrolment is 377, of which 352 are attending 14 city schools ranging from grades 1 to 9. Two residential classrooms remain, for the Beginners and the Opportunity classes.
+1969 Apr. 1: Government assumes operation of school and renames it Prince Albert Student Residence.
+1996: Student Residence closes and western part of site is soon cleared to make way for a municipal health centre. Peter Ballantyne Cree Nation uses remaining property for band offices and community social services, occupying some of the former dormitory cottages."	53.20334939999999	-105.7530705
+Qu'Appelle Indian Residential School	Lebret, Sask.	1884-1969	Roman Catholic	Also known as: Fort Qu'Appelle Indian Residential School; Lebret Indian Residential School	50.7571279	-103.7028345
+Red Deer Industrial School	Red Deer, Alta.	1889-1944	Methodist	Also known as: Edmonton Residential School	52.26811179999999	-113.8112386
+Regina Indian Residential School	Red Deer, Sask.	1890-1910	Presbyterian		53.02215699999999	-105.804125
+Round Lake Indian Residential School	Whitewood, Sask.	1929-1974	United Church		50.329875	-102.2666277
+Sandy Bay Indian residential School	Sandy Bay First Nation, Man.	1905-1970	Roman Catholic		53.7608608	-98.8138762
+Sarcee Indian Residential School	Calgary, Alta.	1894-1930	Anglican		51.05	-114.066667
+Sechlet Indian Residential School	Sechlet, B.C.	1912-1975	Roman Catholic	The grounds of the school are not used for St. Mary's Hospital	49.4741736	-123.7545601
+Sept-Iles Indian Residential School	Sept-Iles, QC.	1952-1967	Roman Catholic		50.21329679999999	-66.37579199999999
+Shingwauk Indian Residential School	Sault Ste. Marie, ON	1973-1970	Anglican	Now home to Algoma Unviersity	46.5136494	-84.33575259999998
+Shubenacadie Indian Residential School	Shubenacadie, N.S.	1922-1968	Roman Catholic		45.0879644	-63.40199989999999
+St. Albans Indian Residential School	Prince Albert, Sask.	?-1951	Anglican	amalgamated with All Saints to become Prince Albert Indian Residential School	53.20334939999999	-105.7530705
+St. Albert's Indian Residential School	St. Albert, Alberta	1941-1948	Roman Catholic		53.6304753	-113.625642
+St. Andrew’s Indian Residential School	Whitefish Lake, Atikameg, Alta.	1903-1950	Anglican	Diocese of Athabasca, Authorized Enrolment – 10 to 30.	55.908325	-115.638719
+St. Anne's Indian Residential School	Fort Albany, Ont.	1936-1964	Roman Catholic		52.30636060000001	-81.7276723
+St. Anthony’s Indian Residential School 	Onion Lake, Sask.	1891-1968	Roman Catholic	Also known as Onion Lake Catholic Indian Residential School	53.7171032	-109.9975204
+St. Anthony's Orphanage	St. Anthony, NL	?-1979			51.3704156	-55.595864799999994
+St. Barnabas Indian Residential School	Onion Lake, Sask.	1893-1951	Anglican	Burned down in 1943	53.717104000000006	-109.9976341
+St. Barnabas Indian Residential School	Sacree Reserve, Alta.	1892-1922	Anglican	iocese of Calgary, Authorized Enrollment – 6 to 35.	50.9561015	-114.3629877
+St. Bernard Indian Residential School	Grouard, Alta.	1939-1962	Roman Catholic		55.52322299999999	-116.159278
+St. Boniface Industrial School	St. Boniface, Man.	1891-1909	Roman Catholic		49.862588	-97.060083
+St. Bruno Indian Residential School	Joussard, Alta.	1913-1969	Roman Catholic	Also known as: Joussard Indian Residential School	55.397153	-115.95269309999999
+St. Cyprian's Indian Residential School	Brocket, Alta.	1890-1961	Anglican	Also known as: Peigan Indian Residential School	49.55174599999999	-113.75093000000001
+St. Francis Xavier Residential School	Calais, Alta.	1890-1961	Roman Catholic		49.412570	-82.137230
+St. George's Indian Residential School	Lytton, B.C.	1901-1979	Anglican	"Also known as: Lytton Indian Residential School.  1960s: Most students in residence at St. George’s attend provincial elementary and secondary schools in Lytton. Regular school bus service established in 1962.
+1969 Apr. 1: Government takes over other church run residential schools and hostels in Canada. Lytton facility (government run since 1922) is renamed St. George’s Student Residence and liaison ceases with Diocese of Cariboo over hiring matters. However, the government continues the practice of hiring Anglican chaplains for the hostel until closing date is determined. 1979: St. George’s Student Residence closes July 31. Property (including former farm lands) is set aside for the use of the Lytton Indian Band who remains undecided over possible future use of the hostel building. To accommodate displaced residents of the Lytton Hostel, the government constructs houses on the Nuuautin No. 2 and Inkluckcheen No. 21 Reserves as family dwellings for these children and parents."	50.233258	-121.581404
+St. Henri Indian residential School	Fort Vermilion, Alta.	1900-1968	Roman Catholic	Also known as: Fort Vermilion Residential School	58.38733250000001	-116.01970049999998
+Stirland Lake Residential High School	Stirland Lake, Ont.	1971-1991	Mennonite	Stirland Lake High School (also known as Wahbon Bay Academy) was established in 1971 by the Mennonite organization Northern Youth Programs Inc., funded by Indian Affairs. The residential school was established to educate and house twenty (20) Aboriginal boys; students attended and lived at the school for ten (10) months of the year. It was located at the remote location of Stirland Lake in Northwestern Ontario, approximately 170 miles north of Sioux Lookout Ontario.	52.3358821	-91.0380173
+St. John's Indian Residential School	Chapleau, Ont.	1907-1948	Anglican	Also known as Chapleau Indian Residential School	47.8423282	-83.40261079999998
+St. John's Indian Residential School	Wabasca, Alta.	1894-1966	Anglican	Also known as Wabasca Indian Residential School. Diocese of Athabasca, Authorized Enrolment – 15 to 60.	56.0144698	-113.8215527
+St. Joseph Indian Residential School	Fort William, Ont.	1936-1964	Roman Catholic	Also known as Fort William Residential School	48.38	-89.28
+St. Joseph Indian Residential School	Spanish, Ont.	1913-1962	Roman Catholic	Girls school at the Spanish IRS facility. 	46.194795899999995	-82.34227790000001
+St. Margaret's Indian Residential School	Fort Frances, Ont.	1902-1974	Roman Catholic	Also known as: Fort Frances Indian Residential School	48.6099494	-93.3955282
+St. Martin Boarding School	Wabasca, Alta.	1901-1973	Roman Catholic		56.0144698	-113.8215527
+St. Mary's Indian Residential School	Cardston, Alta.	1884-1975	Roman Catholic	Also known as: Immaculate Conception Indian Residential School and the Blood Indian Residential School.	49.19506629999999	-113.301798
+St. Mary's Indian Residential School	Kenora, Ont.	1894-1962	Roman Catholic		49.767041600000006	-94.48939240000001
+St. Mary's Mission Indian Residential School	Mission, B.C.	1861-1984	Roman Catholic	Also known as Mission Indian Residential School	49.13292720000001	-122.32616029999998
+St. Michael's Indian Residential School	Alert Bay, B.C.	1882-1974	Anglican	1969 Apr. 1 Indian Affairs takes over St. Michael’s Hostel and renames it Alert Bay Student Residence. Enrolment is 157, comprising children in Grades 1 to 7 (ages 6 to 15). 1974 Dec. 31 After five years of plummeting enrolment (48 in residence at close of the ’73-’74 year), the hostel closes and is turned over to the Nimpkish Band. Only four children arrived in September. Most children are billeted elsewhere in Alert Bay, as arranged by the Nimpkish Band. 1975 Building is acquired by the ‘Namgis First Nation for administrative use and ultimately (2003) renamed ‘Namgis House’.	50.58448550000001	-126.9254094
+St. Michael's Indian Residential School	Duck Lake, Sask.	1892-1964	Roman Catholic		52.8118546	-106.22602749999999
+St. Paul's Hall	Dawson, Yukon	1920-1952	Anglican	Also known as St. Paul's Hostel	64.06	-139.410833
+St. Paul's Indian Residential School	Blood Reserve, Cardston, Alta.	1889-1975	Anglican	"1969 April 1 Ottawa assumes control of St. Paul’s Student Residence. Staff transfer to government payroll. Anglican chaplaincy service continues.
+1975 Hostel closes.
+1978 Title to property and former school buildings transferred to local Indian band."	49.2025	-113.301944
+St. Paul's Industrial School	Selkirk County, Man.	1886-1906	Anglican	Also known as St. Ruper's Land Industrial School	50.1435276	-96.87542950000001
+st. Paul Des Métis Indian Residential School	St. Paul, Alta.	1898-1905	Roman Catholic		38.8615806	-96.4899205
+St. Peter Claver School	Spanish, Ont.	1913-1962	Roman Catholic	Garnier College later operated out of the St. Peter's School building at Spanish.	46.194795899999995	-82.34227790000001
+St. Peter's Indian Residential School	Hay River, N.W.T.	1895-1937	Anglican	Diocese of the Arctic, Authorized Enrollment – 25 to 50.	60.816218000000006	-115.7853652
+St. Peter's Indian Residential School	Lesser Slave Lake, Alta.	1894-1932	Anglican	Also known as Lesser Slave Lake Indian Residential School, Diocese of Athabasca, Authorized Enrolment – 20 to 35.	55.4312556	-115.60389640000001
+St. Philips Indian Residential School	Fort George, QC.	1934-1979	Anglican	Also known as Fort George Indian Residential School ,Diocese of Moosonee, Authorized Enrollment – 35 to 75.	53.83073899999999	-78.989746
+Stringer Hall	Inuvik, N.W.T.	1959-1975	Anglican	Also known as Inuvik Federal School	68.3607437	-133.7230178
+Sturgeon Lake Indian residential Lake	Sturgeon Lake, Alta.	1907-1957	Roman Catholic		55.09054769999999	-117.5170365
+St. Rupert's Land Industrial School	Selkirk County, Man.	1886-1906	Anglican	Also known as St. Paul's Industrial School.	50.1435276	-96.87542950000001
+Thomas Crosby Indian Residential School	Port Simpson, B.C.	1879-1950	Methodist	Also known as Thomas Crosby Girls Home and Thomas Crosby Boys Home	54.55438100000001	-130.43393
+Thunderchild Indian Residential School	Delmas, Sask.	1933-1948	Roman Catholic	Also known as Delmas Indian Residential School	52.929416	-108.5956629
+Victoria Catholic Convent School	Victoria, B.C.	1863-?	Roman Catholic		48.428420700000004	-123.36564440000001
+Washakada Indian Home	Elkhorn, Man.	1888-1940	Anglican	Also known as Elkhorn Indian Residential School	49.9753646	-101.24084029999999
+Waterhen Indian Residential School	Waterhen, Man.	1890-1900	Roman Catholic		51.7405947	-99.5356338
+Wawanosh Indian Residential School	Sault Ste. Marie, ON	1877-1900	Anglican	Affiliated with the Shingwauk Residential School. Merged with Shingwauk in 1900	46.5136494	-84.33575259999998
+Wikwemikong Indian Residential School	Wikwemikong First Nation, Ont.	1840-1913	Roman Catholic	Day School opened in 1840. Residential School in 1879. Following fire the school relocated to Spanish, Ontario and was renamed as separate girls/boys schools.	45.8036471	-81.72148990000002
+Williams Lake Indian Residential School	Williams Lake, B.C.	1890-1981	Roman Catholic	Also known as: Williams Lake Industrial School, Caribou Indian Residential School, St. Joseph’s Mission	52.129444	-122.138333
+Yale Indian Residential School	Yale, BC	1990-?	Anglican		49.561062	-121.42917209999999
+Youville Indian Residential School	St. Albert, Alberta	1892-1948	Roman Catholic		53.6304753	-113.625642
+Yukon Hall	Whitehorse, YT	1956-1965	Anglican	Residences	60.7211871	-135.05684480000002
+Yuquot Indian Residential School	Yuquot, B.C.	1901-1913	Roman Catholic		49.591767	-126.618654
