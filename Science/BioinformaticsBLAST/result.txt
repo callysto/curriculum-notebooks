@@ -1,0 +1,108 @@
+BLASTN 2.10.1+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: dog
+           45,094 sequences; 89,287,148 total letters
+
+
+
+Query= ENSCAFT00000045164.2 cds chromosome:CanFam3.1:8:2681124:2681423:1
+gene:ENSCAFG00000029747.2 gene_biotype:TR_V_gene
+transcript_biotype:TR_V_gene
+
+Length=300
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+ENSCAFT00000045164.2 cds chromosome:CanFam3.1:8:2681124:2681423:1...  555     2e-157
+ENSCAFT00000039036.3 cds chromosome:CanFam3.1:8:2673110:2673683:1...  424     6e-118
+
+
+>ENSCAFT00000045164.2 cds chromosome:CanFam3.1:8:2681124:2681423:1 gene:ENSCAFG00000029747.2 
+gene_biotype:TR_V_gene transcript_biotype:TR_V_gene
+Length=300
+
+ Score = 555 bits (300),  Expect = 2e-157
+ Identities = 300/300 (100%), Gaps = 0/300 (0%)
+ Strand=Plus/Plus
+
+Query  1    ATGGCCCAGAAGGTCACTCAGACTCAACCAGAAATGTTTGTTCGGGAGACAGATACTGTG  60
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1    ATGGCCCAGAAGGTCACTCAGACTCAACCAGAAATGTTTGTTCGGGAGACAGATACTGTG  60
+
+Query  61   ATCCTGCACTGCACGTATGACACTAGCGACAGTGATTATTATTTGTTCTGGTACAAACAG  120
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  61   ATCCTGCACTGCACGTATGACACTAGCGACAGTGATTATTATTTGTTCTGGTACAAACAG  120
+
+Query  121  CCTCCCAGCAGGGAGATGATTCTCATTATTCGCCAAGAAGTTTATAGACAAGATAATGCA  180
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  121  CCTCCCAGCAGGGAGATGATTCTCATTATTCGCCAAGAAGTTTATAGACAAGATAATGCA  180
+
+Query  181  ACAAATAATCGCTTCTCTGTGAACTTCCAGAAAGGAAATAAATCCTTCAGTCTCAAGATC  240
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  181  ACAAATAATCGCTTCTCTGTGAACTTCCAGAAAGGAAATAAATCCTTCAGTCTCAAGATC  240
+
+Query  241  TCAGACTCTCGGCTGGAGGATGCTGCAATGTATTTCTGTGTTCTTGCAGGAGCACAATGA  300
+            ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  241  TCAGACTCTCGGCTGGAGGATGCTGCAATGTATTTCTGTGTTCTTGCAGGAGCACAATGA  300
+
+
+>ENSCAFT00000039036.3 cds chromosome:CanFam3.1:8:2673110:2673683:1 gene:ENSCAFG00000025180.3 
+gene_biotype:protein_coding transcript_biotype:protein_coding
+Length=354
+
+ Score = 424 bits (229),  Expect = 6e-118
+ Identities = 279/302 (92%), Gaps = 7/302 (2%)
+ Strand=Plus/Plus
+
+Query  1    ATGGCCCAGAAGGTCACTCAGACTCAACCAGAAATGTTTGTTCGGGAGACAGATACTGTG  60
+            ||||||||||| |||||||||||||||||||| || | ||| ||||| ||||| ||||||
+Sbjct  58   ATGGCCCAGAAAGTCACTCAGACTCAACCAGACATATCTGTGCGGGACACAGAGACTGTG  117
+
+Query  61   ATCCTGCACTGCACGTATGACACTAGCGACAGTGATTATTATTTGTTCTGGTACAAACAG  120
+            | |||| |||||| |||||||||||| |||||| |  |||||||||||||||||||||||
+Sbjct  118  ACCCTGAACTGCATGTATGACACTAGTGACAGT-A--ATTATTTGTTCTGGTACAAACAG  174
+
+Query  121  CCTCCCAGCAGGGAGATGATTCTCATTATTCGCCAAGAAGTTTATAGACAAGATAATGCA  180
+            |||||||||||||||||||||||||||||||||||||||| |||||||||||| ||||||
+Sbjct  175  CCTCCCAGCAGGGAGATGATTCTCATTATTCGCCAAGAAGCTTATAGACAAGAGAATGCA  234
+
+Query  181  ACAAATAATCGCTTCTCTGTGAACTTCCAGAAAGGAAATAAATCCTTCAGTCTCAAGATC  240
+            ||||||||||||||||||||||||||||| ||||||||||||||||||||||||| ||||
+Sbjct  235  ACAAATAATCGCTTCTCTGTGAACTTCCAAAAAGGAAATAAATCCTTCAGTCTCAGGATC  294
+
+Query  241  TCAGACTCTCGGCTGGAGGATGCTGCAATGTATTTCTGTGTTCTTGCA-GGAG-CACAAT  298
+            |||||||||||||||||||||||||||||||||||||||| |||  || |||| ||||||
+Sbjct  295  TCAGACTCTCGGCTGGAGGATGCTGCAATGTATTTCTGTGCTCT--CATGGAGGCACAAT  352
+
+Query  299  GA  300
+            ||
+Sbjct  353  GA  354
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 24243944450
+
+
+  Database: dog
+    Posted date:  Sep 9, 2020  10:17 PM
+  Number of letters in database: 89,287,148
+  Number of sequences in database:  45,094
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5
