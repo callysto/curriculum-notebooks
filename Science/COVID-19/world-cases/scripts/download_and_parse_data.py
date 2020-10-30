@@ -264,7 +264,7 @@ widgets.Checkbox(
     # Button widget
     CD_button = widgets.Button(
         button_style='success',
-        description="Cumulative Case Count", 
+        description="Generate plot", 
         layout=Layout(width='15%', height='30px'),
         style=style
     )
