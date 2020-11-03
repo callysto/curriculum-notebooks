@@ -120,7 +120,7 @@ def order_dates(flat_df):
 
 
 # We will plot the log projection along with the cumulative number of cases
-def plot_log_function(country,final_df,type_case):
+def plot_log_function(country,final_df,type_case,case):
     
     latest_arr = []
     date_arr = []
@@ -129,12 +129,15 @@ def plot_log_function(country,final_df,type_case):
         latest_arr.append(final_df[final_df.index==country][item].sum())
 
     final_confirmed_red = pd.DataFrame({"Date":date_arr,"CumulativeTotal":latest_arr})
-
+    non_cumulative_cases = final_confirmed_red.diff(axis=0)
     
     
     x = final_confirmed_red.Date
-    y = final_confirmed_red.CumulativeTotal
-
+    if case==True:
+        y = final_confirmed_red.CumulativeTotal
+    else:
+        y = non_cumulative_cases.CumulativeTotal
+    
     npy = np.array(y.to_list())
     l_y = np.log10(npy, where=0<npy, out=np.nan*npy)
 
@@ -154,11 +157,11 @@ def plot_log_function(country,final_df,type_case):
     
 def draw_results(b):
     country = all_the_widgets[0].value
-    
+    case = all_the_widgets[1].value
     clear_output()
     display(tab)  ## Have to redraw the widgets
-    plot_log_function(country,final_confirmed,"confirmed")
-    plot_log_function(country,final_deaths,"fatal")
+    plot_log_function(country,final_confirmed,"confirmed",case)
+    plot_log_function(country,final_deaths,"fatal",case)
 
 if __name__ == "__main__":
 
@@ -249,12 +252,19 @@ if __name__ == "__main__":
         ensure_option=True,
         disabled=False,
         style=style
-    )]
+    ),
+widgets.Checkbox(
+    value=False,
+    description='Get cumulative results',
+    disabled=False,
+    indent=False,
+    style=style
+)]
 
     # Button widget
     CD_button = widgets.Button(
         button_style='success',
-        description="Cumulative Case Count", 
+        description="Generate plot", 
         layout=Layout(width='15%', height='30px'),
         style=style
     )
