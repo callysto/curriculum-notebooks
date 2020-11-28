@@ -1,0 +1,70 @@
+Province,Source,Percent,Renewable
+Manitoba,Hydro,96.8,Yes
+Newfoundland and Labrador,Hydro,95.6,Yes
+Quebec,Hydro,93.9,Yes
+British Columbia,Hydro,88.7,Yes
+Yukon,Hydro,87.1,Yes
+Northwest Territories,Hydro,37.4,Yes
+Ontario,Hydro,24.1,Yes
+New Brunswick,Hydro,18.7,Yes
+Saskatchewan,Hydro,14.9,Yes
+Nova Scotia,Hydro,9.3,Yes
+Alberta,Hydro,2.7,Yes
+Ontario,Nuclear,56.8,No
+New Brunswick,Nuclear,35.9,No
+Prince Edward Island,Wind,98.3,Yes
+Nova Scotia,Wind,11.6,Yes
+Ontario,Wind,7.5,Yes
+New Brunswick,Wind,6.1,Yes
+Alberta,Wind,5.5,Yes
+Quebec,Wind,5,Yes
+Saskatchewan,Wind,2.9,Yes
+Manitoba,Wind,2.8,Yes
+Northwest Territories,Wind,2.7,Yes
+British Columbia,Wind,2.5,Yes
+Newfoundland and Labrador,Wind,0.5,Yes
+British Columbia,Biomass,6.4,Yes
+New Brunswick,Biomass,4,Yes
+Alberta,Biomass,2.6,Yes
+Nova Scotia,Biomass,2.5,Yes
+Ontario,Biomass,1.4,Yes
+Quebec,Biomass,0.7,Yes
+Prince Edward Island,Biomass,0.6,Yes
+Manitoba,Biomass,0.1,Yes
+Saskatchewan,Biomass,0.1,Yes
+Alberta,Natural Gas,46.3,No
+Saskatchewan,Natural Gas,39.2,No
+Nova Scotia,Natural Gas,14.4,No
+Ontario,Natural Gas,7.7,No
+New Brunswick,Natural Gas,7.3,No
+Yukon,Natural Gas,6.3,No
+Northwest Territories,Natural Gas,2.7,No
+British Columbia,Natural Gas,1.4,No
+Newfoundland and Labrador,Natural Gas,0.5,No
+Quebec,Natural Gas,0.1,No
+Nunavut,Petroleum,100,No
+Northwest Territories,Petroleum,57.1,No
+Nova Scotia,Petroleum,12.1,No
+New Brunswick,Petroleum,10.9,No
+Yukon,Petroleum,6.1,No
+Newfoundland and Labrador,Petroleum,3.4,No
+Alberta,Petroleum,2.7,No
+British Columbia,Petroleum,1,No
+Prince Edward Island,Petroleum,0.7,No
+Quebec,Petroleum,0.3,No
+Manitoba,Petroleum,0.2,No
+Ontario,Petroleum,0.1,No
+Ontario,Solar,2.3,Yes
+Yukon,Solar,0.6,Yes
+Prince Edward Island,Solar,0.5,Yes
+Northwest Territories,Solar,0.2,Yes
+Saskatchewan,Solar,0.1,Yes
+Alberta,Solar,0.1,Yes
+Nova Scotia,Solar,0.1,Yes
+Manitoba,Solar,0.05,Yes
+Nova Scotia,Coal,49.9,No
+Saskatchewan,Coal,42.9,No
+Alberta,Coal,39.8,No
+New Brunswick,Coal,17.2,No
+Alberta,Other,0.3,Yes
+Nova Scotia,Tidal,0.2,Yes
