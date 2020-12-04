@@ -1,4 +1,4 @@
-Trait,Gene,Product,Source,Function
+Trait,Gene,Source,Product,Function
 "2,4-D herbicide tolerance",aad-12,Delftia acidovorans,aryloxyalkanoate di-oxygenase 12 (AAD-12) protein,"catalyzes the side chain degradation of 2,4-D herbicide"
 Altered lignin production,ccomt (inverted repeat),Medicago sativa (alfalfa),dsRNA that suppresses endogenous S-adenosyl-L-methionine: trans-caffeoyl CoA 3-O-methyltransferase (CCOMT gene) RNA transcript levels via the RNA interference (RNAi) pathway,reduces content of guaiacyl (G) lignin
 Altered lignin production,EgCAld5H,Eucalyptus grandis,CAld5H enzyme,regulates the syringyl monolignol pathway;
