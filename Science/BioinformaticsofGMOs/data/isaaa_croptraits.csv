@@ -1,0 +1,146 @@
+Trait,Gene,Source,Product,Function
+"2,4-D herbicide tolerance",aad-12,Delftia acidovorans,aryloxyalkanoate di-oxygenase 12 (AAD-12) protein,"catalyzes the side chain degradation of 2,4-D herbicide"
+Altered lignin production,ccomt (inverted repeat),Medicago sativa (alfalfa),dsRNA that suppresses endogenous S-adenosyl-L-methionine: trans-caffeoyl CoA 3-O-methyltransferase (CCOMT gene) RNA transcript levels via the RNA interference (RNAi) pathway,reduces content of guaiacyl (G) lignin
+Altered lignin production,EgCAld5H,Eucalyptus grandis,CAld5H enzyme,regulates the syringyl monolignol pathway;
+Anti-allergy,7crp,synthetic form of tolerogenic protein from Cryptomeria japonica,modified cry j 1 and cry j 2 pollen antigens containing seven major human T cell epitopes,triggers mucosal immune tolerance to cedar pollen allergens
+Antibiotic resistance,aad,Escherichia coli,3''(9)-O-aminoglycoside adenylyltransferase enzyme,allows selection for resistance to aminoglycoside antibiotics such as spectinomycin and streptomycin
+Antibiotic resistance,aph4 (hpt),Escherichia coli,hygromycin-B phosphotransferase (hph) enzyme,allows selection for resistance to the antibiotic hygromycin B
+Antibiotic resistance,bla,Escherichia coli,beta lactamase enzyme,detoxifies beta lactam antibiotics such as ampicillin
+Antibiotic resistance,hph,Streptomyces sp.,hygromycin phosphotransferase,allows selection for resistance to the antibiotic hygromycin B
+Antibiotic resistance,nptII,Escherichia coli Tn5 transposon,neomycin phosphotransferase II enzyme,allows transformed plants to metabolize neomycin and kanamycin antibiotics during selection
+Antibiotic resistance,spc,Escherichia coli,spectinomycin adenyl transferase enzyme (not expressed in plant tissues),"confers resistance to spectinomycin/streptomycin antibiotics, which permits prokaryotic selection"
+Coleopteran insect resistance,cry34Ab1,Bacillus thuringiensis strain PS149B1,Cry34Ab1 delta-endotoxin,confers resistance to coleopteran insects particularly corn rootworm by selectively damaging their midgut lining
+Coleopteran insect resistance,cry35Ab1,Bacillus thuringiensis strain PS149B1,Cry35Ab1 delta-endotoxin,confers resistance to coleopteran insects particularly corn rootworm by selectively damaging their midgut lining
+Coleopteran insect resistance,cry3A,Bacillus thuringiensis subsp. tenebrionis,cry3A delta endotoxin,confers resistance to coleopteran insects by selectively damaging their midgut lining
+Coleopteran insect resistance,cry3Bb1,Bacillus thuringiensis subsp. kumamotoensis,Cry3Bb1 delta endotoxin,confers resistance to coleopteran insects particularly corn rootworm by selectively damaging their midgut lining
+Coleopteran insect resistance,dvsnf7,Western Corn Rootworm (Diabrotica virgifera virgifera),double-stranded RNA transcript containing a 240 bp fragment of the WCR Snf7 gene,RNAi interference resulting to down-regulation of the function of the targeted Snf7 gene leading to Western Corn Rootworm mortality.
+Coleopteran insect resistance,mcry3A,synthetic form of cry3A gene from Bacillus thuringiensis subsp. tenebrionis,modified Cry3A delta-endotoxin,confers resistance to coleopteran insects particularly corn rootworm pests by selectively damaging their midgut lining
+Delayed fruit softening,pg (sense or antisense),Lycopersicon esculentum,no functional polygalacturonase enzyme is produced (transcription of the endogenous enzyme is suppressed by a gene silencing mechanism),"inhibits the production of polygalacturonase enzyme responsible for the breakdown of pectin molecules in the cell wall, and thus causes delayed softening of the fruit"
+Delayed ripening/senescence,acc,Ananas comosus,1-aminocyclopropane-1-carboxylic acid synthase,involved in catalyzing the penultimate step in ethylene biosynthesis
+Delayed ripening/senescence,acc (truncated),Lycopersicon esculentum,modified transcript of 1-amino-cyclopropane-1-carboxylic acid (ACC) synthase gene,"suppresses the normal expression of the native ACC synthase gene, resulting in reduced ethylene production and delayed fruit ripening"
+Delayed ripening/senescence,acc (truncated),Dianthus caryophyllus,modified transcript of 1-amino-cyclopropane -1-carboxylic acid (ACC) synthase gene,causes reduced synthesis of endogenous ethylene through a gene silencing mechanism and thus delayed senescence and longer vase life
+Delayed ripening/senescence,accd,Pseudomonas chlororaphis,1-amino-cyclopropane-1-carboxylic acid deaminase enzyme,"metabolizes the precursor of the fruit ripening hormone ethylene, resulting in delayed fruit ripening"
+Delayed ripening/senescence,anti-efe,Lycopersicon esculentum,antisense RNA of 1-amino-cyclopropane -1-carboxylate oxidase (ACO) gene (no functional ACO enzyme is produced),causes delayed ripening by suppressing the production of ethylene via silencing of the ACO gene that encodes an ethylene-forming enzyme
+Delayed ripening/senescence,sam-k,Escherichia coli bacteriophage T3,S-adenosylmethionine hydrolase enzyme,"causes delayed ripening by reducing the S-adenosylmethionine (SAM), a substrate for ethylene production"
+Dicamba herbicide tolerance,dmo,Stenotrophomonas maltophilia strain DI-6,dicamba mono-oxygenase enzyme,"confers tolerance to the herbicide dicamba (2-methoxy-3,6-dichlorobenzoic acid) by using dicamba as substrate in an enzymatic reaction"
+Drought stress tolerance,cspB,Bacillus subtilis,cold shock protein B,maintains normal cellular functions under water stress conditions by preserving RNA stability and translation
+Drought stress tolerance,EcBetA,Escherichia coli,choline dehydrogenase,catalyzes the production of the osmoprotectant compound glycine betaine conferring tolerance to water stress
+Drought stress tolerance,Hahb-4,Helianthus annuus,Isolated nucleic acid molecule encoding the transcription factor Hahb-4,the transcription factor Hahb-4 binds to a dehydration transcription regulating region of plant
+Drought stress tolerance,RmBetA,Rhizobium meliloti,choline dehydrogenase,catalyzes the production of the osmoprotectant compound glycine betaine conferring tolerance to water stress
+Enhanced Photosynthesis/Yield,bbx32,Arabidopsis thaliana,protein that interacts with one or more endogenous transcription factors to regulate the plant’s day/night physiological processes,to modulate plant's diurnal biology and to enhance growth and reproductive development
+Enhanced Provitamin A Content,crt1,Pantoea ananatis,phytoene desaturase enzyme CRTI,catalyzes the conversion of 15-cis-phytoene to all-trans-lycopene
+Enhanced Provitamin A Content,psy1,Zea mays,phytoene synthase ZmPSY1,"converts geranylgeranyl diphosphate into phytoene, and acts upstream of CRTI in the carotenoid biosynthesis pathway"
+Fertility restoration,barstar,Bacillus amyloliquefaciens,barnase ribonuclease inhibitor,restores fertility by repressing the inhibitory effect of barnase on tapetum cells of the anther
+Fertility restoration,ms45,Zea mays,ms45 protein,restores fertility by restoring the development of the microspore cell wall that gives rise to pollen
+Foliar Late Blight Resistance,Rpi-vnt1,Solanum venturii,late blight resistance protein,confers resistance to potato late blight
+Glufosinate herbicide tolerance,bar,Streptomyces hygroscopicus,phosphinothricin N-acetyltransferase (PAT) enzyme,eliminates herbicidal activity of glufosinate (phosphinothricin) herbicides by acetylation
+Glufosinate herbicide tolerance,pat,Streptomyces viridochromogenes,phosphinothricin N-acetyltransferase (PAT) enzyme,eliminates herbicidal activity of glufosinate (phosphinothricin) herbicides by acetylation
+Glufosinate herbicide tolerance,pat (syn),synthetic form of pat gene derived from Streptomyces viridochromogenes strain Tu 494,phosphinothricin N-acetyltransferase (PAT) enzyme,eliminates herbicidal activity of glufosinate (phosphinothricin) herbicides by acetylation
+Glyphosate herbicide tolerance,2mepsps,Zea mays,5-enolpyruvyl shikimate-3-phosphate synthase enzyme (double mutant version),"decreases binding affinity for glyphosate, thereby increasing tolerance to glyphosate herbicide"
+Glyphosate herbicide tolerance,cp4 epsps (aroA:CP4),Agrobacterium tumefaciens strain CP4,herbicide tolerant form of 5-enolpyruvulshikimate-3-phosphate synthase (EPSPS) enzyme,"decreases binding affinity for glyphosate, thereby conferring increased tolerance to glyphosate herbicide"
+Glyphosate herbicide tolerance,epsps (Ag),Arthrobacter globiformis,5-enolpyruvylshikimate-3-phosphate-synthase enzyme,confers tolerance to glyphosate herbicides
+Glyphosate herbicide tolerance,epsps grg23ace5,synthetic gene; similar to epsps grg23 gene from soil bacterium Arthrobacter globiformis,modified 5-enolpyruvylshikimate-3-phosphate synthase (EPSPS) protein or EPSPS ACE5 protein,confers tolerance to glyphosate herbicides
+Glyphosate herbicide tolerance,gat4601,Bacillus licheniformis,glyphosate N-acetyltransferase enzyme,"catalyzes the inactivation of glyphosate,conferring tolerance to glyphosate herbicides"
+Glyphosate herbicide tolerance,gat4621,Bacillus licheniformis,glyphosate N-acetyltransferase enzyme,"catalyzes the inactivation of glyphosate, conferring tolerance to glyphosate herbicides"
+Glyphosate herbicide tolerance,goxv247,Ochrobactrum anthropi strain LBAA,glyphosate oxidase,confers tolerance to glyphosate herbicides by degrading glyphosate into aminomethylphosphonic acid (AMPA) and glyoxylate
+Glyphosate herbicide tolerance,mepsps,Zea mays,modified 5-enolpyruvylshikimate-3-phosphate synthase (EPSPS) enzyme,confers tolerance to glyphosate herbicides
+Hemipteran Insect Resistance,mCry51Aa2,Bacillus thuringiensis,modified Bt Cry51Aa2 protein,confers resistance to hemipteran insects Lygus hesperus and L. lineolaris by selectively damaging their midgut lining
+Imazamox herbicide tolerance,AtAHAS,Arabidopsis thaliana,acetohydroxy  acid synthase large subunit,tolerance to the herbicide imazamox
+Increased Ear Biomass,athb17,Arabidopsis thaliana,a protein of the class II family of the homeodomain-leucine zipper (HD-Zip) transcription factors,Modulates plant growth and development and regulates gene expression
+Inhibited stem elongation (dwarfed),OsGA2ox1,rice (Oryza sativa L. cv Nipponbare),GA 2-oxidase,inhibits stem elongation and the development of reproductive organs; promotes early development of the inflorescence meristem
+Isoxaflutole herbicide tolerance,hppdPF W336,Pseudomonas fluorescens strain A32,modified p-hydroxyphenylpyruvate dioxygenase (hppd) enzyme,confers tolerance to HPPD-inhibiting herbicides (such as isoxaflutole) by reducing the specificity for the herbicide's bioactive constituent
+Late blight disease resistance,RB,Solanum bulbocastanum,late blight resistance protein,broad spectrum resistance against Phytophthora infestans races
+Lepidopteran insect resistance,cry1A,Bacillus thuringiensis,delta-endotoxin of the Cry1A group,confers resistance to lepidopteran insects by selectively damaging their midgut lining
+Lepidopteran insect resistance,cry1A.105,Bacillus thuringiensis subsp. kumamotoensis,"Cry1A.105 protein which comprises the Cry1Ab, Cry1F and Cry1Ac proteins",confers resistance to lepidopteran insects by selectively damaging their midgut lining
+Lepidopteran insect resistance,cry1Ab,Bacillus thuringiensis subsp. kurstaki,Cry1Ab delta-endotoxin,confers resistance to lepidopteran insects by selectively damaging their midgut lining
+Lepidopteran insect resistance,cry1Ab (truncated),synthetic form of Cry1Ab from Bacillus thuringiensis subsp. kumamotoensis,Cry1Ab delta-endotoxin,confers resistance to lepidopteran insects by selectively damaging their midgut lining
+Lepidopteran insect resistance,cry1Ab-Ac,synthetic fusion gene derived from Bacillus thuringiensis,Cry1Ab-Ac delta endotoxin (fusion protein),confers resistance to lepidopteran insects by selectively damaging their midgut lining
+Lepidopteran insect resistance,cry1Ac,Bacillus thuringiensis subsp. Kurstaki strain HD73,Cry1Ac delta-endotoxin,confers resistance to lepidopteran insects by selectively damaging their midgut lining
+Lepidopteran insect resistance,cry1C,synthetic gene derived from Bacillus thuringiensis,Cry1C delta-endotoxin,"confers resistance to lepidopteran insects, specifically Spodoptera"
+Lepidopteran insect resistance,cry1F,Bacillus thuringiensis var. aizawai,Cry1F delta-endotoxin,confers resistance to lepidopteran insects by selectively damaging their midgut lining
+Lepidopteran insect resistance,cry1Fa2,synthetic form of cry1F gene derived from Bacillus thuringiensis var. aizawai,modified Cry1F protein,confers resistance to lepidopteran insects by selectively damaging their midgut lining
+Lepidopteran insect resistance,cry2Ab2,Bacillus thuringiensis subsp. kumamotoensis,Cry2Ab delta-endotoxin,confers resistance to lepidopteran insects by selectively damaging their midgut lining
+Lepidopteran insect resistance,cry2Ae,Bacillus thuringiensis subsp Dakota,Cry2Ae delta-endotoxin,confers resistance to lepidopteran insects by selectively damaging their midgut lining
+Lepidopteran insect resistance,cry9C,Bacillus thuringiensis subsp. tolworthi strain BTS02618A,Cry9C delta endotoxin,confers resistance to lepidopteran insects by selectively damaging their midgut lining
+Lepidopteran insect resistance,mocry1F,synthetic form of cry1F gene from Bacillus thuringiensis var. aizawai,modified Cry1F protein,confers resistance to lepidopteran insects by selectively damaging their midgut lining
+Lepidopteran insect resistance,pinII,Solanum tuberosum,protease inhibitor protein,enhances defense against insect predators by reducing the digestibility and nutritional quality of the leaves
+Lepidopteran insect resistance,vip3A(a),Bacillus thuringiensis strain AB88,VIP3A vegetative insecticidal protein,confers resistance to feeding damage caused by lepidopteran insects by selectively damaging their midgut lining
+Lepidopteran insect resistance,vip3Aa20,Bacillus thuringiensis strain AB88,vegetative insecticidal protein (vip3Aa variant),confers resistance to feeding damage caused by lepidopteran insects by selectively damaging their midgut
+Low Gossypol,dCS,Gossypium hirsutum L.,"dsRNA that suppresses the expression of d-cadinene synthase gene that encode d-cadinene synthase, a key enzyme involved in gossypolbiosynthesis, thru RNAi pathway",silence the endogenous dCS genes
+Lowered Free Asparagine,asn1,Solanum tuberosum,double stranded RNA,Designed to generate dsRNA to down regulate Asn1 transcripts which lowers asparagine formation
+Lowered Reducing Sugars,PhL,Solanum tuberosum,double stranded RNA,Designed to generate dsRNA to down regulate PhL transcripts which lowers reducing sugars
+Lowered Reducing Sugars,R1,Solanum tuberosum,double stranded RNA,Designed to generate dsRNA to down regulate R1 transcripts which lowers reducing sugars
+Lowered Reducing Sugars,Vlnv,Solanum tuberosum,double stranded RNA,downregulates VInv transcripts which lowers reducing sugars
+Male sterility,barnase,Bacillus amyloliquefaciens,barnase ribonuclease (RNAse) enzyme,causes male sterility by interfering with RNA production in the tapetum cells of the anther
+Male sterility,dam,Escherichia coli,DNA adenine methylase enzyme,confers male sterility by interfering with the production of functional anthers and pollen
+Male sterility,zm-aa1,Zea mays,alpha amylase enzyme,hydrolyses starch and makes pollen sterile when expressed in immature pollen
+Mannose metabolism,pmi,Escherichia coli,Phosphomannose Isomerase (PMI) enzyme,metabolizes mannose and allows positive selection for recovery of transformed plants
+Mesotrione Herbicide Tolerance,avhppd-03,Oat (Avena sativa),p-hydroxyphenylpyruvate dioxygenase,Tolerance to Mesotrione herbicide
+Modified alpha amylase,amy797E,synthetic gene derived from Thermococcales spp.,thermostable alpha-amylase enzyme,enhances bioethanol production by increasing the thermostability of amylase used in degrading starch
+Modified amino acid,cordapA,Corynebacterium glutamicum,dihydrodipicolinate synthase enzyme,increases the production of amino acid lysine
+Modified flower color,5AT,Torenia sp.,anthocyanin 5-acyltransferase (5AT) enzyme,alters the production of a type of anthocyanin called delphinidin
+Modified flower color,bp40 (f3'5'h),Viola wittrockiana,"Flavonoid 3',5'-hydroxylase (F3'5'H) enzyme",catalyzes the production of the blue-coloured anthocyanin pigment delphinidin and its derivatives
+Modified flower color,cytb5,Petunia (Petunia hybrida),Cytochrome b5,Cyt b5 protein acts as an electron donor to the Cyt P450 enzyme and is required for full activity of the Cyt P450 enzyme Flavinoid 3' 5' hydroxylase in vivo and the generation of purple/ blue flower colours.
+Modified flower color,dfr,Petunia hybrida,dihydroflavonol-4-reductase (DFR) hydroxylase enzyme,catalyzes the production of the blue-coloured anthocyanin pigment delphinidin and its derivatives
+Modified flower color,dfr-diaca,Carnation (Dianthus caryophyllus),Dihydroflavonol-4-reductase enzyme,functions in the biosynthesis pathway of the pink/ red-coloured anthocyandin 3-O-(6-O-malylglucoside) pigment in carnations
+Modified flower color,hfl (f3'5'h),Petunia hybrida,"Flavonoid 3',5'-hydroxylase (F3'5'H) enzyme",catalyzes the production of the blue-coloured anthocyanin pigment delphinidin and its derivatives
+Modified flower color,sfl (f3'5'h),Sage (Salvia splendens),"Flavonoid 3',5'-hydroxylase",involved in the biosynthesis of a group of blue coloured anthocyanins called delphinidins
+Modified fruit color,b-Lyc,Ananas comosus,gamma-carotene,increases lycopene accumulation using RNAi technology
+Modified fruit color,e-Lyc,Ananas comosus,delta-carotene,increases lycopene accumulation using RNAi technology
+Modified fruit color,Psy,Tangerine (Citrus reticulata),phytoene,increases lycopene and/or beta-carotene levels
+Modified oil/fatty acid,fad2-1A (sense and antisense),Glycine max,no functional enzyme is produced (production of delta-12 desaturase enzyme is suppressed by RNA interference),reduces desaturation of 18:1 oleic acid to 18:2 linoleic acid; increases the levels of monounsaturated oleic acid and decreases the levels of saturated linoleic acid in the seed
+Modified oil/fatty acid,fad2.2,Carthamus tinctorius,no functional enzyme is produced (production of delta-12 desaturase enzyme is suppressed by RNA interference),downregulation of fad2.2 gene
+Modified oil/fatty acid,fatB,Carthamus tinctorius,no functional enzyme produced (production of FATB enzymes or acyl-acyl carrier protein thioesterases is suppressed by RNA interference),downregulates fatB gene
+Modified oil/fatty acid,fatb1-A (sense and antisense segments),Glycine max,no functional enzyme is produced (production of FATB enzymes or acyl-acyl carrier protein thioesterases is suppressed by RNA interference),"decreases the transport of saturated fatty acids out of the plastid, thereby increasing their availability to desaturation to 18:1 oleic acid; reduces the levels of saturated fatty acids and increases the levels of 18:1 oleic acid"
+Modified oil/fatty acid,gm-fad2-1 (partial sequence),Glycine max,no functional enzyme is produced (expression of the endogenous fad2-1 gene encoding omega-6 desaturase enzyme was suppressed by the partial gm-fad2-1 gene fragment),blocks the formation of linoleic acid from oleic acid (by silencing the fad2-1 gene) and allows accumulation of oleic acid in the seed
+Modified oil/fatty acid,gm-fad2-1 (silencing locus),Glycine max,no functional enzyme is produced (production of endogenous delta-12 desaturase enzyme was suppressed by an additional copy of the gm-fad2-1 gene via a gene silencing mechanism),blocks the conversion of oleic acid to linoleic acid (by silencing the endogenous fad2-1 gene) and allows accumulation of monounsaturated oleic acid in the seed
+Modified oil/fatty acid,Lackl-delta12D,Lachancea kluyveri,delta-12-desaturase,converts oleic acid to linoleic acid
+Modified oil/fatty acid,Micpu-delta-6D,Micromonas pusilla,delta-6-desaturase,convert a-linolenic acid to stearidonic acid
+Modified oil/fatty acid,Nc.Fad3,Neurospora crassa,delta 15 desaturase protein,"desaturates  certain endogenous fatty acids resulting in the production of stearidonic acid (SDA), an omega-3 fatty acid"
+Modified oil/fatty acid,OtD5E,Ostreococcus tauri,delta-5 elongase,"catalyzes the decarboxylation Claisen-like condensation of two carbons from malonyl-CoA to C20:5n-3-CoA   generating   C22:5n-3-ß-keto-C oA,   which   is   then   converted   to   C22:5n-3-CoA by endogenous enzymes"
+Modified oil/fatty acid,OtD6D,Ostreococcus tauri,delta-6 desaturase,converts C18:2n-6 fatty acids into C18:3n-6 fatty acids
+Modified oil/fatty acid,Pavsa-delta-4D,Pavlova salina,delta-4-desaturase,converts docosapentaenoic acid to docosahexaenoic acid
+Modified oil/fatty acid,Pavsa-delta-5D,Pavlova salina,delta-5-desaturase,converts eicosatetraenoic acid to eicosapentaenoic acid
+Modified oil/fatty acid,Picpa-omega-3D,Pichia pastoris,delta-15-/omega-3-desaturase,converts linoleic acid to a-linolenic acid
+Modified oil/fatty acid,PiO3D,Phytophthora infestans,omega-3  desaturase,converts C20:4n-6 into C20:5n-3
+Modified oil/fatty acid,PirO3D,Pythium irregulare,"two copies of the  coding sequence for an omega-3  desaturase, cO3D(Pir)1 and cO3D(Pir)2",converts C20:4n-6 into C20:5n-3
+Modified oil/fatty acid,Pj.D6D,Primula juliae,delta 6 desaturase protein,"desaturates certain endogenous fatty acids resulting in the production of stearidonic acid (SDA), an omega-3 fatty acid"
+Modified oil/fatty acid,PlD4D,Pavlova lutheri,delta-4 desaturase,convert C22:5n-3 into C22:6n-3
+Modified oil/fatty acid,PpD6E,Physcomitrella patens,delta-6 elongase,"catalyzes the decarboxylation Claisen-like condensation of two carbons from malonyl-CoA to C18:3n-6-CoA generating C20:3n-6-ß-keto-CoA, which is then converted to C20:3n-6-CoA by endogenous enzymes"
+Modified oil/fatty acid,PsD12D,Phytophthora sojae,delta-12 desaturase,convert C18:1n-9 into C18:2n-6
+Modified oil/fatty acid,Pyrco-delta-5E,Pyramimonas cordata,delta-5-elongase,converts eicosapentaenoic acid to docosapentaenoic acid
+Modified oil/fatty acid,Pyrco-delta-6E,Pyramimonas cordata,delta-6-elongase,convert stearidonic acid to eicosatetraenoic acid
+Modified oil/fatty acid,TcD4D,Thraustochytrium sp.,delta-4 desaturase,converts C22:5n-3 into C22:6n-3
+Modified oil/fatty acid,TcD5D,Thraustochytrium sp.,"two copies of the coding  sequence for a delta-5 desaturase, cD5D(Tc)1 and cD5D(Tc)2",te
+Modified oil/fatty acid,te,Umbellularia californica (bay leaf),12:0 ACP thioesterase  enzyme,increases the level of triacylglycerides containing esterified lauric acid (12:0)
+Modified oil/fatty acid,TpD6E,Thalassiosira pseudonana,delta-6 elongase,"catalyzes the decarboxylation Claisen-like condensation of two carbons from malonyl-CoA to C18:3n-6-CoA generating C20:3n-6-ß-keto-CoA, which is then converted to C20:3n-6-CoA by endogenous enzymes"
+Modified starch/carbohydrate,gbss (antisense fragment),Solanum tuberosum,no functional granule-bound starch synthase (GBSS) enzyme is produced; production of GBSS enzyme is suppressed by a gene silencing mechanism,reduces the levels of amylose and increases the levels of amylopectin in starch granules
+Multiple insect resistance,API,Sagittaria sagittifolia (arrowhead),arrowhead protease inhibitor protein A or B,confers resistance to a wide range of insect pests
+Multiple insect resistance,CpTI,Vigna unguiculata,trypsin inhibitor,confers resistance to a wide range of insect pests
+Multiple insect resistance,ecry3.1Ab,synthetic form of Cry3A gene and Cry1Ab gene from Bacillus thuringiensis,chimeric (Cry3A-Cry1Ab) delta endotoxin protein,confers resistance to coleopteran and lepidopteran insects by selectively damaging their midgut lining
+Nicotine reduction,NtQPT1 (antisense),Nicotiana tabacum,antisense RNA of quinolinic acid phosphoribosyltransferase (QPTase) gene; no functional QPTase enzyme is produced,"suppresses the transcription of the QPTase gene, thereby reducing the production of nicotinic acid, a precursor for nicotine"
+Non-Browning,PGAS PPO suppression gene,Malus domestica,double stranded RNA (dsRNA),double stranded RNA (dsRNA)from the suppression transcript is processed into small interfering RNAs (siRNAs) that direct the cleavage of the target mRNA through sequence complementarity and suppresses PPO resulting in apples with a non-browning phenotype.
+Nopaline synthesis,nos,Agrobacterium tumefaciens strain CP4,nopaline synthase enzyme,"catalyses the synthesis of nopaline, which permits the identification of transformed plant embryos"
+Oxynil herbicide tolerance,bxn,Klebsiella pneumoniae subsp. Ozaenae,nitrilase enzyme,eliminates herbicidal activity of oxynil herbicides (eg. bromoxynil)
+Phytase production,phyA,Aspergillus niger var. van Tieghem,3-phytase enzyme,increases the breakdown of plant phytates which bind phosphorus and makes the latter available to monogastric animals
+Phytase production,phyA2,Aspergillus niger strain 963,phytase enzyme,degrades phytate phosphorus in seeds into inorganic phosphate to be available to animals when used as feed
+Reduced Black Spot,ppo5,Solanum verrucosum,double stranded RNA,Designed to generate dsRNA to down regulate Ppo5 transcripts which lowers black spot bruise development
+Sulfonylurea herbicide tolerance,als,Arabidopsis thaliana,herbicide tolerant enzyme acetolactate synthase (als),allows the synthesis of essential amino acids in the presence of sulfonylurea herbicides
+Sulfonylurea herbicide tolerance,csr1-2,Arabidopsis thaliana,modified acetohydroxyacid synthase large subunit (AtAHASL),confers tolerance to imidazolinone herbicides
+Sulfonylurea herbicide tolerance,gm-hra,Glycine max,modified acetolactate synthase (ALS) enzyme,confers tolerance to applications of sulfonylurea – based herbicides
+Sulfonylurea herbicide tolerance,S4-HrA,Nicotiana tabacum cv. Xanthi,herbicide tolerant acetolactate synthase (ALS) enzyme,allows the plant to synthesize essential amino acids in the presence of sulfonylurea herbicides
+Sulfonylurea herbicide tolerance,surB,Nicotiana tabacum,herbicide tolerant acetolactate synthase (ALS) enzyme,confers tolerance to sulfonylurea herbicides and other acetolactate synthase (ALS) inhibiting herbicides
+Sulfonylurea herbicide tolerance,zm-hra,Zea mays,herbicide tolerant acetolactase synthase (als) enzyme,confers tolerance to acetolactate synthase-inhibiting herbicides such as sulfonylurea and imidazolinone
+Viral disease resistance,ac1 (sense and antisense),Bean Golden Mosaic Virus (BGMV),sense and antisense RNA of viral replication protein (Rep); no functional viral replication protein is produced,"inhibits the synthesis of the viral replication protein of the Bean Golden Mosaic Virus (BGMV), thereby conferring resistance to the BGMV"
+Viral disease resistance,cmv_cp,Cucumber Mosaic Cucumovirus (CMV),coat protein of cucumber mosaic cucumovirus (CMV),"confers resistance to cucumber mosaic cucumovirus (CMV) through ""pathogen-derived resistance"" mechanism"
+Viral disease resistance,plrv_orf1,Potato Leaf Roll Virus (PLRV),putative replicase domain of the potato leaf roll virus  (PLRV),confers resistance to potato leaf roll virus (PLRV) through gene silencing mechanism
+Viral disease resistance,plrv_orf2,Potato Leaf Roll Virus (PLRV),putative helicase domain of the potato leaf roll virus (PLRV),confers resistance to potato leaf roll virus (PLRV) through gene silencing mechanism
+Viral disease resistance,ppv_cp,Plum pox virus (PPV),coat protein of plum pox virus (PPV),"confers resistance to plum pox virus (PPV) through ""pathogen-derived resistance"" mechanism"
+Viral disease resistance,prsv_cp,Papaya ringspot virus (PRSV),coat protein (CP) of the papaya ringspot virus (PRSV),"confers resistance to papaya ringspot virus (PRSV) through ""pathogen-derived resistance"" mechanism"
+Viral disease resistance,prsv_rep,Papaya ringspot virus (PRSV),replicase domain of the papaya ringspot virus (PRSV),confers resistance to papaya ringspot virus (PRSV) through gene silencing mechanism
+Viral disease resistance,pvy_cp,Potato Virus Y (PVY),coat protein of the potato virus Y (PVY),"confers resistance to potato virus Y (PVY) through ""pathogen-derived resistance"" mechanism"
+Viral disease resistance,wmv_cp,Watermelon Mosaic Potyvirus 2 (WMV2),coat protein of watermelon mosaic potyvirus 2 (WMV2),"confers resistance to watermelon mosaic potyvirus 2 (WMV2) through ""pathogen-derived resistance"" mechanism"
+Viral disease resistance,zymv_cp,Zucchini Yellow Mosaic Potyvirus (ZYMV),coat protein of zucchini yellow mosaic potyvirus (ZYMV),"confers resistance to zucchini yellow mosaic potyvirus (ZYMV) through ""pathogen-derived resistance"" mechanism"
+Visual marker,dsRed2,Discosoma sp.,red fluorescent protein,"produces red stain on transformed tissue, which allows visual selection"
+Visual marker,uidA,Escherichia coli,beta-D-glucuronidase (GUS) enzyme,"produces blue stain on treated transformed tissue, which allows visual selection"
+Volumetric Wood Increase,cel1,Arabidopsis thaliana,CEL1 recombinant protein,promotes a faster growth
