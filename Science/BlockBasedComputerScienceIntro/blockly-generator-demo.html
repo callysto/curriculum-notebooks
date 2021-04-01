@@ -9,41 +9,26 @@
 <body>
 
   <p>
+    <button onclick="runCode()">Run Code</button>
+    <button onclick="clearOutput()">Clear Output</button>
     <button onclick="showCode()">Show JavaScript</button>
-    <button onclick="runCode()">Run JavaScript</button>
+    
   </p>
 
-  <div id="blocklyDiv" style="height: 480px; width: 600px;"></div>
+  <div id="blocklyDiv" style="height: 520px; width: 680px;"></div>
 
   <xml xmlns="https://developers.google.com/blockly/xml" id="toolbox" style="display: none">
-    <category name="Logic" colour="%{BKY_LOGIC_HUE}">
-      <block type="controls_if"></block>
-      <block type="logic_compare"></block>
-      <block type="logic_operation"></block>
-      <block type="logic_negate"></block>
-      <block type="logic_boolean"></block>
-    </category>
-    <category name="Loops" colour="%{BKY_LOOPS_HUE}">
-      <block type="controls_repeat_ext">
-        <value name="TIMES">
-          <block type="math_number">
-            <field name="NUM">10</field>
-          </block>
-        </value>
+    <block type="controls_repeat_ext"></block>
+    <block type="controls_if"></block>
+    <block type="logic_compare"></block>
+    <block type="math_number"><field name="NUM">42</field></block>
+    <block type="math_arithmetic"></block>
+    <block type="math_random_int">
+        <value name="FROM"><block type="math_number"><field name="NUM">1</field></block></value>
+        <value name="TO"><block type="math_number"><field name="NUM">50</field></block></value>
       </block>
-      <block type="controls_whileUntil"></block>
-    </category>
-    <category name="Math" colour="%{BKY_MATH_HUE}">
-      <block type="math_number">
-        <field name="NUM">123</field>
-      </block>
-      <block type="math_arithmetic"></block>
-      <block type="math_single"></block>
-    </category>
-    <category name="Text" colour="%{BKY_TEXTS_HUE}">
-      <block type="text"></block>
-      <block type="text_length"></block>
-      <block type="text_print"></block>
+    <block type="text"><field name="TEXT">text</field></block>
+    <block type="text_print"></block>
     </category>
   </xml>
 
@@ -96,32 +81,44 @@
     </block>
   </xml>
 
-  <pre id='remappedOutput'>Output will be here</pre>
+  <table style="width:100%">
+    <tr>
+      <th>Output</th><th>Code</th>
+    </tr>
+    <tr>
+      <td><div id='remappedOutput'> </div></td>
+      <td><pre id='codeDisplay'> </pre></td>
+    </tr>
+  </table>
+  
 
   <script>
     function remapAlert(messageString) {
-      document.getElementById('remappedOutput').innerText = messageString;
+      var previousOutput = document.getElementById('remappedOutput').innerText;
+      document.getElementById('remappedOutput').innerText = previousOutput + '\n' + messageString;
     }
     window.alert = remapAlert; // because window.alert won't work in an iframe
+
+    function clearOutput() {
+      document.getElementById('remappedOutput').innerText = '';
+    }
 
     var demoWorkspace = Blockly.inject('blocklyDiv',
         {media: '../../media/',
          toolbox: document.getElementById('toolbox')});
-    Blockly.Xml.domToWorkspace(document.getElementById('startBlocks'),
-                               demoWorkspace);
+    Blockly.Xml.domToWorkspace(document.getElementById('startBlocks'), demoWorkspace);
 
     function showCode() {
       // Generate JavaScript code and display it.
       Blockly.JavaScript.INFINITE_LOOP_TRAP = null;
       var code = Blockly.JavaScript.workspaceToCode(demoWorkspace);
-      alert(code);
+      //alert(code);
+      document.getElementById('codeDisplay').innerText = code;
     }
 
     function runCode() {
-      // Generate JavaScript code and run it.
       window.LoopTrap = 1000;
-      Blockly.JavaScript.INFINITE_LOOP_TRAP =
-          'if (--window.LoopTrap == 0) throw "Infinite loop.";\n';
+      Blockly.JavaScript.INFINITE_LOOP_TRAP = 'if (--window.LoopTrap == 0) throw "Infinite loop.";\n';
       var code = Blockly.JavaScript.workspaceToCode(demoWorkspace);
       Blockly.JavaScript.INFINITE_LOOP_TRAP = null;
       try {
