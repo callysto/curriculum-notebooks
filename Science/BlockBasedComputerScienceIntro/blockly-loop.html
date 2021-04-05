@@ -102,10 +102,8 @@
     Blockly.Xml.domToWorkspace(document.getElementById('startBlocks'),workspace);
 
     function showCode() {
-      // Generate JavaScript code and display it.
       Blockly.JavaScript.INFINITE_LOOP_TRAP = null;
       var code = Blockly.Python.workspaceToCode(workspace);
-      //alert(code);
       document.getElementById('codeDisplay').innerText = code;
     }
 
