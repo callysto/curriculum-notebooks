@@ -2,7 +2,7 @@
 
 Create a branch off of master for your task. After completing your notebook(s) and content review, make the recommended changes and open a pull request from your branch to master. 
 
-We consider it a best practice to clear all cell outputs before commiting. This can be done with 'Kernel > Restar & Clear Output' (or 'Edit > Clear All Outputs' in JupyterLab) from the top menu bar. 
+We consider it a best practice to clear all cell outputs before commiting. This can be done with 'Kernel > Restart & Clear Output' (or 'Edit > Clear All Outputs' in JupyterLab) from the top menu bar. 
 
 ## Naming Conventions
 
