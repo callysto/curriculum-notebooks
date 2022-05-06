@@ -10,7 +10,7 @@ cd "$script_dir"
 test_modified="$(git diff --name-only $COMMIT_RANGE test.sh)"
 
 if [ -z "$COMMIT_RANGE" ] || [ ! -z "$test_modified" ]; then
-    notebooks=($(git ls-files *.ipynb | grep -v \.ipynb_checkpoints))
+    notebooks=($(git ls-files '*.ipynb' | grep -v \.ipynb_checkpoints))
 else
     notebooks=($(git diff --name-only --diff-filter=d $COMMIT_RANGE | grep \.ipynb$ | grep -v \.ipynb_checkpoints))
 fi
