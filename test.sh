@@ -7,12 +7,12 @@ mount_point=/callysto
 
 cd "$script_dir"
 
-test_modified="$(git diff --name-only $TRAVIS_COMMIT_RANGE test.sh)"
+test_modified="$(git diff --name-only $COMMIT_RANGE test.sh)"
 
-if [ -z "$TRAVIS_COMMIT_RANGE" ] || [ ! -z "$test_modified" ]; then
+if [ -z "$COMMIT_RANGE" ] || [ ! -z "$test_modified" ]; then
     notebooks=($(git ls-files *.ipynb | grep -v \.ipynb_checkpoints))
 else
-    notebooks=($(git diff --name-only --diff-filter=d $TRAVIS_COMMIT_RANGE | grep \.ipynb$ | grep -v \.ipynb_checkpoints))
+    notebooks=($(git diff --name-only --diff-filter=d $COMMIT_RANGE | grep \.ipynb$ | grep -v \.ipynb_checkpoints))
 fi
 
 # Copy notebooks to a volume and chown them to avoid permissions issues
