@@ -146,8 +146,8 @@ def f(Distance=30):
         plt.xlim(-60,60)
         plt.ylabel('Length')
         plt.xlabel('Length')
-        plt.annotate(xy=[-35,90],s="Object")
-        plt.annotate(xy=[25,90],s="Image")
+        plt.annotate(xy=[-35,90],text="Object")
+        plt.annotate(xy=[25,90],text="Image")
 
         plt.show()
         
