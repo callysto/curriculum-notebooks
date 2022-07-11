@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 import math
 import random
-from IPython.display import clear_output, SVG
+from IPython.display import clear_output, SVG, display, Math, Latex, HTML
 
 #----------
 
@@ -104,8 +104,8 @@ def f(Angle=45):
         plt.xlim(-50,50)
         plt.ylabel('Length')
         plt.xlabel('Length')
-        plt.annotate(xy=[-35,90],s="Incident ray")
-        plt.annotate(xy=[15,90],s="Reflected ray")
+        plt.annotate(xy=[-35,90],text="Incident ray")
+        plt.annotate(xy=[15,90],text="Reflected ray")
 
         plt.show()
         
@@ -146,8 +146,8 @@ def f(Distance=30):
         plt.xlim(-60,60)
         plt.ylabel('Length')
         plt.xlabel('Length')
-        plt.annotate(xy=[-35,90],s="Object")
-        plt.annotate(xy=[25,90],s="Image")
+        plt.annotate(xy=[-35,90],text="Object")
+        plt.annotate(xy=[25,90],text="Image")
 
         plt.show()
         
