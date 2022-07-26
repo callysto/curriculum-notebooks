@@ -35,7 +35,6 @@
       fill(7,189,239);
       stroke(0);
       rect(-150,0,300,10);
-      
         
       //draw normal
       fill(0);
@@ -44,19 +43,13 @@
       light = new flash(0,-150);
       
       rotations();
-      
-      
-      
-      
-      
       }
-
 
       function flash(x_pos,y_pos){
       //create a flashlight
       this.location = createVector(x_pos,y_pos);
-      
       }
+
       //draw the flashlight
       flash.prototype.draw = function() {
       var x = this.location.x;
@@ -69,7 +62,6 @@
       var tri = triangle(x-10,y-10,x,y-30,x+10,y-10);
       //draw handle
       var handle = rect(x-5,y-60,10,40);
-      
       };
 
       flash.prototype.shine1 = function(){
@@ -81,12 +73,10 @@
         //mouse pressed, show beams
         noStroke();
         fill(239,239,7);
-        
         rect(x-3,y,6,150);
         ellipse(0,0,6);
       }else if(m_val == 0){
       }
-      
       };
 
       flash.prototype.shine2 = function(){
@@ -102,9 +92,7 @@
         rect(x-3,y,6,150);
         ellipse(0,0,6);
       }else if(m_val == 0){
-        
       }
-      
       };
 
       function mousePressed(){
@@ -114,14 +102,11 @@
       }else if(m_val == 1){
         m_val = 0;
       }
-      
       }
 
 
       function mouse_angle(){
-      
       //return the angle that the mouse makes with the origin
-      
       theta = atan((mouseX-x_origin)/(mouseY-y_origin));
       if (abs(theta) <= 90){
         return theta;
@@ -137,30 +122,18 @@
       text(tex,x_pos,y_pos);
       }
 
-
       function rotations(){
       //rotate the light about the new origin
       rotate(-(mouse_angle()));
       //draw the light
       light.draw();
-      
 
       //shine the light
       light.shine1();
       rotate(2*(mouse_angle()));
       light.shine2();
       rotate();
-      
-      
       }
-
-
-
-
-
-
-
-
    </script>
  </head>
  <body>

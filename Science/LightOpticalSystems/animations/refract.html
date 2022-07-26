@@ -18,7 +18,6 @@
      text_box('Refraction',23,200,30);
      text_box('Air',16,20,120);
 
-
      //define the new origin
      translate(x_origin,y_origin);
      ref_angle = refract_angle(1.00,1.33,mouse_angle());
@@ -28,7 +27,6 @@
      noStroke();
      rect(-(width/2),0,width,(height/2));
      text_box('Water',16,-230,30);
-
 
      //draw angle size
       fill(255,255,255);
@@ -66,15 +64,11 @@
       light = new flash(0,-100);
 
       rotations();
-
-
     }
-
 
     function flash(x_pos,y_pos){
      //create a flashlight
      this.location = createVector(x_pos,y_pos);
-
     }
      //draw the flashlight
     flash.prototype.draw = function() {
@@ -88,7 +82,6 @@
      var tri = triangle(x-5,y-5,x,y-15,x+5,y-5);
      //draw handle
      var handle = rect(x-2.5,y-30,5,20);
-
     };
 
     flash.prototype.shine1 = function(){
@@ -104,7 +97,6 @@
       ellipse(0,0,6);
      }else if(m_val == 0){
      }
-
     };
 
     flash.prototype.shine2 = function(){
@@ -121,7 +113,6 @@
       ellipse(0,0,6);
      }else if(m_val == 0){
      }
-
     };
 
     function mousePressed(){
@@ -131,14 +122,11 @@
      }else if(m_val == 1){
       m_val = 0;
      }
-
     }
 
 
     function mouse_angle(){
-
      //return the angle that the mouse makes with the origin
-
      theta = atan((mouseX-x_origin)/(mouseY-y_origin));
      if (abs(theta) <= 90){
       return theta;
@@ -153,7 +141,6 @@
      fill(0);
      text(tex,x_pos,y_pos);
     }
-
 
     function refract_angle(n_1,n_2,inc_angle){
         //get the angle of refraction for a given medium, incident angle
@@ -175,11 +162,7 @@
      ref_angle = refract_angle(1.00,1.33,mouse_angle());
      rotate((180 + mouse_angle()) - ref_angle);
      light.shine2();
-     //rotate();
-
-
     }
-
    </script>
  </head>
  <body>

@@ -13,7 +13,6 @@
     function setup() {
      createCanvas(400,400);
      angleMode(DEGREES);
-
     }
 
     function draw() {
@@ -46,7 +45,6 @@
       vex_lens.draw3();
       cave_lens.draw3();
      }
-
     }
 
 
@@ -59,7 +57,6 @@
      var x2 = x + 10;
      var y1 = y - 150;
      var y2 = y - 50;
-
 
     convex.prototype.draw2 = function() {
 
@@ -87,11 +84,9 @@
      bezier(x2, y1, 30, -120, 30, -80, x2, y2);
 
      rays('vex',3);
-
     };
 
     convex.prototype.draw1 = function() {
-
      //draw line on top and bottom
      stroke(0);
      line(x1, y1, x2, y1);
@@ -102,9 +97,7 @@
      bezier(x2, y1, 20, -120, 20, -80, x2, y2);
 
      rays('vex',1);
-
     };
-
     }
 
     function concave(x_pos,y_pos){
@@ -116,9 +109,6 @@
      var x2 = x + 20;
      var y1 = y + 50;
      var y2 = y + 150;
-
-
-
 
     concave.prototype.draw2 = function() {
 
@@ -200,7 +190,6 @@
      line(q2,l2,190,-100);
      line(q2,l3,190,-125);
 
-
     } else if(lens == 'vex' && num == 3){
       //assign values
      var q1 = -150;
@@ -217,10 +206,7 @@
      line(q2,l1,190,-50);
      line(q2,l2,190,-100);
      line(q2,l3,190,-150);
-
     }
-
-
 
     if (lens == 'cave' && num == 1){
       //assign values
@@ -255,7 +241,7 @@
      line(q2,l2,150,100);
      line(q2,l1,150,175);
 
-    } else if(lens == 'cave' && num == 3){
+    } else if(lens == 'cave' && num == 3) {
       //assign values
      var q1 = -150;
      var q2 = 0;
@@ -272,8 +258,6 @@
      line(q2,l2,150,100);
      line(q2,l1,150,200);
     }
-
-
     }
 
     function mousePressed(){
