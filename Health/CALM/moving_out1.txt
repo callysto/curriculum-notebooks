@@ -1,5 +1,5 @@
 My name is Enter your name and I expect to move out at the age of 16. 
-I want to study Enter what you want to study and have my job/occupation to be Enter what you want to do for work. My expected salary for this job would be in the following range: (2000, 5000) 
+I want to study Enter what you want to study and have my job/occupation to be Enter what you want to do for work. My expected salary for this job would be in the following range: (5000, 9000) 
 In my 20's I do not want to be married and I do not want to own a house. By the age of 30 I want to have 0 children. 
 I want to live near Enter the city/town you want to live in and drive a Enter the vehicle you want to own. 
 
