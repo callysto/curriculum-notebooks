@@ -50,6 +50,13 @@ def create_widget(type,description,value,max,step):
                     layout= widgets.Layout(width='500px'),
                     style=dict(description_width='initial'),           
                 )
+        case 'SelectM':
+            return widgets.SelectMultiple(
+                    options=value,
+                    value=[],
+                    description=description,
+                    disabled=False,
+                )
         case _:
             return None
         
