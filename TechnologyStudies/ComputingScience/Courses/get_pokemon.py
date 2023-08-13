@@ -133,3 +133,8 @@ def get_pokemon_data():
 
     # return the dataframe
     return df
+
+
+def get_sprite_url(id):
+    image_url = 'https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/'+str(id)+'.png'
+    return image_url
