@@ -9,7 +9,6 @@ def spotify_setup(CLIENT_ID, CLIENT_SECRET):
         global headers
         headers = {'Authorization':'Bearer {token}'.format(token=access_token)}
         print('Setup complete')
-        return headers
     except:
         print('Remember to paste your client ID and secret into the code')
 
