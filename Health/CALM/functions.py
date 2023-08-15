@@ -55,6 +55,7 @@ def create_widget(type,description,value,max,step):
                     options=value,
                     value=[],
                     description=description,
+                    layout= widgets.Layout(width='500px'),
                     disabled=False,
                 )
         case _:
