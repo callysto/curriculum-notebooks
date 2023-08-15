@@ -54,7 +54,7 @@ def create_widget(type,description,value,max,step):
             return widgets.SelectMultiple(
                     options=value,
                     value=[],
-                    description=test,
+                    description=description,
                     layout= widgets.Layout(height='auto',width='auto'),
                     style=dict(description_width='initial'),
                     disabled=False,
