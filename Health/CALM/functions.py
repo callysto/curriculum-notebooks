@@ -55,7 +55,7 @@ def create_widget(type,description,value,max,step):
                     options=value,
                     value=[],
                     description=description,
-                    layout= widgets.Layout(height='100px'),
+                    layout= widgets.Layout(height='150px'),
                     style=dict(description_width='initial'),
                     disabled=False,
                 )
