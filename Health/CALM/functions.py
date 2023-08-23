@@ -41,19 +41,7 @@ def create_widget(type,description,value,min,max,step):
         case 'IntRangeSlider':
             return widgets.IntRangeSlider(
                     value=value,
-                    min=0,
-                    max=max,
-                    step=step,
-                    description=description,
-                    disabled=False,
-                    continuous_update=False,
-                    layout= widgets.Layout(width='500px'),
-                    style=dict(description_width='initial'),           
-                )
-        case 'IntRangeSlider2':
-            return widgets.IntRangeSlider(
-                    value=value,
-                    min=0,
+                    min=min,
                     max=max,
                     step=step,
                     description=description,
