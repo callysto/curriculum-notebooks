@@ -63,6 +63,17 @@ def create_widget(type,description,value,min,max,step):
             return None
         
 def calculateFederalTax(income):
+    """
+    Calculates the federal tax based on the given income.
+
+    Parameters:
+        income (float): The income on which the federal tax needs to be calculated.
+
+    Returns:
+        float: The calculated federal tax.
+
+    """
+    
     taxBrackets = [47630, 95259, 147667, 210371]
     taxRates = [.15, .205, .26, .29, .33]
     taxes = []
@@ -81,6 +92,16 @@ def calculateFederalTax(income):
     return tax
 
 def calculateProvincialTax(income):
+    """
+    Calculate the provincial tax based on the given income.
+
+    Parameters:
+        income (float): The income on which the provincial tax is calculated.
+
+    Returns:
+        float: The amount of provincial tax calculated based on the income.
+    """
+
     taxBrackets = [131220, 157464, 209952, 314928] # for Alberta
     taxRates = [.1, .12, .13, .14, .15]
     taxes = []
@@ -99,6 +120,16 @@ def calculateProvincialTax(income):
     return tax
 
 def calculateEI(income):
+    """
+    Calculate the employment insurance (EI) premium based on the given income.
+
+    Parameters:
+        income (float): The income of the individual.
+
+    Returns:
+        float: The calculated EI premium.
+    """
+
     eiMaxInsurableEarnings = 53100
     eiRate = 0.0162
     if income >= eiMaxInsurableEarnings:
@@ -108,6 +139,16 @@ def calculateEI(income):
     return eiPremium
 
 def calculateCPP(income):
+    """
+    Calculates the CPP (Canada Pension Plan) premium based on the given income.
+
+    Parameters:
+        income (float): The income of an individual.
+
+    Returns:
+        float: The calculated CPP premium.
+    """
+
     cppMaxContributoryEarnings = 53900
     cppRate = 0.051
     if income >= cppMaxContributoryEarnings:
@@ -115,6 +156,4 @@ def calculateCPP(income):
     else:
         cppPremium = income * cppRate
     return cppPremium
-
-
 
