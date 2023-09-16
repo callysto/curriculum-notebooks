@@ -73,23 +73,22 @@ def calculateFederalTax(income):
         float: The calculated federal tax.
 
     """
-    
-    taxBrackets = [47630, 95259, 147667, 210371]
-    taxRates = [.15, .205, .26, .29, .33]
-    taxes = []
-    for i in range(0, len(taxBrackets)):
-        taxes.append(taxBrackets[i] * taxRates[i])
-    if income < taxBrackets[0]:
-        tax = income * taxRates[0]
-    elif income < taxBrackets[1]:
-        tax = taxes[0] + (income - taxBrackets[0]) * taxRates[1]
-    elif income < taxBrackets[2]:
-        tax = taxes[1] + (income - taxBrackets[1]) * taxRates[2]
-    elif income < taxBrackets[3]:
-        tax = taxes[2] + (income - taxBrackets[2]) * taxRates[3]
-    else:
-        tax = taxes[3] + (income - taxBrackets[3]) * taxRates[4]
-    return tax
+
+    taxBrackets = [53359, 106717, 165430, 235675]
+    taxRates = [0.15, 0.205, 0.26, 0.29, 0.33]
+
+    fed_tax = 0
+    for i in range(len(taxBrackets)):
+        if income <= 0:
+            break
+        if income <= taxBrackets[i]:
+            fed_tax += income * taxRates[i]
+            break
+        else:
+            fed_tax += taxBrackets[i] * taxRates[i]
+            income -= taxBrackets[i]
+
+    return fed_tax
 
 def calculateProvincialTax(income):
     """
@@ -102,22 +101,21 @@ def calculateProvincialTax(income):
         float: The amount of provincial tax calculated based on the income.
     """
 
-    taxBrackets = [131220, 157464, 209952, 314928] # for Alberta
-    taxRates = [.1, .12, .13, .14, .15]
-    taxes = []
-    for i in range(0, len(taxBrackets)):
-        taxes.append(taxBrackets[i] * taxRates[i])
-    if income < taxBrackets[0]:
-        tax = income * taxRates[0]
-    elif income < taxBrackets[1]:
-        tax = taxes[0] + (income - taxBrackets[0]) * taxRates[1]
-    elif income < taxBrackets[2]:
-        tax = taxes[1] + (income - taxBrackets[1]) * taxRates[2]
-    elif income < taxBrackets[3]:
-        tax = taxes[2] + (income - taxBrackets[2]) * taxRates[3]
-    else:
-        tax = taxes[3] + (income - taxBrackets[3]) * taxRates[4]
-    return tax
+    taxBrackets = [142292, 170751, 227668, 341502]
+    taxRates = [0.10, 0.12, 0.13, 0.14, 0.15]
+
+    prov_tax = 0
+    for i in range(len(taxBrackets)):
+        if income <= 0:
+            break
+        if income <= taxBrackets[i]:
+            prov_tax += income * taxRates[i]
+            break
+        else:
+            prov_tax += taxBrackets[i] * taxRates[i]
+            income -= taxBrackets[i]
+
+    return prov_tax
 
 def calculateEI(income):
     """
@@ -156,4 +154,3 @@ def calculateCPP(income):
     else:
         cppPremium = income * cppRate
     return cppPremium
-
