@@ -128,8 +128,8 @@ def calculateEI(income):
         float: The calculated EI premium.
     """
 
-    eiMaxInsurableEarnings = 53100
-    eiRate = 0.0162
+    eiMaxInsurableEarnings = 61500
+    eiRate = 0.0163
     if income >= eiMaxInsurableEarnings:
         eiPremium = eiMaxInsurableEarnings * eiRate
     else:
@@ -147,8 +147,8 @@ def calculateCPP(income):
         float: The calculated CPP premium.
     """
 
-    cppMaxContributoryEarnings = 53900
-    cppRate = 0.051
+    cppMaxContributoryEarnings = 63100
+    cppRate = 0.0595
     if income >= cppMaxContributoryEarnings:
         cppPremium = cppMaxContributoryEarnings * cppRate
     else:
