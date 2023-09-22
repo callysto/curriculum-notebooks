@@ -1,64 +1,70 @@
 import ipywidgets as widgets
 
-def create_widget(type,description,value,min,max,step):
+def create_widget(type, description, value, min=None, max=None, step=None):
     match type:
         case 'Text':
             return widgets.Text(
-                    value=value,
-                    description=description,
-                    disabled=False,
-                    indent=False, 
-                    layout= widgets.Layout(width='400px'), 
-                    style=dict(description_width='initial'),
-                )
+                value=value,
+                description=description,
+                disabled=False,
+                indent=False,
+                layout=widgets.Layout(width='400px'),
+                style=dict(description_width='initial'),
+            )
         case 'TextArea':
             return widgets.Textarea(
-                    value=value,
-                    description=description,
-                    disabled=False,
-                    indent=False, 
-                    layout= widgets.Layout(width='400px',height='100px'), 
-                    style=dict(description_width='initial'),
-                )
+                value=value,
+                description=description,
+                disabled=False,
+                indent=False,
+                layout=widgets.Layout(width='400px', height='100px'),
+                style=dict(description_width='initial'),
+            )
         case 'Checkbox':
             return widgets.Checkbox(
-                    value=value,
-                    description=description,
-                    disabled=False,
-                    indent=False,
-                )
+                value=value,
+                description=description,
+                disabled=False,
+                indent=False,
+            )
         case 'IntSlider':
             return widgets.IntSlider(
-                    value=value,
-                    min = value,
-                    max= max,
-                    step = step,
-                    description=description,
-                    disabled=False,
-                    layout= widgets.Layout(width='500px'),
-                    style=dict(description_width='initial'),
-                )
+                value=value,
+                min=value,
+                max=max,
+                step=step,
+                description=description,
+                disabled=False,
+                layout=widgets.Layout(width='500px'),
+                style=dict(description_width='initial'),
+            )
         case 'IntRangeSlider':
             return widgets.IntRangeSlider(
-                    value=value,
-                    min=min,
-                    max=max,
-                    step=step,
-                    description=description,
-                    disabled=False,
-                    continuous_update=False,
-                    layout= widgets.Layout(width='500px'),
-                    style=dict(description_width='initial'),           
-                )
+                value=value,
+                min=min,
+                max=max,
+                step=step,
+                description=description,
+                disabled=False,
+                continuous_update=False,
+                layout=widgets.Layout(width='500px'),
+                style=dict(description_width='initial'),
+            )
         case 'SelectM':
             return widgets.SelectMultiple(
-                    options=value,
-                    value=[],
-                    description=description,
-                    layout= widgets.Layout(height='150px'),
-                    style=dict(description_width='initial'),
-                    disabled=False,
-                )
+                options=value,
+                value=[],
+                description=description,
+                layout=widgets.Layout(height='150px'),
+                style=dict(description_width='initial'),
+                disabled=False,
+            )
+        case 'Radio':
+            return widgets.RadioButtons(
+                options=value,
+                description=description,
+                disabled=False, 
+            )
         case _:
             return None
         
