@@ -1,7 +1,7 @@
 import ipywidgets as widgets
 
-def create_widget(type, description, value, min=None, max=None, step=None):
-    match type:
+def create_widget(type1, description, value, min=None, max=None, step=None):
+    match type1:
         case 'Text':
             return widgets.Text(
                 value=value,
@@ -80,25 +80,21 @@ def calculateFederalTax(income):
 
     """
 
-    taxBrackets = [53359, 106717, 165430, 235675]
+    taxBrackets = [0, 53359, 106717, 165430, 235675, float('inf')]
     taxRates = [0.15, 0.205, 0.26, 0.29, 0.33]
+    bpa  = 15000 # basic personal allowance deduction
 
+    income -= bpa
     fed_tax = 0
-    for i in range(len(taxBrackets)):
-        if income <= 0:
-            break
-        if income <= taxBrackets[i]:
-            fed_tax += income * taxRates[i]
-            break
-        else:
-            fed_tax += taxBrackets[i] * taxRates[i]
-            income -= taxBrackets[i]
-
+    for i in range(len(taxBrackets)-1):
+        if (income >= taxBrackets[i]) and (income <= taxBrackets[i+1]):
+            fed_tax = (income-taxBrackets[i])*taxRates[i] + \
+                sum({(taxBrackets[j+1]-taxBrackets[j])*taxRates[j] for j in range(i)})
     return fed_tax
 
 def calculateProvincialTax(income):
     """
-    Calculate the provincial tax based on the given income.
+    Calculate the provincial tax based on the given income, for Alberta.
 
     Parameters:
         income (float): The income on which the provincial tax is calculated.
@@ -107,19 +103,16 @@ def calculateProvincialTax(income):
         float: The amount of provincial tax calculated based on the income.
     """
 
-    taxBrackets = [142292, 170751, 227668, 341502]
+    taxBrackets = [0, 142292, 170751, 227668, 341502, float('inf')]
     taxRates = [0.10, 0.12, 0.13, 0.14, 0.15]
+    bpa  = 15000 # basic personal allowance deduction
 
+    income -= bpa
     prov_tax = 0
-    for i in range(len(taxBrackets)):
-        if income <= 0:
-            break
-        if income <= taxBrackets[i]:
-            prov_tax += income * taxRates[i]
-            break
-        else:
-            prov_tax += taxBrackets[i] * taxRates[i]
-            income -= taxBrackets[i]
+    for i in range(len(taxBrackets)-1):
+        if (income >= taxBrackets[i]) and (income <= taxBrackets[i+1]):
+            prov_tax = (income-taxBrackets[i])*taxRates[i] + \
+                sum({(taxBrackets[j+1]-taxBrackets[j])*taxRates[j] for j in range(i)})
 
     return prov_tax
 
@@ -154,9 +147,10 @@ def calculateCPP(income):
     """
 
     cppMaxContributoryEarnings = 63100
+    cppExempt = 3500
     cppRate = 0.0595
     if income >= cppMaxContributoryEarnings:
-        cppPremium = cppMaxContributoryEarnings * cppRate
+        cppPremium = (cppMaxContributoryEarnings - cppExempt)* cppRate
     else:
-        cppPremium = income * cppRate
+        cppPremium = max(0,income - cppExempt) * cppRate
     return cppPremium
