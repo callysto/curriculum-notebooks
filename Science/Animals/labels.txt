@@ -1,0 +1,2 @@
+0 whale
+1 other_animal
