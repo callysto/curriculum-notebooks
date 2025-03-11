@@ -1,6 +1,7 @@
+import requests
+import pandas as pd
+
 def get_pokemon_data():
-    import requests
-    import pandas as pd
     r = requests.get('https://pokeapi.co/api/v2/pokemon?limit=100000')
     df = pd.DataFrame(r.json()['results'])
 
